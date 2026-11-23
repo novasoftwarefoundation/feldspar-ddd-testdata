@@ -13,7 +13,7 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 Names, keys and labels the extractor was not sure about. They were replaced by a placeholder or dropped; only the place and the count are kept.
 
-- 1 × name part replaced by <value>: Takeout/Mijn activiteit/…
+- Nothing.
 
 ## Known gaps
 
@@ -23,7 +23,6 @@ Files the platform's donation scripts read that no package has shown yet: 2
 
 <!-- known gaps by hand: start -->
 - Only a Dutch Takeout has been seen, with YouTube history as JSON and subscriptions and comments as CSV. English file names (`watch-history.json`, `search-history.json`) and HTML history files are not covered.
-- One product folder under `Mijn activiteit/` is kept as `<value>`: its name also occurs as a value and is not in `wording` yet.
 <!-- known gaps by hand: end -->
 
 ## Last change

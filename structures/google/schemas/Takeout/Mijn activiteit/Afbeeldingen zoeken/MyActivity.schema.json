@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Takeout/Mijn activiteit/<value>/MyActivity.json",
+  "title": "Takeout/Mijn activiteit/Afbeeldingen zoeken/MyActivity.json",
   "type": "array",
   "items": {
     "type": "object",

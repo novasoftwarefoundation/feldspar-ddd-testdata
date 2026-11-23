@@ -12,17 +12,6 @@ expected:
   - "watch-history.json"
   - "zoekgeschiedenis.json"
 files:
-  "Takeout/Mijn activiteit/<value>/MyActivity.json":
-    ascii: true
-    first_seen: "2024-09-03"
-    indent: 2
-    kind: "json"
-    langs:
-      - "nl"
-    last_seen: "2024-09-03"
-    meta_encoding: false
-    schema: "schemas/Takeout/Mijn activiteit/{value}/MyActivity.schema.json"
-    seen_in: 1
   "Takeout/Mijn activiteit/Advertenties/MyActivity.json":
     ascii: true
     first_seen: "2024-09-03"
@@ -33,6 +22,17 @@ files:
     last_seen: "2024-09-03"
     meta_encoding: false
     schema: "schemas/Takeout/Mijn activiteit/Advertenties/MyActivity.schema.json"
+    seen_in: 1
+  "Takeout/Mijn activiteit/Afbeeldingen zoeken/MyActivity.json":
+    ascii: true
+    first_seen: "2024-09-03"
+    indent: 2
+    kind: "json"
+    langs:
+      - "nl"
+    last_seen: "2024-09-03"
+    meta_encoding: false
+    schema: "schemas/Takeout/Mijn activiteit/Afbeeldingen zoeken/MyActivity.schema.json"
     seen_in: 1
   "Takeout/Mijn activiteit/Chrome/MyActivity.json":
     ascii: true
@@ -130,7 +130,7 @@ files:
     langs:
       - "nl"
     last_seen: "2024-09-03"
-    meta_encoding: true
+    meta_encoding: false
     schema: "schemas/Takeout/YouTube en YouTube Music/geschiedenis/zoekgeschiedenis.schema.json"
     seen_in: 1
   "Takeout/YouTube en YouTube Music/reacties/reacties.csv":
@@ -158,8 +158,7 @@ files:
 last_change:
   date: "2024-09-03"
   summary: "package of 2024-09-03 (nl) added: 13 new, 0 changed shape, 0 not seen since an earlier package"
-left_out:
-  "name part replaced by <value>: Takeout/Mijn activiteit/…": 1
+left_out: {}
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/google.py and youtube.py) read."
 packages:
