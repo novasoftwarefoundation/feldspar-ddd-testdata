@@ -1,7 +1,8 @@
 # Layout of facebook packages, combined over every package added with `ddd.py add`.
 # Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
 #   expected: file names the platform's donation scripts read (alternatives separated by " | ")
-#   wording: the platform's own words that also occur as values, kept in names and keys
+#   wording: the platform's own words and labels, kept in names, keys and labels even where they also occur as
+#     values or are long
 #   personal_keys: patterns (regular expressions) of keys that hold user data, written as <name>
 expected:
   - "ad_preferences.json"
@@ -232,4 +233,6 @@ packages:
     lang: "en"
 personal_keys: []
 platform: "facebook"
-wording: []
+wording:
+  - "Is opted out of using data about interactions between the user and third party sites"
+  - "Is opted out of using education information (school, college year, field of study, etc.) to target ads"

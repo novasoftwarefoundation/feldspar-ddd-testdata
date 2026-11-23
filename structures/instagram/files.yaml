@@ -1,7 +1,8 @@
 # Layout of instagram packages, combined over every package added with `ddd.py add`.
 # Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
 #   expected: file names the platform's donation scripts read (alternatives separated by " | ")
-#   wording: the platform's own words that also occur as values, kept in names and keys
+#   wording: the platform's own words and labels, kept in names, keys and labels even where they also occur as
+#     values or are long
 #   personal_keys: patterns (regular expressions) of keys that hold user data, written as <name>
 expected:
   - "account_based_in.json"
@@ -1482,4 +1483,12 @@ packages:
     lang: "en"
 personal_keys: []
 platform: "instagram"
-wording: []
+wording:
+  - "Advertisers that have uploaded an audience list containing entries that were matched to your Instagram profile"
+  - "Advertisers who have uploaded an audience list that was matched to your profile based on interactions you may have had with the advertiser's website, app or store"
+  - "Brand partner"
+  - "Email"
+  - "Last time you cleared the notification badge by clicking on the Facebook section of your profile (deprecated feature)"
+  - "Last time you cleared the notification badge by clicking your profile (deprecated feature)"
+  - "Metadata"
+  - "You engaged delta% more accounts that weren’t following you compared to previous period"
