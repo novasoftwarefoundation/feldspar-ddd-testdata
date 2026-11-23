@@ -4,28 +4,28 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 ## Coverage
 
-- Packages: 0
-- File patterns seen: 0 ()
+- Packages: 1, export dates 2024-09-02; languages en
+- File patterns seen: 14 (json 14)
 - No media files (photos, videos, audio) in any package yet.
-- Lists that were empty in every package, so their items are unknown: 0
+- Lists that were empty in every package, so their items are unknown: 4
+  - `fb_example/ad_preferences.json .label_values[].vec`
+  - `fb_example/ad_preferences.json .media`
+  - `fb_example/story_views_in_past_7_days.json .media`
+  - `fb_example/subscription_for_no_ads.json .media`
 
 ## Left out
 
 Names, keys and labels the extractor was not sure about. They were replaced by a placeholder or dropped; only the place and the count are kept.
 
-- Nothing.
+- 2 × label not kept (unsure it is the platform's wording): fb_example/ad_preferences.json.label_values[].label
 
 ## Known gaps
 
-Files the platform's donation scripts read that no package has shown yet: 61
-- `ad_preferences.json`
+Files the platform's donation scripts read that no package has shown yet: 49
 - `ads.json`
 - `ads_feedback_activity.json`
-- `ads_interests.json`
 - `ads_personalization_consent.json`
-- `advertisers_using_your_activity_or_information.json`
 - `autofill_information.json`
-- `comments.json`
 - `contacts_sync_settings.json`
 - `content_that_has_been_shown_to_you_in_your_feed.json`
 - `controls.json`
@@ -34,13 +34,11 @@ Files the platform's donation scripts read that no package has shown yet: 61
 - `group_posts_and_comments.json`
 - `instant_games.json`
 - `instant_games_usage_data.json`
-- `likes_and_reactions.json | likes_and_reactions_1.json`
 - `link_history.json`
 - `meta_avatars_post_backgrounds.json`
 - `navigation_bar_activity.json`
 - `notification_of_meta_privacy_policy_update.json`
 - `notifications.json`
-- `other_categories_used_to_reach_you.json`
 - `pages_and_profiles_you_follow.json`
 - `pages_you_ve_liked.json`
 - `payment_history.json`
@@ -52,11 +50,7 @@ Files the platform's donation scripts read that no package has shown yet: 61
 - `profile_update_history.json`
 - `profile_visits.json`
 - `received_friend_requests.json`
-- `recently_viewed.json`
-- `recently_visited.json`
 - `shows_you_have_watched.json`
-- `story_views_in_past_7_days.json`
-- `subscription_for_no_ads.json`
 - `timezone.json`
 - `who_you_ve_followed.json`
 - `your_activity_off_meta_technologies.json`
@@ -71,12 +65,10 @@ Files the platform's donation scripts read that no package has shown yet: 61
 - `your_fundraiser_donations_information.json`
 - `your_group_membership_activity.json`
 - `your_page_or_groups_badges.json`
-- `your_posts__check_ins__photos_and_videos_1.json`
 - `your_privacy_jurisdiction.json`
 - `your_recently_followed_history.json`
 - `your_recently_used_emojis.json`
 - `your_saved_items.json`
-- `your_search_history.json`
 - `your_transaction_survey_information.json`
 - `your_uncategorized_photos.json`
 
@@ -86,4 +78,4 @@ Files the platform's donation scripts read that no package has shown yet: 61
 
 ## Last change
 
-- None yet.
+- 2024-09-02: package of 2024-09-02 (en) added: 14 new, 0 changed shape, 0 not seen since an earlier package

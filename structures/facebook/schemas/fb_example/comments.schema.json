@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fb_example/comments.json",
+  "type": "object",
+  "properties": {
+    "comments_v2": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "comment": {
+                  "type": "object",
+                  "properties": {
+                    "author": {
+                      "type": "string",
+                      "x-first-seen": "2024-09-02",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-09-02",
+                      "x-seen-in": 1
+                    },
+                    "comment": {
+                      "type": "string",
+                      "x-first-seen": "2024-09-02",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-09-02",
+                      "x-seen-in": 1
+                    },
+                    "timestamp": {
+                      "type": "integer",
+                      "x-first-seen": "2024-09-02",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-09-02",
+                      "x-seen-in": 1,
+                      "x-timestamp": "unix-seconds"
+                    }
+                  },
+                  "required": [
+                    "author",
+                    "comment",
+                    "timestamp"
+                  ],
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "comment"
+              ],
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "timestamp": {
+            "type": "integer",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1,
+            "x-timestamp": "unix-seconds"
+          }
+        },
+        "required": [
+          "data",
+          "timestamp",
+          "title"
+        ],
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "comments_v2"
+  ],
+  "x-first-seen": "2024-09-02",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-09-02",
+  "x-seen-in": 1
+}

@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fb_example/recently_viewed.json",
+  "type": "object",
+  "properties": {
+    "recently_viewed": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "data": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "x-first-seen": "2024-09-02",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-09-02",
+                      "x-seen-in": 1
+                    },
+                    "uri": {
+                      "type": "string",
+                      "format": "uri",
+                      "x-first-seen": "2024-09-02",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-09-02",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "uri"
+                  ],
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1
+                },
+                "timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
+                }
+              },
+              "required": [
+                "data",
+                "timestamp"
+              ],
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "name": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "description",
+          "entries",
+          "name"
+        ],
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "recently_viewed"
+  ],
+  "x-first-seen": "2024-09-02",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-09-02",
+  "x-seen-in": 1
+}

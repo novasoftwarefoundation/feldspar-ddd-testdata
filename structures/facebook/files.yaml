@@ -65,11 +65,171 @@ expected:
   - "your_search_history.json"
   - "your_transaction_survey_information.json"
   - "your_uncategorized_photos.json"
-files: {}
-left_out: {}
+files:
+  "fb_example/ad_preferences.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/ad_preferences.schema.json"
+    seen_in: 1
+  "fb_example/ads_interests.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: true
+    schema: "schemas/fb_example/ads_interests.schema.json"
+    seen_in: 1
+  "fb_example/advertisers_using_your_activity_or_information.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: true
+    schema: "schemas/fb_example/advertisers_using_your_activity_or_information.schema.json"
+    seen_in: 1
+  "fb_example/advertisers_you've_interacted_with.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/advertisers_you've_interacted_with.schema.json"
+    seen_in: 1
+  "fb_example/comments.json":
+    ascii: false
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/comments.schema.json"
+    seen_in: 1
+  "fb_example/likes_and_reactions_<n>.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/likes_and_reactions_{n}.schema.json"
+    seen_in: 1
+  "fb_example/other_categories_used_to_reach_you.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/other_categories_used_to_reach_you.schema.json"
+    seen_in: 1
+  "fb_example/recently_viewed.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/recently_viewed.schema.json"
+    seen_in: 1
+  "fb_example/recently_visited.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/recently_visited.schema.json"
+    seen_in: 1
+  "fb_example/story_views_in_past_7_days.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/story_views_in_past_7_days.schema.json"
+    seen_in: 1
+  "fb_example/subscription_for_no_ads.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/subscription_for_no_ads.schema.json"
+    seen_in: 1
+  "fb_example/who_you've_followed.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/who_you've_followed.schema.json"
+    seen_in: 1
+  "fb_example/your_posts__check_ins__photos_and_videos_<n>.json":
+    ascii: false
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/your_posts__check_ins__photos_and_videos_{n}.schema.json"
+    seen_in: 1
+  "fb_example/your_search_history.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/fb_example/your_search_history.schema.json"
+    seen_in: 1
+last_change:
+  date: "2024-09-02"
+  summary: "package of 2024-09-02 (en) added: 14 new, 0 changed shape, 0 not seen since an earlier package"
+left_out:
+  "label not kept (unsure it is the platform's wording): fb_example/ad_preferences.json.label_values[].label": 2
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/facebook.py) read."
-packages: []
+packages:
+  - date: "2024-09-02"
+    lang: "en"
 personal_keys: []
 platform: "facebook"
 wording: []

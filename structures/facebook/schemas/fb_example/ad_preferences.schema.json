@@ -1,0 +1,422 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fb_example/ad_preferences.json",
+  "type": "object",
+  "properties": {
+    "ent_name": {
+      "type": "string",
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    },
+    "fbid": {
+      "type": "string",
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    },
+    "label_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "dict": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1
+                },
+                "dict": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "ent_field_name": {
+                        "type": "string",
+                        "x-first-seen": "2024-09-02",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-09-02",
+                        "x-seen-in": 1
+                      },
+                      "label": {
+                        "type": "string",
+                        "enum": [
+                          "Name"
+                        ],
+                        "x-first-seen": "2024-09-02",
+                        "x-labels": {
+                          "Name": {
+                            "first-seen": "2024-09-02",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2024-09-02",
+                            "seen-in": 1
+                          }
+                        },
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-09-02",
+                        "x-seen-in": 1
+                      },
+                      "value": {
+                        "type": "string",
+                        "x-first-seen": "2024-09-02",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-09-02",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "ent_field_name",
+                      "label",
+                      "value"
+                    ],
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "dict",
+                "title"
+              ],
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "ent_field_name": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Added interests",
+              "Datafile Custom Audience exclusion opt-out",
+              "Datafile Custom Audience inclusion opt-out",
+              "Datafile custom audience opt-out",
+              "Is opted out from seeing ads off Meta",
+              "Is opted out of third party data at the user level",
+              "Is opted out of using interests to target ads",
+              "Is opted out of using life events to target ads",
+              "Is opted out of using location affinity data to target ads",
+              "Is opted out of using political views to target ads",
+              "Is opted out of using relationship status to target ads",
+              "Is opted out of using religious views to target ads",
+              "Is opted out of using their employer to target ads",
+              "Is opted out of using their job title to target ads",
+              "Is the Digital Advertising Alliance opt-out cookie present in any browser",
+              "Opted-in Ad Interests",
+              "Removed interests",
+              "Reported interests",
+              "Sensitive topics opted in to",
+              "Sensitive topics opted out of",
+              "Third party opted in topics",
+              "User ad interests preferences",
+              "User ad topics preferences"
+            ],
+            "x-first-seen": "2024-09-02",
+            "x-labels": {
+              "Added interests": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Datafile Custom Audience exclusion opt-out": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Datafile Custom Audience inclusion opt-out": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Datafile custom audience opt-out": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out from seeing ads off Meta": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of third party data at the user level": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using interests to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using life events to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using location affinity data to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using political views to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using relationship status to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using religious views to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using their employer to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using their job title to target ads": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is the Digital Advertising Alliance opt-out cookie present in any browser": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Opted-in Ad Interests": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Removed interests": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Reported interests": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Sensitive topics opted in to": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Sensitive topics opted out of": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Third party opted in topics": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "User ad interests preferences": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "User ad topics preferences": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              }
+            },
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "value": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "vec": {
+            "type": "array",
+            "x-always-empty": true,
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          }
+        },
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    },
+    "media": {
+      "type": "array",
+      "x-always-empty": true,
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "ent_name",
+    "fbid",
+    "label_values",
+    "media"
+  ],
+  "x-first-seen": "2024-09-02",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-09-02",
+  "x-seen-in": 1
+}

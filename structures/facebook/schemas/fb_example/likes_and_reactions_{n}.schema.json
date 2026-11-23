@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fb_example/likes_and_reactions_<n>.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1
+      },
+      "data": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "reaction": {
+              "type": "object",
+              "properties": {
+                "actor": {
+                  "type": "string",
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1
+                },
+                "reaction": {
+                  "type": "string",
+                  "x-first-seen": "2024-09-02",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-09-02",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "actor",
+                "reaction"
+              ],
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "reaction"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1
+      },
+      "timestamp": {
+        "type": "integer",
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1,
+        "x-timestamp": "unix-seconds"
+      }
+    },
+    "required": [
+      "data",
+      "timestamp",
+      "title"
+    ],
+    "x-first-seen": "2024-09-02",
+    "x-langs": [
+      "en"
+    ],
+    "x-last-seen": "2024-09-02",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2024-09-02",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-09-02",
+  "x-seen-in": 1
+}

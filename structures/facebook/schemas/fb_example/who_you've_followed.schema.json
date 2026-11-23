@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "fb_example/who_you've_followed.json",
+  "type": "object",
+  "properties": {
+    "following_v3": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1
+          },
+          "timestamp": {
+            "type": "integer",
+            "x-first-seen": "2024-09-02",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2024-09-02",
+            "x-seen-in": 1,
+            "x-timestamp": "unix-seconds"
+          }
+        },
+        "required": [
+          "name",
+          "timestamp"
+        ],
+        "x-first-seen": "2024-09-02",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2024-09-02",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "following_v3"
+  ],
+  "x-first-seen": "2024-09-02",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-09-02",
+  "x-seen-in": 1
+}
