@@ -31,8 +31,11 @@ STATS = collections.Counter()      # (action, field) -> count
 UNSURE = collections.Counter()     # fields replaced because their kind was unclear
 
 
+SALT = [""]      # set while re-drawing a fake that collided with another original's fake
+
+
 def rng_for(kind, value):
-    digest = hmac.new(KEY, f"{kind}\0{value}".encode("utf-8", "surrogatepass"), hashlib.sha256).digest()
+    digest = hmac.new(KEY, f"{kind}{SALT[0]}\0{value}".encode("utf-8", "surrogatepass"), hashlib.sha256).digest()
     return random.Random(digest)
 
 
@@ -161,6 +164,8 @@ URL_IN_TEXT = re.compile(r"https?://\S+|www\.\S+")
 
 def fake_text(s, kind="text"):
     """Fake text: same length per word, same character types; punctuation and spacing kept."""
+    if not any(c.isalnum() for c in s):
+        return s        # only emoji / punctuation (e.g. a single reaction emoji): identifies nobody
     r = rng_for(kind, s)
     out, pos = [], 0
     for m in URL_IN_TEXT.finditer(s):
@@ -211,7 +216,7 @@ def fake_name(n):
 def fake_email(e):
     r = rng_for("email", e)
     local, _, _ = e.partition("@")
-    return scramble(local, "email-local") + "@" + r.choice(["example.com", "example.org", "example.net"])
+    return scramble(local, "email-local") + "@" + r.choice(["voorbeeldpost.test", "nepmail.test", "testbus.test"])
 
 
 def fake_phone(p):
@@ -314,7 +319,28 @@ def fake_thread_dir(d):
     return scramble(m.group(1), "thread") + "_" + scramble(m.group(2), "thread-id")
 
 
-MEDIA_ID = re.compile(r"^(\d)(\d{9,})(\.\w+)?$")
+MEDIA_KEEP_TOKENS = {"n", "video", "dashinit", "audioclip", "thumbnail", "s", "o", "a"}
+
+
+def fake_media_name(seg):
+    """Media file names are CDN / media ids that lead back to the post: same shape, new characters."""
+    stem, dot, ext = seg.rpartition(".") if re.search(r"\.[A-Za-z0-9]{2,5}$", seg) else (seg, "", "")
+    out = []
+    for tok in stem.split("_"):
+        m = re.fullmatch(r"([a-z]+)(\d+)", tok)
+        if tok in MEDIA_KEEP_TOKENS or tok == "":
+            out.append(tok)
+        elif m and m.group(1) in MEDIA_KEEP_TOKENS:
+            out.append(m.group(1) + scramble(m.group(2), "media-tok"))
+        elif tok.isdigit():
+            out.append(tok[0] + scramble(tok[1:], "media-id"))
+        elif re.fullmatch(r"[0-9A-F]+|[0-9a-f]+", tok):
+            r = rng_for("media-hex", tok)
+            hexd = "0123456789ABCDEF" if tok.upper() == tok else "0123456789abcdef"
+            out.append("".join(r.choice(hexd) for _ in tok))
+        else:
+            out.append(scramble_ident(tok, "media-tok"))
+    return "_".join(out) + dot + ext
 
 
 def fake_path(p):
@@ -322,16 +348,17 @@ def fake_path(p):
     for i in range(1, len(segs)):
         if segs[i - 1] in ("inbox", "message_requests", "filtered_threads", "archived_threads") and i < len(segs):
             segs[i] = fake_thread_dir(segs[i])
-    # media file names are Instagram media ids, which lead back to the post: same length, new digits
-    m = MEDIA_ID.match(segs[-1])
-    if m:
-        segs[-1] = m.group(1) + scramble(m.group(2), "media-id") + (m.group(3) or "")
+    # media file names carry media / CDN ids: same shape, new characters (folders like 202410 stay)
+    last = segs[-1]
+    if (re.search(r"\d", last) and not last.endswith((".json", ".txt")) and not re.fullmatch(r"\d{6}", last)
+            and not (len(segs) > 1 and segs[-2] in ("inbox", "message_requests", "filtered_threads", "archived_threads"))):
+        segs[-1] = fake_media_name(last)
     return "/".join(segs)
 
 
 # --- value classification ----------------------------------------------------------------------
 
-MONTHS = r"(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*"
+MONTHS = r"(jan|feb|mär|mar|apr|mai|may|jun|jul|aug|sep|okt|oct|nov|dez|dec)[a-zä]*|uhr"
 
 
 def looks_time(s):
@@ -362,8 +389,15 @@ KEEP_LABELS = {
     "File size in bytes", "Original height", "Original width", "Option 1 font size", "Option 2 font size",
     "Option 3 font size", "Option 4 font size", "Count", "How many times did you try to download the file?",
     "Emoji Pong High Score", "Duration",
+    # German exports
+    "Aktualisierung auf App-übergreifendes Messaging durchgeführt", "Consent Status",
+    "Einstellung für Promos für exklusive Stories", "Entscheidung", "Grund", "Name des Produkts", "Komprimierung",
+    "Unterstützte SDK-Versionen", "Gesichtserkennungs-Version", "Kommentieren gestattet für",
+    "Methode zur Bestätigung der Telefonnummer", "Sprachcode", "Privates Konto", "Kontaktsynchronisierung",
+    "Telefonnummer bestätigt", "Hat ein Live-Video geteilt",
 }
-KEEP_KEYS = {"source_app", "camera_position", "source_type", "scene_capture_type", "lens_make", "lens_model",
+KEEP_KEYS = {"device_manufacturer", "device_model", "device_os_version", "device_type", "type",
+             "source_app", "camera_position", "source_type", "scene_capture_type", "lens_make", "lens_model",
              "software", "focal_length", "aperture", "shutter_speed", "metering_mode", "date_time_digitized",
              "date_time_original", "reply_control", "geo_gated_country_list", "music_genre", "reaction"}
 ACTION_BY_LABEL = {
@@ -378,7 +412,7 @@ ACTION_BY_LABEL = {
     "Latitude": "lat", "Imprecise Latitude": "lat", "Precise Latitude": "lat",
     "Longitude": "lon", "Imprecise Longitude": "lon", "Precise Longitude": "lon",
     "Date of birth": "dob", "Birthday": "dob", "Gender": "gender",
-    "City": "city", "Region": "region", "Country": "country", "State": "region", "First Country Code": "code",
+    "City": "city", "Region": "region", "Country": "country", "State": "region", "First Country Code": "keep",
     "Location": "place", "Locations of interest": "city", "ZIP/postal code": "id", "ZIP code": "id",
     "Website": "url", "Website link you visited": "url", "URL": "url", "Ad library public URL": "url",
     "Brand partner's profile": "url",
@@ -388,12 +422,20 @@ ACTION_BY_LABEL = {
     "Description": "text", "Title of website page you visited": "text", "Brand": "text", "Merchant name": "text",
     "Product name": "text", "Product names": "text", "Brand partner": "name", "Price": "text",
     "Contact Information": "auto", "New value": "auto", "Previous value": "auto",
+    # German exports
+    "Benutzername": "username", "Nutzername": "username", "E-Mail-Adresse": "email", "E-Mail": "email",
+    "Telefonnummer": "phone", "Geschlecht": "gender", "Name der Stadt": "city", "Geräte-ID": "id", "Gerät": "text",
+    "IP-Adresse": "ip", "Name des Cookies": "id", "Ungenauer Breitengrad": "lat", "Ungenauer Längengrad": "lon",
+    "Genauer Breitengrad": "lat", "Genauer Längengrad": "lon", "Suche": "auto", "Vorname": "name", "Nachname": "name",
+    "Kontaktinformationen": "auto", "Erstes Länderkennzeichen": "keep", "Geburtsdatum": "dob", "Biografie": "text",
+    "Kommentar": "text", "Eigentümer": "username", "Medieninhaber": "username", "Saved on": "url",
 }
-KEY_ACTIONS = {"sender_name": "name", "actor": "name", "name": "name", "original_content_owner": "username",
+KEY_ACTIONS = {"advertiser_name": "text", "last_connected_ip": "ip", "sender_name": "name", "actor": "name", "name": "name", "original_content_owner": "username",
                "content": "text", "share_text": "text", "link": "url", "href": "url", "uri": "path",
                "thread_path": "path", "device_id": "id"}
 INSIGHTS = "past_instagram_insights/"
 TEXT_FILES = ("advertisers_using_your_activity_or_information.json", "other_categories_used_to_reach_you.json",
+              "your_topics.json",
               "recently_viewed_items.json")
 
 
@@ -417,7 +459,65 @@ def auto(v, field):
     return fake_text(v), "text"
 
 
+META_WORDS = {"instagram", "facebook", "meta", "threads", "whatsapp", "messenger", "instagram lite", "facebook lite"}
+MANY_TO_ONE = {"keep", "gender", "city", "region", "country", "code"}
+FAKE_CACHE: dict = {}       # (action, original) -> fake
+FAKE_OWNER: dict = {}       # casefolded fake -> original
+ORIGINALS_CF: set = set()   # every original string (casefolded): a fake must never equal one
+ORIG_TOKENS: set = set()    # every 4+ character token of the originals: a fake must not bring one in
+_TOKEN_RES = (re.compile(r"[^\s\"',;:!?()\[\]{}<>]+"), re.compile(r"[\w.@+\-]+"), re.compile(r"[^/?&=#:.+%\s]+"))
+
+
+def tokens_of(s):
+    c = s.casefold()
+    return {t for rx in _TOKEN_RES for t in rx.findall(c) if len(t) >= 4}
+
+
+ORIG_SUBS: set = set()      # original tokens and short values of 6..30 characters, matched as substrings
+
+
+def _brings_original_token(new, v):
+    """True when the fake brings in an original token (4+ chars, whole) or an original piece (6..30 chars,
+    anywhere in it) that its own original did not already contain."""
+    if not ORIG_TOKENS:
+        return False
+    if (tokens_of(new) - tokens_of(v)) & ORIG_TOKENS:
+        return True
+    c, vc = new.casefold(), v.casefold()
+    for n in range(6, min(30, len(c)) + 1):
+        for i in range(len(c) - n + 1):
+            w = c[i:i + n]
+            if w in ORIG_SUBS and w not in vc:
+                return True
+    return False
+COLLISIONS = collections.Counter()
+
+
 def apply(action, v, field):
+    """Returns the new value for string v; distinct originals get distinct fakes."""
+    key = (action, v)
+    if key in FAKE_CACHE:
+        if action == "auto":
+            STATS[("auto-cached", field)] += 1
+        return FAKE_CACHE[key]
+    new = _apply(action, v, field)
+    n = 0
+    while (new and new != v and action not in MANY_TO_ONE and n < 60
+           and ((new.casefold() in FAKE_OWNER and FAKE_OWNER[new.casefold()] != v) or new.casefold() in ORIGINALS_CF
+                or _brings_original_token(new, v))):
+        n += 1
+        SALT[0] = f"#{n}"
+        new = _apply(action, v, field) if n < 30 else scramble(v, "collision")
+        SALT[0] = ""
+    if n:
+        COLLISIONS["re-drawn" if new.casefold() not in FAKE_OWNER else "unresolved"] += 1
+    if new and new != v:
+        FAKE_OWNER.setdefault(new.casefold(), v)
+    FAKE_CACHE[key] = new
+    return new
+
+
+def _apply(action, v, field):
     """Returns the new value for string v."""
     if action == "auto":
         new, kind = auto(v, field)
@@ -433,6 +533,8 @@ def apply(action, v, field):
     if action == "username":
         return fake_username(v) if not looks_time(v) else v
     if action == "name":
+        if v in USERNAMES:
+            return fake_username(v)
         if EMAIL_RE.match(v):
             return fake_email(v)
         if re.fullmatch(r"[\d\s+\-()]+", v):
@@ -472,6 +574,16 @@ def apply(action, v, field):
         return fake_url(v) if re.match(r"https?://", v) else fake_path(v)
     if action == "letters":
         return fake_letters_only(v)
+    if action == "csv-id":
+        if re.fullmatch(r"UC[\w-]{22}", v):
+            return "UC" + scramble_ident(v[2:], "yt-id")
+        return scramble_ident(v, "yt-id")
+    if action == "header":
+        labels = v.split(".")
+        return ".".join(lab if lab == "www" or i == len(labels) - 1 else scramble_ident(lab, "host")
+                        for i, lab in enumerate(labels))
+    if action == "text" and v.casefold() in META_WORDS:
+        return v        # Meta's own product name (e.g. an advertiser called "Instagram"): identifies nobody
     if action == "text":
         return fake_text(v)
     raise ValueError(action)
@@ -537,6 +649,8 @@ def walk(node, fname, key=None, label=None, group=None, parent=None):
     if key in KEEP_KEYS:
         STATS[("keep", key)] += 1
         return node
+    if key == "name" and "off_meta" in fname:
+        return str_value(node, "text", "name(app or website)")
     if key in KEY_ACTIONS:
         return str_value(node, KEY_ACTIONS[key], key)
     return str_value(node, "auto", "key:" + str(key))
@@ -582,6 +696,10 @@ def collect(node, label=None, key=None):
                 collect(v, lab, k)
             else:
                 collect(v, label if key == "smd" else None, k)
+        if "string_map_data" in node and "string_list_data" not in node:
+            t = node.get("title")
+            if isinstance(t, str) and t and not looks_time(t):
+                USERNAMES.add(unmoji(t)[0])
         if "string_list_data" in node:
             t = node.get("title")
             if isinstance(t, str) and t and not looks_time(t):
@@ -599,10 +717,29 @@ def collect(node, label=None, key=None):
             collect(x, label, key)
     elif isinstance(node, str) and node:
         v = unmoji(node)[0]
-        if label in ("Username", "Media Owner", "Author") or key == "original_content_owner":
+        if label in ("Username", "Media Owner", "Author", "Benutzername", "Nutzername", "Eigentümer",
+                     "Medieninhaber") or key == "original_content_owner":
             USERNAMES.add(v)
-        elif label in ("Name", "Profile Name") or key in ("sender_name", "actor", "name"):
+        elif label in ("Name", "Profile Name", "Vorname", "Nachname") or key in ("sender_name", "actor", "name"):
             NAMES.add(v)
+
+
+def _all_strings(n):
+    if isinstance(n, dict):
+        for v in n.values():
+            _all_strings(v)
+    elif isinstance(n, list):
+        for x in n:
+            _all_strings(x)
+    elif isinstance(n, str) and n:
+        ORIGINALS_CF.add(n.casefold())
+        ORIGINALS_CF.add(unmoji(n)[0].casefold())
+        for x in (n, unmoji(n)[0]):
+            t = tokens_of(x)
+            ORIG_TOKENS.update(t)
+            ORIG_SUBS.update(w for w in t if 6 <= len(w) <= 30)
+            if 6 <= len(x) <= 30:
+                ORIG_SUBS.add(x.casefold())
 
 
 # --- media placeholders ------------------------------------------------------------------------
@@ -629,6 +766,7 @@ def main(src, dst, phdir=os.path.join(os.path.dirname(os.path.abspath(__file__))
         if info.filename.endswith(".json"):
             parsed[info.filename] = json.loads(zin.read(info))
             collect(parsed[info.filename])
+            _all_strings(parsed[info.filename])
     NAMES.discard("")
     USERNAMES.discard("")
     print("known usernames:", len(USERNAMES), "known names:", len(NAMES))
@@ -646,8 +784,14 @@ def main(src, dst, phdir=os.path.join(os.path.dirname(os.path.abspath(__file__))
     files = collections.Counter()
     with zipfile.ZipFile(dst, "w", compression=zipfile.ZIP_STORED) as zout:
         for info in zin.infolist():
-            name = fake_path(info.filename)
-            if info.filename.endswith(".json"):
+            name = fake_path(info.filename.rstrip("/")) + ("/" if info.is_dir() else "")
+            if info.is_dir():
+                body = b""
+                files["dir"] += 1
+            elif info.filename.endswith("no-data.txt"):
+                body = zin.read(info)          # Meta's fixed "no data" notice
+                files["no-data"] += 1
+            elif info.filename.endswith(".json"):
                 data = parsed[info.filename]
                 new = walk(data, info.filename)
                 if info.filename.endswith("profile_changes.json"):
@@ -661,11 +805,13 @@ def main(src, dst, phdir=os.path.join(os.path.dirname(os.path.abspath(__file__))
             zi.compress_type = info.compress_type
             zi.external_attr = info.external_attr
             zout.writestr(zi, body)
-    print("files:", dict(files), "renamed entries:", sum(fake_path(i.filename) != i.filename for i in zin.infolist()))
+    print("files:", dict(files), "renamed entries:",
+          sum(fake_path(i.filename.rstrip("/")) != i.filename.rstrip("/") for i in zin.infolist()))
     agg = collections.Counter()
     for (action, field), n in STATS.items():
         agg[action] += n
     print("replacements by kind:", dict(sorted(agg.items())))
+    print("fake collisions:", dict(COLLISIONS) or "none")
     print("fields without a fixed rule, replaced by detected type:")
     for (fld, kind), n in sorted(UNSURE.items()):
         print(f"   {fld} -> {kind}: {n}")

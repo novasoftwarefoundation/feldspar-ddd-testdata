@@ -79,19 +79,33 @@ Build a large synthetic ChatGPT export for load tests; conversations over `--par
 
     python3 generators/chatgpt/generate_chatgpt_export.py chatgpt-600mib.zip --mib 600 --months 36
 
-## Anonymizer
+## Anonymizers
 
-Replace every personal value of an Instagram JSON export with a consistent fake one, keeping the structure exactly
-(same files, keys, list lengths, types and Meta's JSON format); photos and videos become tiny placeholders:
+Each anonymizer replaces every personal value of an export with a consistent fake one (the same person gets the same
+fake everywhere) and keeps the structure exactly: same files in the same order, same keys, list lengths, types and
+the platform's own JSON format. Photos, videos and attachments become tiny placeholders of the same type. They print
+counts only, never a value. All tools are in [`anonymizer/`](anonymizer):
 
-    python3 anonymizer/instagram/anonymize.py instagram-export.zip instagram-anonymized.zip
+| Platform | Anonymize | Compare and scan the copy for the original's values |
+|---|---|---|
+| Instagram | `python3 anonymizer/anonymize.py instagram-export.zip instagram-anonymized.zip` | `python3 anonymizer/verify2.py instagram-export.zip instagram-anonymized.zip` |
+| Google Takeout | `python3 anonymizer/takeout.py takeout.zip takeout-anonymized.zip` | `python3 anonymizer/gverify.py takeout.zip takeout-anonymized.zip` |
+| TikTok | `python3 anonymizer/tiktok_anon.py tiktok-export.zip tiktok-anonymized.zip` | `python3 anonymizer/gverify.py tiktok-export.zip tiktok-anonymized.zip` |
+| ChatGPT | `python3 anonymizer/cg_anon.py anonymized/ chatgpt-export.zip [more.zip …]` | `python3 anonymizer/cg_verify.py originals/ anonymized/` |
 
-Then compare the two and scan the copy for the original's personal values; it prints counts only:
-
-    python3 anonymizer/instagram/verify.py instagram-export.zip instagram-anonymized.zip --username <username> --email <email>
+- **ChatGPT:** `cg_anon.py` rewrites JSON string by string, so a file that is deliberately broken (for testing) keeps
+  its breakage byte for byte. Several zips anonymized in one run share one mapping. Each copy gets the same file name
+  as its original in the output folder; an existing file is never replaced.
+- **Instagram:** `verify.py` is the older check with the account's own values as options:
+  `python3 anonymizer/verify.py instagram-export.zip instagram-anonymized.zip --username <username> --email <email>`.
+- **Google:** `stress_build.py` rebuilds a large Takeout made of many copies of one export from that export's
+  anonymized copy, with the same file list; `stress_verify.py` checks it.
+- **Diagnostics:** `survey.py`, `gsurvey.py`, `gprobe.py`, `cg_probe.py`, `stress_probe.py`, `mac_probe.py` and the
+  `locate*.py` scripts explain what an export holds or where a scan hit occurs, with masked values, field names,
+  lengths and counts only.
 
 The fake values change on every run, and the key that maps them is never stored. The placeholders in
-`anonymizer/instagram/placeholders/` were made with `mkvideo.swift` (macOS).
+`anonymizer/placeholders/` were made with `mkvideo.swift` (macOS).
 
 ## License
 
