@@ -106,7 +106,9 @@ Files the platform's donation scripts read that no package has shown yet: 6
 - `subscription_for_no_ads.json`
 
 <!-- known gaps by hand: start -->
-
+- Meta writes field labels in the participant's language. The 2024 package (German) has them as keys of `string_map_data`; the 2026 package (English) has `label_values` lists with `label`/`value` pairs. Both shapes are kept; a key seen only in one language is not marked "not seen since" by a package in another.
+- Seven files changed from an object to a list between 2024 and 2026 (`ads_viewed`, `posts_viewed`, `videos_watched`, `posts_you're_not_interested_in`, `liked_posts`, `saved_posts`, `saved_collections`); see `x-changes` in their schemas.
+- Only English and German labels have been seen; Dutch and other languages are not covered.
 <!-- known gaps by hand: end -->
 
 ## Last change

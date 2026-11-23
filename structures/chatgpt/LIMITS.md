@@ -23,7 +23,8 @@ Files the platform's donation scripts read that no package has shown yet: 3
 - `model_comparisons.json`
 
 <!-- known gaps by hand: start -->
-
+- ChatGPT exports carry no field labels, so the language is recorded as `und` (undetermined).
+- Large exports split `conversations.json` into `conversations-000.json`, `conversations-001.json` … listed in `export_manifest.json`; no package with that split has been added yet (generators/chatgpt/generate_chatgpt_export.py writes that shape).
 <!-- known gaps by hand: end -->
 
 ## Last change

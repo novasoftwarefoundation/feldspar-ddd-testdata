@@ -73,7 +73,8 @@ Files the platform's donation scripts read that no package has shown yet: 49
 - `your_uncategorized_photos.json`
 
 <!-- known gaps by hand: start -->
-
+- The only package so far is a flat example folder (`fb_example/`), not Facebook's own folder layout: file names and JSON shapes are Facebook's, the folders are not.
+- No package with Facebook's own layout, messages or media has been seen yet.
 <!-- known gaps by hand: end -->
 
 ## Last change

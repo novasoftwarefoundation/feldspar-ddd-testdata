@@ -22,7 +22,8 @@ Files the platform's donation scripts read that no package has shown yet: 2
 - `watch-history.json`
 
 <!-- known gaps by hand: start -->
-
+- Only a Dutch Takeout has been seen, with YouTube history as JSON and subscriptions and comments as CSV. English file names (`watch-history.json`, `search-history.json`) and HTML history files are not covered.
+- One product folder under `Mijn activiteit/` is kept as `<value>`: its name also occurs as a value and is not in `wording` yet.
 <!-- known gaps by hand: end -->
 
 ## Last change

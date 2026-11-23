@@ -26,7 +26,9 @@ Files that newer packages no longer have:
 - `user_data_tiktok.json (not seen since 2024-09-02)`
 
 <!-- known gaps by hand: start -->
-
+- The 2024-12 package had no dates in its zip; its date is the day it was stored, not the export date.
+- The two packages use different file names (`user_data_tiktok.json` and `user_data.json`), so their JSON is described by two schemas. Because the 2024-12 date is uncertain, the order of that rename is too.
+- Direct message keys are written as `Chat History with <value>:`; the participant names are left out.
 <!-- known gaps by hand: end -->
 
 ## Last change
