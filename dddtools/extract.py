@@ -61,6 +61,8 @@ def id_pattern(text):
     out = HEX.sub("<hex>", out)
     out = TOKEN.sub("<id>", out)
     out = DIGITS.sub(_digits, out)
+    # A word with an id glued to letters (a handle such as "ab1234cd") is an id as a whole.
+    out = re.sub(r"[A-Za-z0-9]*(?:[A-Za-z0-9]<id>|<id>[A-Za-z0-9])[A-Za-z0-9]*", "<id>", out)
     return out
 
 
