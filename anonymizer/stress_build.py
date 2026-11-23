@@ -1,8 +1,9 @@
-"""Rebuild the Google stress zip from the anonymized google-full, with exactly the original's entry list.
+"""Rebuild a Google stress zip (many copies of one base export) from the anonymized base export, with exactly the
+original's entry list.
 
-    python3 stress_build.py <stress-original.zip> <google-full-original.zip> <google-full-anonymized.zip> <out.zip>
+    python3 stress_build.py <stress-original.zip> <base-original.zip> <base-anonymized.zip> <out.zip>
 
-Every data file of the stress zip must be byte-identical to the google-full file it copies (checked);
+Every data file of the stress zip must be byte-identical to the base export file it copies (checked);
 it is replaced by that file's anonymized version. Folders, .DS_Store files (Finder layout + the archive's
 own names) and __MACOSX AppleDouble files (quarantine flags/time, last-used date) are kept, except a
 com.apple.macl value (machine-specific ids), whose bytes are replaced by random bytes of the same length.
@@ -60,11 +61,11 @@ with zipfile.ZipFile(out_p, "w") as zout:
         else:
             b = base(i.filename)
             if b not in orig_bytes:
-                raise SystemExit("a data file without a google-full counterpart; stopping")
+                raise SystemExit("a data file without a base export counterpart; stopping")
             if stress.read(i) != orig_bytes[b]:
-                raise SystemExit("a data file differs from its google-full counterpart; stopping")
+                raise SystemExit("a data file differs from its base export counterpart; stopping")
             body = anon_bytes[b]
-            stats["data file from anonymized google-full"] += 1
+            stats["data file from anonymized base export"] += 1
         zi = zipfile.ZipInfo(i.filename, date_time=i.date_time)
         zi.compress_type = i.compress_type
         zi.external_attr = i.external_attr

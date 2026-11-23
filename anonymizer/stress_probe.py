@@ -1,4 +1,4 @@
-"""Probe the Google stress zip against google-full. Counts, masked names and xattr names only."""
+"""Probe a Google stress zip against its base export. Counts, masked names and xattr names only."""
 import collections
 import hashlib
 import re
@@ -40,19 +40,19 @@ for i in stress.infolist():
         if d[:4] == b"\x00\x05\x16\x07":
             for m in re.finditer(rb"(com\.apple\.[\w.:-]+|kMDItem\w+)", d):
                 xattrs[m.group(1).decode()] += 1
-        kinds["mac file" + (" (matches a google-full path)" if b in fhash or b.rstrip('/') + '/' in fdirs else "")] += 1
+        kinds["mac file" + (" (matches a base export path)" if b in fhash or b.rstrip('/') + '/' in fdirs else "")] += 1
         continue
     if i.is_dir():
-        kinds["dir" + (" in google-full" if b in fdirs else " NOT in google-full")] += 1
+        kinds["dir" + (" in base export" if b in fdirs else " NOT in base export")] += 1
         if b not in fdirs:
             unmatched[re.sub(r"\d+", "N", b)] += 1
         continue
     if b not in fhash:
-        kinds["file NOT in google-full"] += 1
+        kinds["file NOT in base export"] += 1
         unmatched[re.sub(r"\d+", "N", b)] += 1
         continue
     same = hashlib.sha256(stress.read(i)).hexdigest() == fhash[b]
-    kinds["file, byte-identical to google-full" if same else "file, DIFFERENT from google-full"] += 1
+    kinds["file, byte-identical to base export" if same else "file, DIFFERENT from base export"] += 1
 print(dict(kinds))
 print("unmatched (digits masked):", unmatched.most_common(10))
 print("AppleDouble sizes:", mac_sizes.most_common(5))

@@ -1,6 +1,6 @@
 """Verify the rebuilt stress zip. Counts only.
 
-    python3 stress_verify.py <stress-original> <stress-copy> <google-full-original> <google-full-anonymized>
+    python3 stress_verify.py <stress-original> <stress-copy> <base-original> <base-anonymized>
 """
 import collections
 import csv
@@ -29,10 +29,10 @@ for a, b in zip(oi, ci):
         c["metadata entry identical to original" if da == db else "metadata entry changed (macl)"] += 1
         meta_text += [db.decode("latin1"), db.decode("utf-16-be", "replace"), db[1:].decode("utf-16-be", "replace")]
     else:
-        c["data entry identical to anonymized google-full" if db == anon[base(a.filename)] else "DATA ENTRY DIFFERS"] += 1
+        c["data entry identical to anonymized base export" if db == anon[base(a.filename)] else "DATA ENTRY DIFFERS"] += 1
 print(dict(c))
 
-# leak scan of the metadata entries: every original google-full value (4+ chars) that the anonymized copy replaced
+# leak scan of the metadata entries: every original base export value (4+ chars) that the anonymized copy replaced
 orig_vals, anon_vals = set(), set()
 def strings(n, out):
     if isinstance(n, dict):
@@ -57,5 +57,5 @@ for v in list(replaced):
     if m and len(m.group(2)) >= 4:
         replaced.add(m.group(2))
 meta = "\n".join(meta_text).casefold()
-print("replaced google-full values (and title parts) checked in the metadata entries:", len(replaced),
+print("replaced base export values (and title parts) checked in the metadata entries:", len(replaced),
       "| found:", sum(1 for v in replaced if v.casefold() in meta))
