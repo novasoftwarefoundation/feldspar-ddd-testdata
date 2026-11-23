@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Takeout/Mijn activiteit/Nieuws/MyActivity.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "x-first-seen": "2024-09-03",
+        "x-langs": [
+          "nl"
+        ],
+        "x-last-seen": "2024-09-03",
+        "x-seen-in": 1
+      },
+      "activityControls": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "x-first-seen": "2024-09-03",
+          "x-langs": [
+            "nl"
+          ],
+          "x-last-seen": "2024-09-03",
+          "x-seen-in": 1
+        },
+        "x-first-seen": "2024-09-03",
+        "x-langs": [
+          "nl"
+        ],
+        "x-last-seen": "2024-09-03",
+        "x-seen-in": 1
+      },
+      "header": {
+        "type": "string",
+        "x-first-seen": "2024-09-03",
+        "x-langs": [
+          "nl"
+        ],
+        "x-last-seen": "2024-09-03",
+        "x-seen-in": 1
+      },
+      "products": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "x-first-seen": "2024-09-03",
+          "x-langs": [
+            "nl"
+          ],
+          "x-last-seen": "2024-09-03",
+          "x-seen-in": 1
+        },
+        "x-first-seen": "2024-09-03",
+        "x-langs": [
+          "nl"
+        ],
+        "x-last-seen": "2024-09-03",
+        "x-seen-in": 1
+      },
+      "time": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2024-09-03",
+        "x-langs": [
+          "nl"
+        ],
+        "x-last-seen": "2024-09-03",
+        "x-seen-in": 1
+      },
+      "titleUrl": {
+        "type": "string",
+        "format": "uri",
+        "x-first-seen": "2024-09-03",
+        "x-langs": [
+          "nl"
+        ],
+        "x-last-seen": "2024-09-03",
+        "x-seen-in": 1
+      }
+    },
+    "required": [
+      "activityControls",
+      "header",
+      "products",
+      "time",
+      "title",
+      "titleUrl"
+    ],
+    "x-first-seen": "2024-09-03",
+    "x-langs": [
+      "nl"
+    ],
+    "x-last-seen": "2024-09-03",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2024-09-03",
+  "x-langs": [
+    "nl"
+  ],
+  "x-last-seen": "2024-09-03",
+  "x-seen-in": 1
+}
