@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Synthetic Instagram / Facebook data download packages (DDPs) for load tests.
+"""Synthetic Instagram / Facebook data download packages for load tests.
 
 Fully synthetic content: accounts are "konto_00042", people are "Testperson 42",
 the participant is "Pat Beispiel".
 
-    python3 generators/meta/gen_ddp.py --platform instagram --profile heavy --lang de --format new -o out.zip
-    python3 generators/meta/gen_ddp.py --platform facebook --profile extreme --media-mb 2000 -o out.zip
+    python3 generators/meta/generate_meta_export.py --platform instagram --profile heavy --lang de --format new -o out.zip
+    python3 generators/meta/generate_meta_export.py --platform facebook --profile extreme --media-mb 2000 -o out.zip
 
 Profiles (record counts per file) are documented in PROFILES below. --format new writes Meta's current ``label_values`` shapes,
 --format old the older ``string_map_data`` / ``*_v2`` shapes. --lang picks the

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Structure rules for digital data donation packages (DDPs): extract, combine, compare, check, generate.
+"""Structure rules for digital data donation packages: extract, combine, compare, check, generate.
 
     python3 ddd.py add      <package.zip> --platform instagram --lang en [--date 2026-11-23]
     python3 ddd.py extract  <package.zip> --platform instagram -o snapshot.json
