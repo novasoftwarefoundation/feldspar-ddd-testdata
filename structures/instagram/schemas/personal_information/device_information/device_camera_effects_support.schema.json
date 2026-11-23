@@ -141,7 +141,8 @@
               "type": "string",
               "enum": [
                 "Device ID",
-                "Device metadata"
+                "Device metadata",
+                "Metadata"
               ],
               "x-first-seen": "2026-11-23",
               "x-labels": {
@@ -154,6 +155,14 @@
                   "seen-in": 1
                 },
                 "Device metadata": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Metadata": {
                   "first-seen": "2026-11-23",
                   "langs": [
                     "en"

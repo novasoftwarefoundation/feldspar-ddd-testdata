@@ -80,20 +80,7 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 Names, keys and labels the extractor was not sure about. They were replaced by a placeholder or dropped; only the place and the count are kept.
 
-- 1 × label not kept (unsure it is the platform's wording): ads_information/ads_and_topics/ads_viewed.json[].label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): ads_information/ads_and_topics/posts_viewed.json[].label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): ads_information/ads_and_topics/videos_watched.json[].label_values[].label
-- 2 × label not kept (unsure it is the platform's wording): ads_information/instagram_ads_and_businesses/advertisers_using_your_activity_or_information.json.label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): personal_information/autofill_information/autofill_information.json.label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): personal_information/device_information/device_camera_effects_support.json[].label_values[].label
-- 2 × label not kept (unsure it is the platform's wording): personal_information/personal_information/instagram_profile_information.json.label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): your_instagram_activity/media/other_content.json[].label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): your_instagram_activity/media/posts.json[].label_values[].dict[].dict[].label
-- 1 × label not kept (unsure it is the platform's wording): your_instagram_activity/media/posts.json[].label_values[].label
-- 1 × label not kept (unsure it is the platform's wording): your_instagram_activity/shopping/checkout_payment_information.json.label_values[].dict[].dict[].label
-- 1 × long key replaced by <text>: logged_information/past_instagram_insights/content_interactions.json $.organic_insights_interactions[].string_map_data
-- 6 × name part replaced by <value>: your_activity_across_facebook/messages/inbox/…
-- 16 × name part replaced by <value>: your_instagram_activity/messages/inbox/…
+- Nothing.
 
 ## Known gaps
 

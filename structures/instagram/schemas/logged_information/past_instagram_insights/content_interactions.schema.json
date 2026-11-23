@@ -28,52 +28,6 @@
           },
           "string_map_data": {
             "type": "object",
-            "patternProperties": {
-              "^.+$": {
-                "type": "object",
-                "properties": {
-                  "href": {
-                    "type": "string",
-                    "x-first-seen": "2026-11-23",
-                    "x-langs": [
-                      "en"
-                    ],
-                    "x-last-seen": "2026-11-23",
-                    "x-seen-in": 1
-                  },
-                  "timestamp": {
-                    "type": "integer",
-                    "x-first-seen": "2026-11-23",
-                    "x-langs": [
-                      "en"
-                    ],
-                    "x-last-seen": "2026-11-23",
-                    "x-seen-in": 1
-                  },
-                  "value": {
-                    "type": "string",
-                    "x-first-seen": "2026-11-23",
-                    "x-langs": [
-                      "en"
-                    ],
-                    "x-last-seen": "2026-11-23",
-                    "x-seen-in": 1
-                  }
-                },
-                "required": [
-                  "href",
-                  "timestamp",
-                  "value"
-                ],
-                "x-first-seen": "2026-11-23",
-                "x-key-pattern": "<text>",
-                "x-langs": [
-                  "en"
-                ],
-                "x-last-seen": "2026-11-23",
-                "x-seen-in": 1
-              }
-            },
             "properties": {
               "Accounts Engaged Delta": {
                 "type": "object",
@@ -719,6 +673,49 @@
                 ],
                 "x-last-seen": "2026-11-23",
                 "x-seen-in": 1
+              },
+              "You engaged delta% more accounts that weren’t following you compared to previous period": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
               }
             },
             "required": [
@@ -736,7 +733,8 @@
               "Story Interactions",
               "Story Interactions Delta",
               "Video Interactions",
-              "Video Interactions Delta"
+              "Video Interactions Delta",
+              "You engaged delta% more accounts that weren’t following you compared to previous period"
             ],
             "x-first-seen": "2026-11-23",
             "x-langs": [

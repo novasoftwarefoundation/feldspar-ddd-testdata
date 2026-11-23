@@ -73,10 +73,28 @@
           "label": {
             "type": "string",
             "enum": [
+              "Advertisers that have uploaded an audience list containing entries that were matched to your Instagram profile",
+              "Advertisers who have uploaded an audience list that was matched to your profile based on interactions you may have had with the advertiser's website, app or store",
               "Advertisers whose store you visited"
             ],
             "x-first-seen": "2026-11-23",
             "x-labels": {
+              "Advertisers that have uploaded an audience list containing entries that were matched to your Instagram profile": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Advertisers who have uploaded an audience list that was matched to your profile based on interactions you may have had with the advertiser's website, app or store": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
               "Advertisers whose store you visited": {
                 "first-seen": "2026-11-23",
                 "langs": [

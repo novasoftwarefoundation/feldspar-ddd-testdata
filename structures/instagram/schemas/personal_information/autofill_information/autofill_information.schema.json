@@ -22,6 +22,7 @@
               "Country",
               "Country code",
               "Country name",
+              "Email",
               "First/given name",
               "Last updated time",
               "Last/family name",
@@ -116,6 +117,14 @@
                 "seen-in": 1
               },
               "Country name": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Email": {
                 "first-seen": "2026-11-23",
                 "langs": [
                   "en"

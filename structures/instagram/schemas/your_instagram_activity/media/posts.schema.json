@@ -75,6 +75,7 @@
                             "Longitude",
                             "Marked as AI generated",
                             "Media",
+                            "Metadata",
                             "Name",
                             "Original height",
                             "Original width",
@@ -204,6 +205,14 @@
                               "seen-in": 1
                             },
                             "Media": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Metadata": {
                               "first-seen": "2026-11-23",
                               "langs": [
                                 "en"
@@ -522,6 +531,7 @@
                 "Longitude",
                 "Marked as AI generated",
                 "Media",
+                "Metadata",
                 "Original height",
                 "Original width",
                 "Paid partnership",
@@ -692,6 +702,14 @@
                   "seen-in": 1
                 },
                 "Media": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Metadata": {
                   "first-seen": "2026-11-23",
                   "langs": [
                     "en"

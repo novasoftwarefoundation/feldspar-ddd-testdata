@@ -24,6 +24,8 @@
               "Last time an email was sent after you logged in",
               "Last time email address was changed",
               "Last time we sent an SMS containing help for logging in",
+              "Last time you cleared the notification badge by clicking on the Facebook section of your profile (deprecated feature)",
+              "Last time you cleared the notification badge by clicking your profile (deprecated feature)",
               "Latest email submitted during the email confirmation process"
             ],
             "x-first-seen": "2026-11-23",
@@ -125,6 +127,22 @@
                 "seen-in": 1
               },
               "Last time we sent an SMS containing help for logging in": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Last time you cleared the notification badge by clicking on the Facebook section of your profile (deprecated feature)": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Last time you cleared the notification badge by clicking your profile (deprecated feature)": {
                 "first-seen": "2026-11-23",
                 "langs": [
                   "en"

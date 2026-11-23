@@ -54,6 +54,7 @@
                           "Country",
                           "Default address",
                           "District",
+                          "Email",
                           "First name",
                           "Last name",
                           "Name",
@@ -112,6 +113,14 @@
                             "seen-in": 1
                           },
                           "District": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Email": {
                             "first-seen": "2026-11-23",
                             "langs": [
                               "en"

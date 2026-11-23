@@ -142,6 +142,7 @@
               "type": "string",
               "enum": [
                 "Ad library public URL",
+                "Brand partner",
                 "Brand partner's profile",
                 "Caption",
                 "Title",
@@ -150,6 +151,14 @@
               "x-first-seen": "2026-11-23",
               "x-labels": {
                 "Ad library public URL": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Brand partner": {
                   "first-seen": "2026-11-23",
                   "langs": [
                     "en"
