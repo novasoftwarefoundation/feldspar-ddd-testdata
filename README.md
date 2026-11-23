@@ -104,7 +104,9 @@ counts only, never a value. All tools are in [`anonymizer/`](anonymizer):
   `locate*.py` scripts explain what an export holds or where a scan hit occurs, with masked values, field names,
   lengths and counts only.
 
-The fake values change on every run, and the key that maps them is never stored. The placeholders in
+The fake values change on every run, and the key that maps them is never stored. Always run the check after
+anonymizing: by chance a fake can contain a piece of an original value, and the check reports that as a leak. Run the
+anonymizer again until the check reports no leak. The placeholders in
 `anonymizer/placeholders/` were made with `mkvideo.swift` (macOS).
 
 ## License
