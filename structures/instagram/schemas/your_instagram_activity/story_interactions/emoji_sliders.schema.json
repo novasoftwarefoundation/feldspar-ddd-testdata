@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/story_interactions/emoji_sliders.json",
+  "type": "object",
+  "properties": {
+    "label_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "dict": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "dict": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "enum": [
+                          "Name",
+                          "URL",
+                          "Username"
+                        ],
+                        "x-first-seen": "2026-11-23",
+                        "x-labels": {
+                          "Name": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "URL": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Username": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          }
+                        },
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      },
+                      "value": {
+                        "type": "string",
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "value"
+                    ],
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "dict",
+                "title"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "href": {
+            "type": "string",
+            "format": "uri",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Background color",
+              "Caption",
+              "Emoji",
+              "Question",
+              "Text color",
+              "Title",
+              "URL"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-labels": {
+              "Background color": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Caption": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Emoji": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Question": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Text color": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Title": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "URL": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              }
+            },
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "value": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "media": {
+      "type": "array",
+      "x-always-empty": true,
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "timestamp": {
+      "type": "integer",
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1,
+      "x-timestamp": "unix-seconds"
+    }
+  },
+  "required": [
+    "label_values",
+    "media",
+    "timestamp"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

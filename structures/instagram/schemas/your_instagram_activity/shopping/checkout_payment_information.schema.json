@@ -1,0 +1,426 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/shopping/checkout_payment_information.json",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "label_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "dict": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "dict": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "enum": [
+                          "Apt/suite/other",
+                          "City",
+                          "Company",
+                          "Country",
+                          "Default address",
+                          "District",
+                          "First name",
+                          "Last name",
+                          "Name",
+                          "Phone number",
+                          "Primary email",
+                          "State",
+                          "Street",
+                          "Sub district",
+                          "Update time",
+                          "Verification status",
+                          "Verification time",
+                          "Verified",
+                          "ZIP/postal code",
+                          "Zip code extension"
+                        ],
+                        "x-first-seen": "2026-11-23",
+                        "x-labels": {
+                          "Apt/suite/other": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "City": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Company": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Country": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Default address": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "District": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "First name": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Last name": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Name": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Phone number": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Primary email": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "State": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Street": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Sub district": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Update time": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Verification status": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Verification time": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Verified": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "ZIP/postal code": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          },
+                          "Zip code extension": {
+                            "first-seen": "2026-11-23",
+                            "langs": [
+                              "en"
+                            ],
+                            "last-seen": "2026-11-23",
+                            "seen-in": 1
+                          }
+                        },
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      },
+                      "timestamp_value": {
+                        "type": "integer",
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      },
+                      "value": {
+                        "type": "string",
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "dict",
+                "title"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "First name",
+              "Last name",
+              "Marketing offer seen time",
+              "Name",
+              "Region",
+              "Update time"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-labels": {
+              "First name": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Last name": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Marketing offer seen time": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Name": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Region": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Update time": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              }
+            },
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "timestamp_value": {
+            "type": "integer",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "value": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "media": {
+      "type": "array",
+      "x-always-empty": true,
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "timestamp": {
+      "type": "integer",
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1,
+      "x-timestamp": "unix-seconds"
+    }
+  },
+  "required": [
+    "label_values",
+    "media",
+    "timestamp",
+    "title"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

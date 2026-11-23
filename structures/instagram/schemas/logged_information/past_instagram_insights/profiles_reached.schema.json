@@ -1,0 +1,512 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "logged_information/past_instagram_insights/profiles_reached.json",
+  "type": "object",
+  "properties": {
+    "organic_insights_reach": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Accounts Reached": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Accounts Reached Delta": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Date Range": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Followers": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Impressions": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Impressions Delta": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Non-Followers": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Non-Followers Delta": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Profile Visits Delta": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Profile visits": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Accounts Reached",
+              "Accounts Reached Delta",
+              "Date Range",
+              "Followers",
+              "Impressions",
+              "Impressions Delta",
+              "Non-Followers",
+              "Non-Followers Delta",
+              "Profile Visits Delta",
+              "Profile visits"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "organic_insights_reach"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

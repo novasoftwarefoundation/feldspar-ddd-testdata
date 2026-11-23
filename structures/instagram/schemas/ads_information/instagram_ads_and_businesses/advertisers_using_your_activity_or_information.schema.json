@@ -64,15 +64,101 @@
       ],
       "x-last-seen": "2024-03-04",
       "x-seen-in": 1
+    },
+    "label_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "enum": [
+              "Advertisers whose store you visited"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-labels": {
+              "Advertisers whose store you visited": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              }
+            },
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "vec": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "value"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "label",
+          "vec"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "media": {
+      "type": "array",
+      "x-always-empty": true,
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
     }
   },
-  "required": [
-    "ig_custom_audiences_all_types"
-  ],
   "x-first-seen": "2024-03-04",
   "x-langs": [
-    "de"
+    "de",
+    "en"
   ],
-  "x-last-seen": "2024-03-04",
-  "x-seen-in": 1
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 2
 }

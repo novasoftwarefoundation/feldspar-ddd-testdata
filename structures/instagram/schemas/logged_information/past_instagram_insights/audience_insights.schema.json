@@ -1,0 +1,952 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "logged_information/past_instagram_insights/audience_insights.json",
+  "type": "object",
+  "properties": {
+    "organic_insights_audience": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Date Range": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Follower Percentage by Age for All Genders": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Follower Percentage by Age for Men": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Follower Percentage by Age for Women": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Follower Percentage by City": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Follower Percentage by Country": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Followers": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Followers Delta": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Follows": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Friday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Monday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Overall followers": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Saturday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Sunday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Thursday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Total Follower Percentage for Men": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Total Follower Percentage for Women": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Tuesday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Unfollows": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Wednesday Follower Activity": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Date Range",
+              "Follower Percentage by Age for All Genders",
+              "Follower Percentage by Age for Men",
+              "Follower Percentage by Age for Women",
+              "Follower Percentage by City",
+              "Follower Percentage by Country",
+              "Followers",
+              "Followers Delta",
+              "Follows",
+              "Friday Follower Activity",
+              "Monday Follower Activity",
+              "Overall followers",
+              "Saturday Follower Activity",
+              "Sunday Follower Activity",
+              "Thursday Follower Activity",
+              "Total Follower Percentage for Men",
+              "Total Follower Percentage for Women",
+              "Tuesday Follower Activity",
+              "Unfollows",
+              "Wednesday Follower Activity"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "organic_insights_audience"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/threads/liked_threads.json",
+  "type": "object",
+  "properties": {
+    "text_post_app_media_likes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "string_list_data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "href": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
+                },
+                "value": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "href",
+                "timestamp",
+                "value"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "string_list_data",
+          "title"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "text_post_app_media_likes"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

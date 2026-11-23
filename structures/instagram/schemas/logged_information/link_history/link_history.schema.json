@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "logged_information/link_history/link_history.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "label_values": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "enum": [
+                "Title of website page you visited",
+                "Website link you visited",
+                "Website session end time",
+                "Website session start time"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-labels": {
+                "Title of website page you visited": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Website link you visited": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Website session end time": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Website session start time": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                }
+              },
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "value": {
+              "type": "string",
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "label",
+            "value"
+          ],
+          "x-first-seen": "2026-11-23",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2026-11-23",
+          "x-seen-in": 1
+        },
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "media": {
+        "type": "array",
+        "x-always-empty": true,
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "timestamp": {
+        "type": "integer",
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1,
+        "x-timestamp": "unix-seconds"
+      }
+    },
+    "required": [
+      "label_values",
+      "media",
+      "timestamp"
+    ],
+    "x-first-seen": "2026-11-23",
+    "x-langs": [
+      "en"
+    ],
+    "x-last-seen": "2026-11-23",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

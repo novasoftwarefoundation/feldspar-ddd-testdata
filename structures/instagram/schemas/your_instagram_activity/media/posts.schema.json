@@ -1,0 +1,1206 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/media/posts.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "label_values": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "dict": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "dict": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string",
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        },
+                        "dict": {
+                          "type": "array",
+                          "x-always-empty": true,
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        },
+                        "label": {
+                          "type": "string",
+                          "enum": [
+                            "Alternative names",
+                            "Amount raised",
+                            "Creation time",
+                            "Description",
+                            "Draft",
+                            "Draft identifier",
+                            "Expiry time",
+                            "File size in bytes",
+                            "Hidden from profile but shown in feed",
+                            "Hide like and view counts",
+                            "Is an advertisement",
+                            "Latitude",
+                            "Longitude",
+                            "Marked as AI generated",
+                            "Media",
+                            "Name",
+                            "Original height",
+                            "Original width",
+                            "Paid partnership",
+                            "Published",
+                            "Reply approval required",
+                            "Story type",
+                            "Subtype",
+                            "Update time",
+                            "Upload identifier",
+                            "Visibility",
+                            "Visual reply using existing media",
+                            "Who can reply to your post"
+                          ],
+                          "x-first-seen": "2026-11-23",
+                          "x-labels": {
+                            "Alternative names": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Amount raised": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Creation time": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Description": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Draft": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Draft identifier": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Expiry time": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "File size in bytes": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Hidden from profile but shown in feed": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Hide like and view counts": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Is an advertisement": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Latitude": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Longitude": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Marked as AI generated": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Media": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Name": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Original height": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Original width": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Paid partnership": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Published": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Reply approval required": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Story type": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Subtype": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Update time": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Upload identifier": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Visibility": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Visual reply using existing media": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            },
+                            "Who can reply to your post": {
+                              "first-seen": "2026-11-23",
+                              "langs": [
+                                "en"
+                              ],
+                              "last-seen": "2026-11-23",
+                              "seen-in": 1
+                            }
+                          },
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        },
+                        "media": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "title": {
+                                "type": "string",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "creation_timestamp": {
+                                "type": "integer",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1,
+                                "x-timestamp": "unix-seconds"
+                              },
+                              "cross_post_source": {
+                                "type": "object",
+                                "properties": {
+                                  "source_app": {
+                                    "type": "string",
+                                    "x-first-seen": "2026-11-23",
+                                    "x-langs": [
+                                      "en"
+                                    ],
+                                    "x-last-seen": "2026-11-23",
+                                    "x-seen-in": 1
+                                  }
+                                },
+                                "required": [
+                                  "source_app"
+                                ],
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "media_metadata": {
+                                "type": "object",
+                                "properties": {
+                                  "camera_metadata": {
+                                    "type": "object",
+                                    "properties": {
+                                      "has_camera_metadata": {
+                                        "type": "boolean",
+                                        "x-first-seen": "2026-11-23",
+                                        "x-langs": [
+                                          "en"
+                                        ],
+                                        "x-last-seen": "2026-11-23",
+                                        "x-seen-in": 1
+                                      }
+                                    },
+                                    "required": [
+                                      "has_camera_metadata"
+                                    ],
+                                    "x-first-seen": "2026-11-23",
+                                    "x-langs": [
+                                      "en"
+                                    ],
+                                    "x-last-seen": "2026-11-23",
+                                    "x-seen-in": 1
+                                  }
+                                },
+                                "required": [
+                                  "camera_metadata"
+                                ],
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "uri": {
+                                "type": "string",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              }
+                            },
+                            "required": [
+                              "creation_timestamp",
+                              "cross_post_source",
+                              "media_metadata",
+                              "title",
+                              "uri"
+                            ],
+                            "x-first-seen": "2026-11-23",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2026-11-23",
+                            "x-seen-in": 1
+                          },
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        },
+                        "timestamp_value": {
+                          "type": "integer",
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        },
+                        "value": {
+                          "type": "string",
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        },
+                        "vec": {
+                          "type": "array",
+                          "x-always-empty": true,
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        }
+                      },
+                      "x-first-seen": "2026-11-23",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2026-11-23",
+                      "x-seen-in": 1
+                    },
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "dict",
+                  "title"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "label": {
+              "type": "string",
+              "enum": [
+                "Amount raised",
+                "Caption",
+                "Created from draft",
+                "Creation time",
+                "Device name",
+                "Draft",
+                "Draft identifier",
+                "Expiry time",
+                "File size in bytes",
+                "Folders on device",
+                "Hidden from profile but shown in feed",
+                "Hide like and view counts",
+                "How you opened the camera",
+                "How you opened the camera from the browser",
+                "Is an advertisement",
+                "Is audio muted",
+                "Latitude",
+                "Longitude",
+                "Marked as AI generated",
+                "Media",
+                "Original height",
+                "Original width",
+                "Paid partnership",
+                "Publish mode",
+                "Published",
+                "Reply approval required",
+                "Story type",
+                "Subtype",
+                "Title",
+                "Update time",
+                "Upload identifier",
+                "Visibility",
+                "Visual reply using existing media",
+                "Who can reply to your post"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-labels": {
+                "Amount raised": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Caption": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Created from draft": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Creation time": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Device name": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Draft": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Draft identifier": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Expiry time": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "File size in bytes": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Folders on device": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Hidden from profile but shown in feed": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Hide like and view counts": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "How you opened the camera": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "How you opened the camera from the browser": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Is an advertisement": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Is audio muted": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Latitude": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Longitude": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Marked as AI generated": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Media": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Original height": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Original width": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Paid partnership": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Publish mode": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Published": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Reply approval required": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Story type": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Subtype": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Title": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Update time": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Upload identifier": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Visibility": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Visual reply using existing media": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Who can reply to your post": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                }
+              },
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "media": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "creation_timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1,
+                    "x-timestamp": "unix-seconds"
+                  },
+                  "cross_post_source": {
+                    "type": "object",
+                    "properties": {
+                      "source_app": {
+                        "type": "string",
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "source_app"
+                    ],
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "media_metadata": {
+                    "type": "object",
+                    "properties": {
+                      "camera_metadata": {
+                        "type": "object",
+                        "properties": {
+                          "has_camera_metadata": {
+                            "type": "boolean",
+                            "x-first-seen": "2026-11-23",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2026-11-23",
+                            "x-seen-in": 1
+                          }
+                        },
+                        "required": [
+                          "has_camera_metadata"
+                        ],
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      },
+                      "photo_metadata": {
+                        "type": "object",
+                        "properties": {
+                          "exif_data": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "aperture": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "camera_position": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "date_time_digitized": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "date_time_original": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "device_id": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "focal_length": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "iso": {
+                                  "type": "integer",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "latitude": {
+                                  "type": "number",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "lens_make": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "lens_model": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "longitude": {
+                                  "type": "number",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "metering_mode": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "scene_capture_type": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "scene_type": {
+                                  "type": "integer",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "shutter_speed": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "software": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                },
+                                "source_type": {
+                                  "type": "string",
+                                  "x-first-seen": "2026-11-23",
+                                  "x-langs": [
+                                    "en"
+                                  ],
+                                  "x-last-seen": "2026-11-23",
+                                  "x-seen-in": 1
+                                }
+                              },
+                              "x-first-seen": "2026-11-23",
+                              "x-langs": [
+                                "en"
+                              ],
+                              "x-last-seen": "2026-11-23",
+                              "x-seen-in": 1
+                            },
+                            "x-first-seen": "2026-11-23",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2026-11-23",
+                            "x-seen-in": 1
+                          }
+                        },
+                        "required": [
+                          "exif_data"
+                        ],
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "camera_metadata",
+                      "photo_metadata"
+                    ],
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "uri": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "creation_timestamp",
+                  "cross_post_source",
+                  "media_metadata",
+                  "title",
+                  "uri"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "timestamp_value": {
+              "type": "integer",
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "value": {
+              "type": "string",
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "vec": {
+              "type": "array",
+              "x-always-empty": true,
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            }
+          },
+          "x-first-seen": "2026-11-23",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2026-11-23",
+          "x-seen-in": 1
+        },
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "media": {
+        "type": "array",
+        "x-always-empty": true,
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "timestamp": {
+        "type": "integer",
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1,
+        "x-timestamp": "unix-seconds"
+      }
+    },
+    "required": [
+      "label_values",
+      "media",
+      "timestamp"
+    ],
+    "x-first-seen": "2026-11-23",
+    "x-langs": [
+      "en"
+    ],
+    "x-last-seen": "2026-11-23",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

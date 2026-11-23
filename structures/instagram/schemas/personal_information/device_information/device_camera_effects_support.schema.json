@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "personal_information/device_information/device_camera_effects_support.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "label_values": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "dict": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "label": {
+                    "type": "string",
+                    "enum": [
+                      "Hair detection",
+                      "Motion sensor",
+                      "Real-world size estimation",
+                      "Separating you from your background",
+                      "Supported SDK Versions",
+                      "Supported image compression format",
+                      "Supported test versions of Meta's camera effects SDK",
+                      "Supported versions of Meta's camera effects SDK",
+                      "World tracking"
+                    ],
+                    "x-first-seen": "2026-11-23",
+                    "x-labels": {
+                      "Hair detection": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Motion sensor": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Real-world size estimation": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Separating you from your background": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Supported SDK Versions": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Supported image compression format": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Supported test versions of Meta's camera effects SDK": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "Supported versions of Meta's camera effects SDK": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      },
+                      "World tracking": {
+                        "first-seen": "2026-11-23",
+                        "langs": [
+                          "en"
+                        ],
+                        "last-seen": "2026-11-23",
+                        "seen-in": 1
+                      }
+                    },
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "label",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "label": {
+              "type": "string",
+              "enum": [
+                "Device ID",
+                "Device metadata"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-labels": {
+                "Device ID": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                },
+                "Device metadata": {
+                  "first-seen": "2026-11-23",
+                  "langs": [
+                    "en"
+                  ],
+                  "last-seen": "2026-11-23",
+                  "seen-in": 1
+                }
+              },
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "value": {
+              "type": "string",
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "label"
+          ],
+          "x-first-seen": "2026-11-23",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2026-11-23",
+          "x-seen-in": 1
+        },
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "media": {
+        "type": "array",
+        "x-always-empty": true,
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "timestamp": {
+        "type": "integer",
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1,
+        "x-timestamp": "unix-seconds"
+      }
+    },
+    "required": [
+      "label_values",
+      "media",
+      "timestamp"
+    ],
+    "x-first-seen": "2026-11-23",
+    "x-langs": [
+      "en"
+    ],
+    "x-last-seen": "2026-11-23",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

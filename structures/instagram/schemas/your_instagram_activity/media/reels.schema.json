@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/media/reels.json",
+  "type": "object",
+  "properties": {
+    "ig_reels_media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "media": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "creation_timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
+                },
+                "cross_post_source": {
+                  "type": "object",
+                  "properties": {
+                    "source_app": {
+                      "type": "string",
+                      "x-first-seen": "2026-11-23",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2026-11-23",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "required": [
+                    "source_app"
+                  ],
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "dubbing_info": {
+                  "type": "array",
+                  "x-always-empty": true,
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "media_metadata": {
+                  "type": "object",
+                  "properties": {
+                    "camera_metadata": {
+                      "type": "object",
+                      "properties": {
+                        "has_camera_metadata": {
+                          "type": "boolean",
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        }
+                      },
+                      "required": [
+                        "has_camera_metadata"
+                      ],
+                      "x-first-seen": "2026-11-23",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2026-11-23",
+                      "x-seen-in": 1
+                    },
+                    "video_metadata": {
+                      "type": "object",
+                      "properties": {
+                        "exif_data": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "camera_position": {
+                                "type": "string",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "device_id": {
+                                "type": "string",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "latitude": {
+                                "type": "number",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "longitude": {
+                                "type": "number",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              },
+                              "source_type": {
+                                "type": "string",
+                                "x-first-seen": "2026-11-23",
+                                "x-langs": [
+                                  "en"
+                                ],
+                                "x-last-seen": "2026-11-23",
+                                "x-seen-in": 1
+                              }
+                            },
+                            "x-first-seen": "2026-11-23",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2026-11-23",
+                            "x-seen-in": 1
+                          },
+                          "x-first-seen": "2026-11-23",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2026-11-23",
+                          "x-seen-in": 1
+                        }
+                      },
+                      "required": [
+                        "exif_data"
+                      ],
+                      "x-first-seen": "2026-11-23",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2026-11-23",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "required": [
+                    "camera_metadata",
+                    "video_metadata"
+                  ],
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "media_variants": {
+                  "type": "array",
+                  "x-always-empty": true,
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "uri": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "creation_timestamp",
+                "cross_post_source",
+                "dubbing_info",
+                "media_metadata",
+                "media_variants",
+                "title",
+                "uri"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "ig_reels_media"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

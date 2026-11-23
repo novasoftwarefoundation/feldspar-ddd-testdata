@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/other_activity/your_information_download_requests.json",
+  "type": "object",
+  "properties": {
+    "label_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "enum": [
+              "End date",
+              "Have we notified you that your request is taking a long time to process?",
+              "Have you seen this archive?",
+              "How many times did you try to download the file?",
+              "Information types",
+              "Media quality",
+              "Output format",
+              "Request completion time",
+              "Start date",
+              "Update time",
+              "Where you requested your data from"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-labels": {
+              "End date": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Have we notified you that your request is taking a long time to process?": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Have you seen this archive?": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "How many times did you try to download the file?": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Information types": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Media quality": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Output format": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Request completion time": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Start date": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Update time": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Where you requested your data from": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              }
+            },
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "timestamp_value": {
+            "type": "integer",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1,
+            "x-timestamp": "unix-seconds"
+          },
+          "value": {
+            "type": "string",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "vec": {
+            "type": "array",
+            "x-always-empty": true,
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "label"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "media": {
+      "type": "array",
+      "x-always-empty": true,
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "timestamp": {
+      "type": "integer",
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1,
+      "x-timestamp": "unix-seconds"
+    }
+  },
+  "required": [
+    "label_values",
+    "media",
+    "timestamp"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

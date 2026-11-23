@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "preferences/settings/notification_preferences.json",
+  "type": "object",
+  "properties": {
+    "label_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "dict": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string",
+                  "enum": [
+                    "Channel",
+                    "Notification type",
+                    "Value"
+                  ],
+                  "x-first-seen": "2026-11-23",
+                  "x-labels": {
+                    "Channel": {
+                      "first-seen": "2026-11-23",
+                      "langs": [
+                        "en"
+                      ],
+                      "last-seen": "2026-11-23",
+                      "seen-in": 1
+                    },
+                    "Notification type": {
+                      "first-seen": "2026-11-23",
+                      "langs": [
+                        "en"
+                      ],
+                      "last-seen": "2026-11-23",
+                      "seen-in": 1
+                    },
+                    "Value": {
+                      "first-seen": "2026-11-23",
+                      "langs": [
+                        "en"
+                      ],
+                      "last-seen": "2026-11-23",
+                      "seen-in": 1
+                    }
+                  },
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                },
+                "value": {
+                  "type": "string",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "label",
+                "value"
+              ],
+              "x-first-seen": "2026-11-23",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "label": {
+            "type": "string",
+            "enum": [
+              "Preferences",
+              "Update time"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-labels": {
+              "Preferences": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              },
+              "Update time": {
+                "first-seen": "2026-11-23",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2026-11-23",
+                "seen-in": 1
+              }
+            },
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1
+          },
+          "timestamp_value": {
+            "type": "integer",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 1,
+            "x-timestamp": "unix-seconds"
+          }
+        },
+        "required": [
+          "label"
+        ],
+        "x-first-seen": "2026-11-23",
+        "x-langs": [
+          "en"
+        ],
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "media": {
+      "type": "array",
+      "x-always-empty": true,
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1
+    },
+    "timestamp": {
+      "type": "integer",
+      "x-first-seen": "2026-11-23",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 1,
+      "x-timestamp": "unix-seconds"
+    }
+  },
+  "required": [
+    "label_values",
+    "media",
+    "timestamp"
+  ],
+  "x-first-seen": "2026-11-23",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 1
+}

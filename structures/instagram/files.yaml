@@ -65,9 +65,21 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
-    meta_encoding: false
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
     schema: "schemas/ads_information/ads_and_topics/ads_viewed.schema.json"
+    seen_in: 2
+  "ads_information/ads_and_topics/in-app_message.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/ads_information/ads_and_topics/in-app_message.schema.json"
     seen_in: 1
   "ads_information/ads_and_topics/posts_viewed.json":
     ascii: true
@@ -76,9 +88,21 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
-    meta_encoding: false
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
     schema: "schemas/ads_information/ads_and_topics/posts_viewed.schema.json"
+    seen_in: 2
+  "ads_information/ads_and_topics/posts_you're_interested_or_not_interested_in.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/ads_information/ads_and_topics/posts_you're_interested_or_not_interested_in.schema.json"
     seen_in: 1
   "ads_information/ads_and_topics/posts_you're_not_interested_in.json":
     ascii: true
@@ -87,9 +111,21 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/ads_information/ads_and_topics/posts_you're_not_interested_in.schema.json"
+    seen_in: 2
+  "ads_information/ads_and_topics/profiles_you're_not_interested_in.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/ads_information/ads_and_topics/profiles_you're_not_interested_in.schema.json"
     seen_in: 1
   "ads_information/ads_and_topics/suggested_accounts_viewed.json":
     ascii: true
@@ -109,16 +145,28 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
-    meta_encoding: false
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
     schema: "schemas/ads_information/ads_and_topics/videos_watched.schema.json"
-    seen_in: 1
+    seen_in: 2
   "ads_information/advertising/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
     langs:
       - "de"
     last_seen: "2024-03-04"
+    seen_in: 1
+  "ads_information/instagram_ads_and_businesses/ad_preferences.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/ads_information/instagram_ads_and_businesses/ad_preferences.schema.json"
     seen_in: 1
   "ads_information/instagram_ads_and_businesses/advertisers_using_your_activity_or_information.json":
     ascii: true
@@ -127,9 +175,32 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/ads_information/instagram_ads_and_businesses/advertisers_using_your_activity_or_information.schema.json"
+    seen_in: 2
+  "ads_information/instagram_ads_and_businesses/information_you've_submitted_to_advertisers.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/ads_information/instagram_ads_and_businesses/information_you've_submitted_to_advertisers.schema.json"
+    seen_in: 1
+  "ads_information/instagram_ads_and_businesses/other_categories_used_to_reach_you.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/ads_information/instagram_ads_and_businesses/other_categories_used_to_reach_you.schema.json"
     seen_in: 1
   "apps_and_websites_off_of_instagram/apps_and_websites/your_activity_off_meta_technologies.json":
     ascii: true
@@ -149,10 +220,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/connections/contacts/synced_contacts.schema.json"
-    seen_in: 1
+    seen_in: 2
   "connections/followers_and_following/close_friends.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -171,10 +243,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: false
     schema: "schemas/connections/followers_and_following/followers_{n}.schema.json"
-    seen_in: 1
+    seen_in: 2
   "connections/followers_and_following/following.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -182,9 +255,21 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: false
     schema: "schemas/connections/followers_and_following/following.schema.json"
+    seen_in: 2
+  "connections/followers_and_following/pending_follow_requests.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/connections/followers_and_following/pending_follow_requests.schema.json"
     seen_in: 1
   "connections/followers_and_following/recently_unfollowed_accounts.json":
     ascii: true
@@ -197,6 +282,17 @@ files:
     meta_encoding: false
     schema: "schemas/connections/followers_and_following/recently_unfollowed_accounts.schema.json"
     seen_in: 1
+  "connections/followers_and_following/recently_unfollowed_profiles.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/connections/followers_and_following/recently_unfollowed_profiles.schema.json"
+    seen_in: 1
   "connections/followers_and_following/removed_suggestions.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -208,6 +304,17 @@ files:
     meta_encoding: false
     schema: "schemas/connections/followers_and_following/removed_suggestions.schema.json"
     seen_in: 1
+  "logged_information/link_history/link_history.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/logged_information/link_history/link_history.schema.json"
+    seen_in: 1
   "logged_information/link_history/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
@@ -215,12 +322,100 @@ files:
       - "de"
     last_seen: "2024-03-04"
     seen_in: 1
+  "logged_information/link_history/your_link_history_settings.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/logged_information/link_history/your_link_history_settings.schema.json"
+    seen_in: 1
+  "logged_information/past_instagram_insights/audience_insights.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/logged_information/past_instagram_insights/audience_insights.schema.json"
+    seen_in: 1
+  "logged_information/past_instagram_insights/content_interactions.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/logged_information/past_instagram_insights/content_interactions.schema.json"
+    seen_in: 1
+  "logged_information/past_instagram_insights/live_videos.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/logged_information/past_instagram_insights/live_videos.schema.json"
+    seen_in: 1
   "logged_information/past_instagram_insights/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
     langs:
       - "de"
     last_seen: "2024-03-04"
+    seen_in: 1
+  "logged_information/past_instagram_insights/posts.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/logged_information/past_instagram_insights/posts.schema.json"
+    seen_in: 1
+  "logged_information/past_instagram_insights/profiles_reached.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/logged_information/past_instagram_insights/profiles_reached.schema.json"
+    seen_in: 1
+  "logged_information/past_instagram_insights/reels.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/logged_information/past_instagram_insights/reels.schema.json"
+    seen_in: 1
+  "logged_information/past_instagram_insights/stories.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/logged_information/past_instagram_insights/stories.schema.json"
     seen_in: 1
   "logged_information/policy_updates_and_permissions/notification_of_privacy_policy_updates.json":
     ascii: true
@@ -244,6 +439,17 @@ files:
     meta_encoding: false
     schema: "schemas/logged_information/recent_searches/account_searches.schema.json"
     seen_in: 1
+  "logged_information/recent_searches/profile_searches.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/logged_information/recent_searches/profile_searches.schema.json"
+    seen_in: 1
   "logged_information/recent_searches/word_or_phrase_searches.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -255,12 +461,48 @@ files:
     meta_encoding: false
     schema: "schemas/logged_information/recent_searches/word_or_phrase_searches.schema.json"
     seen_in: 1
+  "media/<id>.jpg":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 1
   "media/other/<id>.jpg":
     first_seen: "2024-03-04"
     kind: "media"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 2
+  "media/other/<id>.mp4":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 1
+  "media/posts/<id>.jpg":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 1
+  "media/posts/<yyyymm>/<id>.jpg":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 1
+  "media/posts/<yyyymm>/<id>.mp4":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
     seen_in: 1
   "media/recently_deleted/<yyyymm>/<id>.webp":
     first_seen: "2024-03-04"
@@ -290,6 +532,17 @@ files:
       - "de"
     last_seen: "2024-03-04"
     seen_in: 1
+  "personal_information/autofill_information/autofill_information.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/autofill_information/autofill_information.schema.json"
+    seen_in: 1
   "personal_information/autofill_information/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
@@ -307,6 +560,17 @@ files:
     last_seen: "2024-03-04"
     meta_encoding: true
     schema: "schemas/personal_information/device_information/camera_information.schema.json"
+    seen_in: 1
+  "personal_information/device_information/device_camera_effects_support.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/device_information/device_camera_effects_support.schema.json"
     seen_in: 1
   "personal_information/device_information/devices.json":
     ascii: true
@@ -337,6 +601,28 @@ files:
     meta_encoding: false
     schema: "schemas/personal_information/information_about_you/account_based_in.schema.json"
     seen_in: 1
+  "personal_information/information_about_you/locations_of_interest.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/information_about_you/locations_of_interest.schema.json"
+    seen_in: 1
+  "personal_information/information_about_you/profile_based_in.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/information_about_you/profile_based_in.schema.json"
+    seen_in: 1
   "personal_information/loyalty_accounts/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
@@ -354,6 +640,39 @@ files:
     last_seen: "2024-03-04"
     meta_encoding: true
     schema: "schemas/personal_information/personal_information/account_information.schema.json"
+    seen_in: 1
+  "personal_information/personal_information/instagram_friend_map.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/personal_information/instagram_friend_map.schema.json"
+    seen_in: 1
+  "personal_information/personal_information/instagram_profile_information.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/personal_information/instagram_profile_information.schema.json"
+    seen_in: 1
+  "personal_information/personal_information/note_and_repost_interactions.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/personal_information/personal_information/note_and_repost_interactions.schema.json"
     seen_in: 1
   "personal_information/personal_information/note_interactions.json":
     ascii: true
@@ -373,10 +692,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/personal_information/personal_information/personal_information.schema.json"
-    seen_in: 1
+    seen_in: 2
   "personal_information/personal_information/professional_information.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -387,6 +707,17 @@ files:
     last_seen: "2024-03-04"
     meta_encoding: false
     schema: "schemas/personal_information/personal_information/professional_information.schema.json"
+    seen_in: 1
+  "personal_information/personal_information/profile_changes.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/personal_information/personal_information/profile_changes.schema.json"
     seen_in: 1
   "preferences/media_settings/comments_allowed_from.json":
     ascii: true
@@ -420,6 +751,28 @@ files:
     last_seen: "2024-03-04"
     meta_encoding: true
     schema: "schemas/preferences/media_settings/use_cross-app_messaging.schema.json"
+    seen_in: 1
+  "preferences/settings/notification_preferences.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/preferences/settings/notification_preferences.schema.json"
+    seen_in: 1
+  "preferences/your_topics/your_ads_see_more/see_less_topics.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/preferences/your_topics/your_ads_see_more/see_less_topics.schema.json"
     seen_in: 1
   "preferences/your_topics/your_topics.json":
     ascii: true
@@ -465,6 +818,61 @@ files:
     meta_encoding: true
     schema: "schemas/security_and_login_information/login_and_account_creation/signup_information.schema.json"
     seen_in: 1
+  "security_and_login_information/login_and_profile_creation/last_known_location.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/security_and_login_information/login_and_profile_creation/last_known_location.schema.json"
+    seen_in: 1
+  "security_and_login_information/login_and_profile_creation/login_activity.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/security_and_login_information/login_and_profile_creation/login_activity.schema.json"
+    seen_in: 1
+  "security_and_login_information/login_and_profile_creation/logout_activity.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/security_and_login_information/login_and_profile_creation/logout_activity.schema.json"
+    seen_in: 1
+  "security_and_login_information/login_and_profile_creation/profile_activity.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/security_and_login_information/login_and_profile_creation/profile_activity.schema.json"
+    seen_in: 1
+  "security_and_login_information/login_and_profile_creation/signup_details.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/security_and_login_information/login_and_profile_creation/signup_details.schema.json"
+    seen_in: 1
   "your_activity_across_facebook/messages/inbox/<name>_<id>/audio/<id>.aac":
     first_seen: "2024-03-04"
     kind: "media"
@@ -479,6 +887,17 @@ files:
       - "de"
     last_seen: "2024-03-04"
     seen_in: 1
+  "your_instagram_activity/comments/hype.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/comments/hype.schema.json"
+    seen_in: 1
   "your_instagram_activity/comments/post_comments_<n>.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -486,10 +905,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/your_instagram_activity/comments/post_comments_{n}.schema.json"
-    seen_in: 1
+    seen_in: 2
   "your_instagram_activity/comments/reels_comments.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -497,10 +917,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/your_instagram_activity/comments/reels_comments.schema.json"
-    seen_in: 1
+    seen_in: 2
   "your_instagram_activity/content/profile_photos.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -576,10 +997,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/your_instagram_activity/likes/liked_comments.schema.json"
-    seen_in: 1
+    seen_in: 2
   "your_instagram_activity/likes/liked_posts.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -587,9 +1009,83 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/your_instagram_activity/likes/liked_posts.schema.json"
+    seen_in: 2
+  "your_instagram_activity/media/other_content.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/media/other_content.schema.json"
+    seen_in: 1
+  "your_instagram_activity/media/posts.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/media/posts.schema.json"
+    seen_in: 1
+  "your_instagram_activity/media/posts_<n>.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/media/posts_{n}.schema.json"
+    seen_in: 1
+  "your_instagram_activity/media/profile_photos.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/media/profile_photos.schema.json"
+    seen_in: 1
+  "your_instagram_activity/media/reels.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/media/reels.schema.json"
+    seen_in: 1
+  "your_instagram_activity/media/stories.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/media/stories.schema.json"
+    seen_in: 1
+  "your_instagram_activity/messages/inbox/<name>_<id>/audio/<id>.mp4":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
     seen_in: 1
   "your_instagram_activity/messages/inbox/<name>_<id>/message_<n>.json":
     ascii: true
@@ -598,9 +1094,35 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: true
     schema: "schemas/your_instagram_activity/messages/inbox/{name}_{id}/message_{n}.schema.json"
+    seen_in: 2
+  "your_instagram_activity/messages/inbox/<name>_<id>/photos/<id>":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 1
+  "your_instagram_activity/messages/inbox/<name>_<id>/photos/<id>.jpg":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    seen_in: 1
+  "your_instagram_activity/messages/message_requests/<name>_<id>/message_<n>.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/messages/message_requests/{name}_{id}/message_{n}.schema.json"
     seen_in: 1
   "your_instagram_activity/messages/secret_conversations.json":
     ascii: true
@@ -612,6 +1134,13 @@ files:
     last_seen: "2024-03-04"
     meta_encoding: false
     schema: "schemas/your_instagram_activity/messages/secret_conversations.schema.json"
+    seen_in: 1
+  "your_instagram_activity/messages/stickers_used/<id>.png":
+    first_seen: "2026-11-23"
+    kind: "media"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
     seen_in: 1
   "your_instagram_activity/meta_spark/no-data.txt":
     first_seen: "2024-03-04"
@@ -627,16 +1156,28 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
+      - "en"
+    last_seen: "2026-11-23"
     meta_encoding: false
     schema: "schemas/your_instagram_activity/monetization/eligibility.schema.json"
-    seen_in: 1
+    seen_in: 2
   "your_instagram_activity/other_activity/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
     langs:
       - "de"
     last_seen: "2024-03-04"
+    seen_in: 1
+  "your_instagram_activity/other_activity/your_information_download_requests.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/other_activity/your_information_download_requests.schema.json"
     seen_in: 1
   "your_instagram_activity/reports/no-data.txt":
     first_seen: "2024-03-04"
@@ -652,10 +1193,11 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
-    meta_encoding: false
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
     schema: "schemas/your_instagram_activity/saved/saved_collections.schema.json"
-    seen_in: 1
+    seen_in: 2
   "your_instagram_activity/saved/saved_posts.json":
     ascii: true
     first_seen: "2024-03-04"
@@ -663,9 +1205,21 @@ files:
     kind: "json"
     langs:
       - "de"
-    last_seen: "2024-03-04"
-    meta_encoding: false
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
     schema: "schemas/your_instagram_activity/saved/saved_posts.schema.json"
+    seen_in: 2
+  "your_instagram_activity/shopping/checkout_payment_information.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/shopping/checkout_payment_information.schema.json"
     seen_in: 1
   "your_instagram_activity/shopping/no-data.txt":
     first_seen: "2024-03-04"
@@ -673,6 +1227,94 @@ files:
     langs:
       - "de"
     last_seen: "2024-03-04"
+    seen_in: 1
+  "your_instagram_activity/shopping/recently_viewed_items.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/shopping/recently_viewed_items.schema.json"
+    seen_in: 1
+  "your_instagram_activity/shopping/wishlist_items.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/shopping/wishlist_items.schema.json"
+    seen_in: 1
+  "your_instagram_activity/story_interactions/emoji_sliders.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/story_interactions/emoji_sliders.schema.json"
+    seen_in: 1
+  "your_instagram_activity/story_interactions/emoji_story_reactions.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/story_interactions/emoji_story_reactions.schema.json"
+    seen_in: 1
+  "your_instagram_activity/story_interactions/polls.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/story_interactions/polls.schema.json"
+    seen_in: 1
+  "your_instagram_activity/story_interactions/questions.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/story_interactions/questions.schema.json"
+    seen_in: 1
+  "your_instagram_activity/story_interactions/stories_viewed.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/story_interactions/stories_viewed.schema.json"
+    seen_in: 1
+  "your_instagram_activity/story_interactions/story_likes.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/story_interactions/story_likes.schema.json"
     seen_in: 1
   "your_instagram_activity/story_sticker_interactions/emoji_sliders.json":
     ascii: true
@@ -729,6 +1371,39 @@ files:
     meta_encoding: false
     schema: "schemas/your_instagram_activity/subscriptions/your_muted_story_teaser_creators.schema.json"
     seen_in: 1
+  "your_instagram_activity/threads/followers.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/threads/followers.schema.json"
+    seen_in: 1
+  "your_instagram_activity/threads/following.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/threads/following.schema.json"
+    seen_in: 1
+  "your_instagram_activity/threads/liked_threads.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/threads/liked_threads.schema.json"
+    seen_in: 1
   "your_instagram_activity/threads/no-data.txt":
     first_seen: "2024-03-04"
     kind: "text"
@@ -736,10 +1411,66 @@ files:
       - "de"
     last_seen: "2024-03-04"
     seen_in: 1
+  "your_instagram_activity/threads/personal_information.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/threads/personal_information.schema.json"
+    seen_in: 1
+  "your_instagram_activity/threads/recently_unfollowed_profiles.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/threads/recently_unfollowed_profiles.schema.json"
+    seen_in: 1
+  "your_instagram_activity/threads/threads_and_replies.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: true
+    schema: "schemas/your_instagram_activity/threads/threads_and_replies.schema.json"
+    seen_in: 1
+  "your_instagram_activity/threads/threads_viewed.json":
+    ascii: true
+    first_seen: "2026-11-23"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2026-11-23"
+    meta_encoding: false
+    schema: "schemas/your_instagram_activity/threads/threads_viewed.schema.json"
+    seen_in: 1
 last_change:
-  date: "2024-03-04"
-  summary: "package of 2024-03-04 (de) added: 71 new, 0 changed shape, 0 not seen since an earlier package"
+  date: "2026-11-23"
+  summary: "package of 2026-11-23 (en) added: 94 new, 7 changed shape, 0 not seen since an earlier package"
 left_out:
+  "label not kept (unsure it is the platform's wording): ads_information/ads_and_topics/ads_viewed.json[].label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): ads_information/ads_and_topics/posts_viewed.json[].label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): ads_information/ads_and_topics/videos_watched.json[].label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): ads_information/instagram_ads_and_businesses/advertisers_using_your_activity_or_information.json.label_values[].label": 2
+  "label not kept (unsure it is the platform's wording): personal_information/autofill_information/autofill_information.json.label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): personal_information/device_information/device_camera_effects_support.json[].label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): personal_information/personal_information/instagram_profile_information.json.label_values[].label": 2
+  "label not kept (unsure it is the platform's wording): your_instagram_activity/media/other_content.json[].label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): your_instagram_activity/media/posts.json[].label_values[].dict[].dict[].label": 1
+  "label not kept (unsure it is the platform's wording): your_instagram_activity/media/posts.json[].label_values[].label": 1
+  "label not kept (unsure it is the platform's wording): your_instagram_activity/shopping/checkout_payment_information.json.label_values[].dict[].dict[].label": 1
+  "long key replaced by <text>: logged_information/past_instagram_insights/content_interactions.json $.organic_insights_interactions[].string_map_data": 1
   "name part replaced by <value>: your_activity_across_facebook/messages/inbox/…": 6
   "name part replaced by <value>: your_instagram_activity/messages/inbox/…": 16
 notes:
@@ -747,6 +1478,8 @@ notes:
 packages:
   - date: "2024-03-04"
     lang: "de"
+  - date: "2026-11-23"
+    lang: "en"
 personal_keys: []
 platform: "instagram"
 wording: []

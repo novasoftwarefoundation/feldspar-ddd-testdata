@@ -14,10 +14,11 @@
               "type": "string",
               "x-first-seen": "2024-03-04",
               "x-langs": [
-                "de"
+                "de",
+                "en"
               ],
-              "x-last-seen": "2024-03-04",
-              "x-seen-in": 1
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 2
             }
           },
           "required": [
@@ -25,17 +26,19 @@
           ],
           "x-first-seen": "2024-03-04",
           "x-langs": [
-            "de"
+            "de",
+            "en"
           ],
-          "x-last-seen": "2024-03-04",
-          "x-seen-in": 1
+          "x-last-seen": "2026-11-23",
+          "x-seen-in": 2
         },
         "x-first-seen": "2024-03-04",
         "x-langs": [
-          "de"
+          "de",
+          "en"
         ],
-        "x-last-seen": "2024-03-04",
-        "x-seen-in": 1
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 2
       },
       "string_map_data": {
         "type": "object",
@@ -47,10 +50,11 @@
                 "type": "string",
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
-                "x-seen-in": 1
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2
               }
             },
             "required": [
@@ -58,10 +62,11 @@
             ],
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "Media Owner": {
             "type": "object",
@@ -70,10 +75,11 @@
                 "type": "string",
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
-                "x-seen-in": 1
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2
               }
             },
             "required": [
@@ -81,10 +87,11 @@
             ],
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "Time": {
             "type": "object",
@@ -93,10 +100,11 @@
                 "type": "integer",
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
-                "x-seen-in": 1,
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2,
                 "x-timestamp": "unix-seconds"
               }
             },
@@ -105,10 +113,11 @@
             ],
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           }
         },
         "required": [
@@ -117,10 +126,11 @@
         ],
         "x-first-seen": "2024-03-04",
         "x-langs": [
-          "de"
+          "de",
+          "en"
         ],
-        "x-last-seen": "2024-03-04",
-        "x-seen-in": 1
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 2
       }
     },
     "required": [
@@ -129,15 +139,17 @@
     ],
     "x-first-seen": "2024-03-04",
     "x-langs": [
-      "de"
+      "de",
+      "en"
     ],
-    "x-last-seen": "2024-03-04",
-    "x-seen-in": 1
+    "x-last-seen": "2026-11-23",
+    "x-seen-in": 2
   },
   "x-first-seen": "2024-03-04",
   "x-langs": [
-    "de"
+    "de",
+    "en"
   ],
-  "x-last-seen": "2024-03-04",
-  "x-seen-in": 1
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 2
 }

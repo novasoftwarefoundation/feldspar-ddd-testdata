@@ -7,19 +7,21 @@
       "type": "string",
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     },
     "is_still_participant": {
       "type": "boolean",
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     },
     "joinable_mode": {
       "type": "object",
@@ -59,10 +61,11 @@
       "x-always-empty": true,
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     },
     "messages": {
       "type": "array",
@@ -78,20 +81,22 @@
                   "type": "integer",
                   "x-first-seen": "2024-03-04",
                   "x-langs": [
-                    "de"
+                    "de",
+                    "en"
                   ],
-                  "x-last-seen": "2024-03-04",
-                  "x-seen-in": 1,
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 2,
                   "x-timestamp": "unix-seconds"
                 },
                 "uri": {
                   "type": "string",
                   "x-first-seen": "2024-03-04",
                   "x-langs": [
-                    "de"
+                    "de",
+                    "en"
                   ],
-                  "x-last-seen": "2024-03-04",
-                  "x-seen-in": 1
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 2
                 }
               },
               "required": [
@@ -100,34 +105,47 @@
               ],
               "x-first-seen": "2024-03-04",
               "x-langs": [
-                "de"
+                "de",
+                "en"
               ],
-              "x-last-seen": "2024-03-04",
-              "x-seen-in": 1
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 2
             },
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "content": {
             "type": "string",
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "is_geoblocked_for_viewer": {
             "type": "boolean",
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
+          },
+          "is_unsent_image_by_messenger_kid_parent": {
+            "type": "boolean",
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
             "x-seen-in": 1
           },
           "photos": {
@@ -139,39 +157,42 @@
                   "type": "integer",
                   "x-first-seen": "2024-03-04",
                   "x-langs": [
-                    "de"
+                    "de",
+                    "en"
                   ],
-                  "x-last-seen": "2024-03-04",
-                  "x-seen-in": 1,
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 2,
                   "x-timestamp": "unix-seconds"
                 },
                 "uri": {
                   "type": "string",
                   "x-first-seen": "2024-03-04",
                   "x-langs": [
-                    "de"
+                    "de",
+                    "en"
                   ],
-                  "x-last-seen": "2024-03-04",
-                  "x-seen-in": 1
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 2
                 }
               },
               "required": [
-                "creation_timestamp",
                 "uri"
               ],
               "x-first-seen": "2024-03-04",
               "x-langs": [
-                "de"
+                "de",
+                "en"
               ],
-              "x-last-seen": "2024-03-04",
-              "x-seen-in": 1
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 2
             },
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "reactions": {
             "type": "array",
@@ -182,19 +203,31 @@
                   "type": "string",
                   "x-first-seen": "2024-03-04",
                   "x-langs": [
-                    "de"
+                    "de",
+                    "en"
                   ],
-                  "x-last-seen": "2024-03-04",
-                  "x-seen-in": 1
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 2
                 },
                 "reaction": {
                   "type": "string",
                   "x-first-seen": "2024-03-04",
                   "x-langs": [
-                    "de"
+                    "de",
+                    "en"
                   ],
-                  "x-last-seen": "2024-03-04",
-                  "x-seen-in": 1
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 2
+                },
+                "timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2026-11-23",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2026-11-23",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
                 }
               },
               "required": [
@@ -203,26 +236,29 @@
               ],
               "x-first-seen": "2024-03-04",
               "x-langs": [
-                "de"
+                "de",
+                "en"
               ],
-              "x-last-seen": "2024-03-04",
-              "x-seen-in": 1
+              "x-last-seen": "2026-11-23",
+              "x-seen-in": 2
             },
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "sender_name": {
             "type": "string",
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "share": {
             "type": "object",
@@ -232,45 +268,84 @@
                 "format": "uri",
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
-                "x-seen-in": 1
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2
               },
               "original_content_owner": {
                 "type": "string",
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
-                "x-seen-in": 1
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2
               },
               "share_text": {
                 "type": "string",
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
-                "x-seen-in": 1
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2
               }
             },
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
+          },
+          "sticker": {
+            "type": "object",
+            "properties": {
+              "ai_stickers": {
+                "type": "array",
+                "x-always-empty": true,
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "uri": {
+                "type": "string",
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "ai_stickers",
+              "uri"
+            ],
+            "x-first-seen": "2026-11-23",
+            "x-langs": [
+              "en"
+            ],
+            "x-last-seen": "2026-11-23",
             "x-seen-in": 1
           },
           "timestamp_ms": {
             "type": "integer",
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1,
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2,
             "x-timestamp": "unix-milliseconds"
           }
         },
@@ -281,17 +356,19 @@
         ],
         "x-first-seen": "2024-03-04",
         "x-langs": [
-          "de"
+          "de",
+          "en"
         ],
-        "x-last-seen": "2024-03-04",
-        "x-seen-in": 1
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 2
       },
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     },
     "participants": {
       "type": "array",
@@ -302,10 +379,11 @@
             "type": "string",
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           }
         },
         "required": [
@@ -313,26 +391,29 @@
         ],
         "x-first-seen": "2024-03-04",
         "x-langs": [
-          "de"
+          "de",
+          "en"
         ],
-        "x-last-seen": "2024-03-04",
-        "x-seen-in": 1
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 2
       },
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     },
     "thread_path": {
       "type": "string",
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     }
   },
   "required": [
@@ -345,8 +426,9 @@
   ],
   "x-first-seen": "2024-03-04",
   "x-langs": [
-    "de"
+    "de",
+    "en"
   ],
-  "x-last-seen": "2024-03-04",
-  "x-seen-in": 1
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 2
 }

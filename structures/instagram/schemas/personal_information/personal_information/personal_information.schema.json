@@ -12,10 +12,11 @@
             "type": "string",
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "media_map_data": {
             "type": "object",
@@ -125,17 +126,121 @@
                 ],
                 "x-last-seen": "2024-03-04",
                 "x-seen-in": 1
+              },
+              "Profile Photo": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "creation_timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1,
+                    "x-timestamp": "unix-seconds"
+                  },
+                  "cross_post_source": {
+                    "type": "object",
+                    "properties": {
+                      "source_app": {
+                        "type": "string",
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "source_app"
+                    ],
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "media_metadata": {
+                    "type": "object",
+                    "properties": {
+                      "camera_metadata": {
+                        "type": "object",
+                        "properties": {
+                          "has_camera_metadata": {
+                            "type": "boolean",
+                            "x-first-seen": "2026-11-23",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2026-11-23",
+                            "x-seen-in": 1
+                          }
+                        },
+                        "required": [
+                          "has_camera_metadata"
+                        ],
+                        "x-first-seen": "2026-11-23",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2026-11-23",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "camera_metadata"
+                    ],
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "uri": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "creation_timestamp",
+                  "cross_post_source",
+                  "media_metadata",
+                  "title",
+                  "uri"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
               }
             },
-            "required": [
-              "Profilbild"
-            ],
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           },
           "string_map_data": {
             "type": "object",
@@ -183,6 +288,93 @@
                 "x-last-seen": "2024-03-04",
                 "x-seen-in": 1
               },
+              "Bio": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Date of birth": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "format": "date",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
               "E-Mail-Adresse": {
                 "type": "object",
                 "properties": {
@@ -225,6 +417,92 @@
                   "de"
                 ],
                 "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              },
+              "Emoji Pong High Score": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Gender": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
                 "x-seen-in": 1
               },
               "Geschlecht": {
@@ -320,28 +598,31 @@
                     "type": "string",
                     "x-first-seen": "2024-03-04",
                     "x-langs": [
-                      "de"
+                      "de",
+                      "en"
                     ],
-                    "x-last-seen": "2024-03-04",
-                    "x-seen-in": 1
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 2
                   },
                   "timestamp": {
                     "type": "integer",
                     "x-first-seen": "2024-03-04",
                     "x-langs": [
-                      "de"
+                      "de",
+                      "en"
                     ],
-                    "x-last-seen": "2024-03-04",
-                    "x-seen-in": 1
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 2
                   },
                   "value": {
                     "type": "string",
                     "x-first-seen": "2024-03-04",
                     "x-langs": [
-                      "de"
+                      "de",
+                      "en"
                     ],
-                    "x-last-seen": "2024-03-04",
-                    "x-seen-in": 1
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 2
                   }
                 },
                 "required": [
@@ -351,9 +632,53 @@
                 ],
                 "x-first-seen": "2024-03-04",
                 "x-langs": [
-                  "de"
+                  "de",
+                  "en"
                 ],
-                "x-last-seen": "2024-03-04",
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 2
+              },
+              "Private Account": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
                 "x-seen-in": 1
               },
               "Privates Konto": {
@@ -484,24 +809,105 @@
                 ],
                 "x-last-seen": "2024-03-04",
                 "x-seen-in": 1
+              },
+              "Username": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
+              },
+              "Website": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2026-11-23",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2026-11-23",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2026-11-23",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2026-11-23",
+                "x-seen-in": 1
               }
             },
             "required": [
-              "Benutzername",
-              "E-Mail-Adresse",
-              "Geschlecht",
-              "Methode zur Bestätigung der Telefonnummer",
-              "Name",
-              "Privates Konto",
-              "Telefonnummer",
-              "Telefonnummer bestätigt"
+              "Name"
             ],
             "x-first-seen": "2024-03-04",
             "x-langs": [
-              "de"
+              "de",
+              "en"
             ],
-            "x-last-seen": "2024-03-04",
-            "x-seen-in": 1
+            "x-last-seen": "2026-11-23",
+            "x-seen-in": 2
           }
         },
         "required": [
@@ -511,17 +917,19 @@
         ],
         "x-first-seen": "2024-03-04",
         "x-langs": [
-          "de"
+          "de",
+          "en"
         ],
-        "x-last-seen": "2024-03-04",
-        "x-seen-in": 1
+        "x-last-seen": "2026-11-23",
+        "x-seen-in": 2
       },
       "x-first-seen": "2024-03-04",
       "x-langs": [
-        "de"
+        "de",
+        "en"
       ],
-      "x-last-seen": "2024-03-04",
-      "x-seen-in": 1
+      "x-last-seen": "2026-11-23",
+      "x-seen-in": 2
     }
   },
   "required": [
@@ -529,8 +937,9 @@
   ],
   "x-first-seen": "2024-03-04",
   "x-langs": [
-    "de"
+    "de",
+    "en"
   ],
-  "x-last-seen": "2024-03-04",
-  "x-seen-in": 1
+  "x-last-seen": "2026-11-23",
+  "x-seen-in": 2
 }
