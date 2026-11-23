@@ -119,8 +119,8 @@ def normalise_segment(segment, is_file, values, left_out, where):
     out, hit = values.replace_tokens(out)
     if hit:
         left_out[f"name part replaced by <value>: {where}"] += 1
-    # A trailing small number numbers the parts of one file (message_1.json, followers_2.json).
-    out = re.sub(r"_(\d{1,3})$", "_<n>", out)
+    # A trailing small number numbers the parts of one file (message_1.json, conversations-000.json).
+    out = re.sub(r"([_-])\d{1,3}$", r"\1<n>", out)
     # Something followed by an id (thread folders such as "<username>_<id>") hides a name.
     if re.search(r"_<id>$" if is_file else r"_<(id|hex)>$", out):
         out = "<name>_<id>"
