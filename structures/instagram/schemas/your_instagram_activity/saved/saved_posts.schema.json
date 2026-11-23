@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/saved/saved_posts.json",
+  "type": "object",
+  "properties": {
+    "saved_saved_media": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Saved on": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1,
+                    "x-timestamp": "unix-seconds"
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Saved on"
+            ],
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "saved_saved_media"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

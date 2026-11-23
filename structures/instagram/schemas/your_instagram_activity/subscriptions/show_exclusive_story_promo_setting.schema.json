@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/subscriptions/show_exclusive_story_promo_setting.json",
+  "type": "object",
+  "properties": {
+    "subscriptions_show_story_teaser_setting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Einstellung für Promos für exklusive Stories": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Einstellung für Promos für exklusive Stories"
+            ],
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "subscriptions_show_story_teaser_setting"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

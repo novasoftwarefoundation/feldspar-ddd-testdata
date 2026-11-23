@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "personal_information/personal_information/professional_information.json",
+  "type": "object",
+  "properties": {
+    "profile_business": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "profile_business"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

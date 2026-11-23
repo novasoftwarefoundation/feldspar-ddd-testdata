@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "security_and_login_information/login_and_account_creation/last_known_location.json",
+  "type": "object",
+  "properties": {
+    "account_history_imprecise_last_known_location": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Ungenauer Breitengrad": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              },
+              "Ungenauer Längengrad": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              },
+              "Upload-Zeitpunkt": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Ungenauer Breitengrad",
+              "Ungenauer Längengrad",
+              "Upload-Zeitpunkt"
+            ],
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "account_history_imprecise_last_known_location"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

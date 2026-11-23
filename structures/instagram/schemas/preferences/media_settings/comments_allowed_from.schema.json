@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "preferences/media_settings/comments_allowed_from.json",
+  "type": "object",
+  "properties": {
+    "settings_allow_comments_from": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Kommentieren gestattet für": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Kommentieren gestattet für"
+            ],
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "settings_allow_comments_from"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

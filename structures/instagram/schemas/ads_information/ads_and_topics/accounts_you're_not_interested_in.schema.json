@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ads_information/ads_and_topics/accounts_you're_not_interested_in.json",
+  "type": "object",
+  "properties": {
+    "impressions_history_recs_hidden_authors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "media_map_data": {
+            "type": "object",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_map_data": {
+            "type": "object",
+            "properties": {
+              "Benutzername": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              },
+              "Zeit": {
+                "type": "object",
+                "properties": {
+                  "href": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  },
+                  "timestamp": {
+                    "type": "integer",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1,
+                    "x-timestamp": "unix-seconds"
+                  },
+                  "value": {
+                    "type": "string",
+                    "x-first-seen": "2024-03-04",
+                    "x-langs": [
+                      "de"
+                    ],
+                    "x-last-seen": "2024-03-04",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "href",
+                  "timestamp",
+                  "value"
+                ],
+                "x-first-seen": "2024-03-04",
+                "x-langs": [
+                  "de"
+                ],
+                "x-last-seen": "2024-03-04",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "Benutzername",
+              "Zeit"
+            ],
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_map_data",
+          "string_map_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "impressions_history_recs_hidden_authors"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "apps_and_websites_off_of_instagram/apps_and_websites/your_activity_off_meta_technologies.json",
+  "type": "object",
+  "properties": {
+    "apps_and_websites_off_meta_activity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1
+                },
+                "id": {
+                  "type": "integer",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1
+                },
+                "timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
+                }
+              },
+              "required": [
+                "id",
+                "timestamp",
+                "type"
+              ],
+              "x-first-seen": "2024-03-04",
+              "x-langs": [
+                "de"
+              ],
+              "x-last-seen": "2024-03-04",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "name": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "events",
+          "name"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "apps_and_websites_off_meta_activity"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

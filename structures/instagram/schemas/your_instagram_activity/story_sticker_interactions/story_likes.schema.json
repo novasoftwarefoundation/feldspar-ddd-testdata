@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "your_instagram_activity/story_sticker_interactions/story_likes.json",
+  "type": "object",
+  "properties": {
+    "story_activities_story_likes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_list_data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
+                }
+              },
+              "required": [
+                "timestamp"
+              ],
+              "x-first-seen": "2024-03-04",
+              "x-langs": [
+                "de"
+              ],
+              "x-last-seen": "2024-03-04",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "string_list_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "story_activities_story_likes"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}

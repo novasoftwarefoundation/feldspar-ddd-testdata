@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "connections/followers_and_following/close_friends.json",
+  "type": "object",
+  "properties": {
+    "relationships_close_friends": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "media_list_data": {
+            "type": "array",
+            "x-always-empty": true,
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          },
+          "string_list_data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "href": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1
+                },
+                "timestamp": {
+                  "type": "integer",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1,
+                  "x-timestamp": "unix-seconds"
+                },
+                "value": {
+                  "type": "string",
+                  "x-first-seen": "2024-03-04",
+                  "x-langs": [
+                    "de"
+                  ],
+                  "x-last-seen": "2024-03-04",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "href",
+                "timestamp",
+                "value"
+              ],
+              "x-first-seen": "2024-03-04",
+              "x-langs": [
+                "de"
+              ],
+              "x-last-seen": "2024-03-04",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2024-03-04",
+            "x-langs": [
+              "de"
+            ],
+            "x-last-seen": "2024-03-04",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "media_list_data",
+          "string_list_data",
+          "title"
+        ],
+        "x-first-seen": "2024-03-04",
+        "x-langs": [
+          "de"
+        ],
+        "x-last-seen": "2024-03-04",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2024-03-04",
+      "x-langs": [
+        "de"
+      ],
+      "x-last-seen": "2024-03-04",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "relationships_close_friends"
+  ],
+  "x-first-seen": "2024-03-04",
+  "x-langs": [
+    "de"
+  ],
+  "x-last-seen": "2024-03-04",
+  "x-seen-in": 1
+}
