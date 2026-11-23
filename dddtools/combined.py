@@ -268,9 +268,11 @@ def walk(schema, path):
         yield from walk(child, path + label_of(kind, name, child))
 
 
-def expected_seen(expected, patterns):
-    """`expected` is a file name, or alternatives separated by " | "."""
-    regexes = [re.compile(pattern_regex(p.rpartition("/")[2])) for p in patterns]
+def expected_seen(expected, files):
+    """`expected` is a file name, or alternatives separated by " | ". Media files and names made of
+    placeholders only (such as <id>) never count as a match."""
+    names = [p.rpartition("/")[2] for p, e in files.items() if e["kind"] != "media"]
+    regexes = [re.compile(pattern_regex(n)) for n in names if re.sub(r"<[a-z]+>", "", n).strip("._-")]
     return any(r.match(name.strip().rpartition("/")[2]) for name in expected.split("|") for r in regexes)
 
 
