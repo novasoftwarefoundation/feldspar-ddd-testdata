@@ -1,0 +1,26 @@
+# Layout of google packages, combined over every package added with `ddd.py add`.
+# Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
+#   expected: file names the platform's donation scripts read (alternatives separated by " | ")
+#   wording: the platform's own words that also occur as values, kept in names and keys
+expected:
+  - "comments.csv | reacties.csv"
+  - "kijkgeschiedenis.json"
+  - "search-history.json"
+  - "subscriptions.csv | abonnementen.csv"
+  - "watch-history.json"
+  - "zoekgeschiedenis.json"
+files: {}
+left_out: {}
+notes:
+  - "expected: the file names that the D3i data-donation-task scripts (platforms/google.py and youtube.py) read."
+packages: []
+platform: "google"
+wording:
+  - "Advertenties"
+  - "Chrome"
+  - "Discover"
+  - "Google"
+  - "Music"
+  - "Nieuws"
+  - "YouTube"
+  - "Zoeken"

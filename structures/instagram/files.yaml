@@ -1,0 +1,54 @@
+# Layout of instagram packages, combined over every package added with `ddd.py add`.
+# Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
+#   expected: file names the platform's donation scripts read (alternatives separated by " | ")
+#   wording: the platform's own words that also occur as values, kept in names and keys
+expected:
+  - "account_based_in.json"
+  - "account_information.json"
+  - "account_privacy_changes.json"
+  - "account_searches.json"
+  - "ads_clicked.json"
+  - "ads_interests.json"
+  - "ads_viewed.json"
+  - "advertisers_using_your_activity_or_information.json"
+  - "camera_information.json"
+  - "comments_allowed_from.json"
+  - "devices.json"
+  - "eligibility.json"
+  - "followers.json"
+  - "followers_1.json"
+  - "following.json"
+  - "liked_comments.json"
+  - "liked_posts.json"
+  - "login_activity.json"
+  - "pending_follow_requests.json"
+  - "personal_information.json"
+  - "post_comments.json"
+  - "post_comments_1.json"
+  - "posts_viewed.json"
+  - "professional_information.json"
+  - "profile_changes.json"
+  - "profile_photos.json"
+  - "profile_searches.json"
+  - "recent_follow_requests.json"
+  - "recently_deleted_content.json"
+  - "recently_unfollowed_accounts.json"
+  - "reels.json"
+  - "saved_posts.json"
+  - "secret_conversations.json"
+  - "signup_information.json"
+  - "stories.json"
+  - "story_likes.json"
+  - "subscription_for_no_ads.json"
+  - "threads_viewed.json"
+  - "use_cross-app_messaging.json"
+  - "videos_watched.json"
+  - "word_or_phrase_searches.json"
+  - "your_topics.json"
+files: {}
+left_out: {}
+notes:
+  - "expected: the file names that the D3i data-donation-task scripts (platforms/instagram.py) read."
+packages: []
+platform: "instagram"
+wording: []
