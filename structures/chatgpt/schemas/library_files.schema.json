@@ -631,8 +631,8 @@
           "object",
           "null"
         ],
-        "patternProperties": {
-          "^.+:fit\\-256x256$": {
+        "properties": {
+          "sediment:fit-256x256": {
             "type": "object",
             "properties": {
               "generated_at": {
@@ -754,7 +754,6 @@
               "width"
             ],
             "x-first-seen": "2026-09-28",
-            "x-key-pattern": "<value>:fit-256x256",
             "x-langs": [
               "und"
             ],
@@ -762,6 +761,9 @@
             "x-seen-in": 1
           }
         },
+        "required": [
+          "sediment:fit-256x256"
+        ],
         "x-first-seen": "2026-09-28",
         "x-langs": [
           "und"

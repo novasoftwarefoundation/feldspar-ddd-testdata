@@ -13,7 +13,7 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 Names, keys and labels the extractor was not sure about. They were replaced by a placeholder or dropped; only the place and the count are kept.
 
-- 4 × key part replaced by <value>: library_files.json $[].thumbnail_sources
+- Nothing.
 
 ## Known gaps
 

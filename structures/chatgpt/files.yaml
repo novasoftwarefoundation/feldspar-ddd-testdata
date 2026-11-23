@@ -105,8 +105,7 @@ files:
 last_change:
   date: "2026-09-28"
   summary: "package of 2026-09-28 (und) added: 9 new, 0 changed shape, 0 not seen since an earlier package"
-left_out:
-  "key part replaced by <value>: library_files.json $[].thumbnail_sources": 4
+left_out: {}
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/chatgpt.py) read."
 packages:
