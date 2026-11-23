@@ -1,0 +1,2638 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "user_data.json",
+  "type": "object",
+  "properties": {
+    "Activity": {
+      "type": "object",
+      "properties": {
+        "Favorite Effects": {
+          "type": "object",
+          "properties": {
+            "FavoriteEffectsList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteEffectsList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Favorite Hashtags": {
+          "type": "object",
+          "properties": {
+            "FavoriteHashtagList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteHashtagList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Favorite Sounds": {
+          "type": "object",
+          "properties": {
+            "FavoriteSoundList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteSoundList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Favorite Videos": {
+          "type": "object",
+          "properties": {
+            "FavoriteVideoList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteVideoList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Follower List": {
+          "type": "object",
+          "properties": {
+            "FansList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "UserName": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "UserName"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "IsFastLane": {
+              "type": "boolean",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FansList",
+            "IsFastLane"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Following List": {
+          "type": "object",
+          "properties": {
+            "Following": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "UserName": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "UserName"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "IsFastLane": {
+              "type": "boolean",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "Following",
+            "IsFastLane"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Hashtag": {
+          "type": "object",
+          "properties": {
+            "HashtagList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "HashtagLink": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "HashtagName": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "HashtagLink",
+                  "HashtagName"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "HashtagList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Like List": {
+          "type": "object",
+          "properties": {
+            "ItemFavoriteList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ItemFavoriteList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Login History": {
+          "type": "object",
+          "properties": {
+            "LoginHistoryList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Carrier": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "DeviceModel": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "DeviceSystem": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "IP": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "NetworkType": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Carrier",
+                  "Date",
+                  "DeviceModel",
+                  "DeviceSystem",
+                  "IP",
+                  "NetworkType"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "LoginHistoryList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Most Recent Location Data": {
+          "type": "object",
+          "properties": {
+            "LocationData": {
+              "type": "object",
+              "properties": {
+                "Date": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-format": "local-date-time",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "GpsData": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "LastRegion": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "Date",
+                "GpsData",
+                "LastRegion"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "LocationData"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Purchase History": {
+          "type": "object",
+          "properties": {
+            "BuyGifts": {
+              "type": "object",
+              "properties": {
+                "BuyGifts": {
+                  "type": "null",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "BuyGifts"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "SendGifts": {
+              "type": "object",
+              "properties": {
+                "SendGifts": {
+                  "type": "null",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "SendGifts"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "BuyGifts",
+            "SendGifts"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Search History": {
+          "type": "object",
+          "properties": {
+            "SearchList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "SearchTerm": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "SearchTerm"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "SearchList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Share History": {
+          "type": "object",
+          "properties": {
+            "ShareHistoryList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Method": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "SharedContent": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link",
+                  "Method",
+                  "SharedContent"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ShareHistoryList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Status": {
+          "type": "object",
+          "properties": {
+            "Status List": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Android ID": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "App Version": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "GAID": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "IDFA": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "IDFV": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Resolution": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Web ID": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Android ID",
+                  "App Version",
+                  "GAID",
+                  "IDFA",
+                  "IDFV",
+                  "Resolution",
+                  "Web ID"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "Status List"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Video Browsing History": {
+          "type": "object",
+          "properties": {
+            "VideoList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "VideoList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Favorite Effects",
+        "Favorite Hashtags",
+        "Favorite Sounds",
+        "Favorite Videos",
+        "Follower List",
+        "Following List",
+        "Hashtag",
+        "Like List",
+        "Login History",
+        "Most Recent Location Data",
+        "Purchase History",
+        "Search History",
+        "Share History",
+        "Status",
+        "Video Browsing History"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Ads and data": {
+      "type": "object",
+      "properties": {
+        "Ad Interests": {
+          "type": "object",
+          "properties": {
+            "AdInterestCategories": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "AdInterestCategories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Off TikTok Activity": {
+          "type": "object",
+          "properties": {
+            "OffTikTokActivityDataList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Event": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Source": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "TimeStamp": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Event",
+                  "Source",
+                  "TimeStamp"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "OffTikTokActivityDataList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Ad Interests",
+        "Off TikTok Activity"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "App Settings": {
+      "type": "object",
+      "properties": {
+        "Block": {
+          "type": "object",
+          "properties": {
+            "BlockList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "BlockList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Settings": {
+          "type": "object",
+          "properties": {
+            "SettingsMap": {
+              "type": "object",
+              "properties": {
+                "Allow DownLoad": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow Others to Find Me": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "App Language": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Content Preferences": {
+                  "type": "object",
+                  "properties": {
+                    "Keyword filters for videos in Following feed": {
+                      "type": "null",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "Keyword filters for videos in For You feed": {
+                      "type": "null",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "Video Languages Preferences": {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "required": [
+                    "Keyword filters for videos in Following feed",
+                    "Keyword filters for videos in For You feed",
+                    "Video Languages Preferences"
+                  ],
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Family Content Preferences": {
+                  "type": "object",
+                  "patternProperties": {
+                    "^.+$": {
+                      "type": "object",
+                      "properties": {
+                        "FollowingMuteWords": {
+                          "type": "null",
+                          "x-first-seen": "2024-12-10",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2024-12-10",
+                          "x-seen-in": 1
+                        },
+                        "ForYouMuteWords": {
+                          "type": "null",
+                          "x-first-seen": "2024-12-10",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2024-12-10",
+                          "x-seen-in": 1
+                        },
+                        "Type": {
+                          "type": "string",
+                          "x-first-seen": "2024-12-10",
+                          "x-langs": [
+                            "en"
+                          ],
+                          "x-last-seen": "2024-12-10",
+                          "x-seen-in": 1
+                        }
+                      },
+                      "required": [
+                        "FollowingMuteWords",
+                        "ForYouMuteWords",
+                        "Type"
+                      ],
+                      "x-first-seen": "2024-12-10",
+                      "x-key-pattern": "<name>",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Filter Comments": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Interests": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Personalized Ads": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Private Account": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Push Notification": {
+                  "type": "object",
+                  "properties": {
+                    "Desktop notification": {
+                      "type": "string",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "New Comments on My Video": {
+                      "type": "string",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "New Fans": {
+                      "type": "string",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "New Likes on My Video": {
+                      "type": "string",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "required": [
+                    "Desktop notification",
+                    "New Comments on My Video",
+                    "New Fans",
+                    "New Likes on My Video"
+                  ],
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Web Language": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Who Can Duet With Me": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Who Can Post Comments": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Who Can Send Me Message": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Who Can Stitch with your videos": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Who Can View Videos I Liked": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "Allow DownLoad",
+                "Allow Others to Find Me",
+                "App Language",
+                "Content Preferences",
+                "Family Content Preferences",
+                "Filter Comments",
+                "Interests",
+                "Personalized Ads",
+                "Private Account",
+                "Push Notification",
+                "Web Language",
+                "Who Can Duet With Me",
+                "Who Can Post Comments",
+                "Who Can Send Me Message",
+                "Who Can Stitch with your videos",
+                "Who Can View Videos I Liked"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "SettingsMap"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Block",
+        "Settings"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Comment": {
+      "type": "object",
+      "properties": {
+        "Comments": {
+          "type": "object",
+          "properties": {
+            "CommentsList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Comment": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "Photo": {
+                    "type": "string",
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Comment",
+                  "Date",
+                  "Photo"
+                ],
+                "x-first-seen": "2024-12-10",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-12-10",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "CommentsList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Comments"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Direct Messages": {
+      "type": "object",
+      "properties": {
+        "Chat History": {
+          "type": "object",
+          "properties": {
+            "ChatHistory": {
+              "type": "object",
+              "patternProperties": {
+                "^Chat\\ History\\ with\\ .+:$": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Content": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "Date": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-format": "local-date-time",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "From": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "Content",
+                      "Date",
+                      "From"
+                    ],
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "x-first-seen": "2024-12-10",
+                  "x-key-pattern": "Chat History with <value>:",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ChatHistory"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Chat History"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Income Plus Wallet Transactions": {
+      "type": "object",
+      "properties": {
+        "Income Plus Wallet Transaction": {
+          "type": "object",
+          "properties": {
+            "TransactionsList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "TransactionsList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Income Plus Wallet Transaction"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Poi Review": {
+      "type": "object",
+      "properties": {
+        "POI Review": {
+          "type": "object",
+          "properties": {
+            "ReviewsList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ReviewsList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "POI Review"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Profile": {
+      "type": "object",
+      "properties": {
+        "Auto Fill": {
+          "type": "object",
+          "properties": {
+            "Address": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "City": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "Country": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "Email": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "FirstName": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "LastName": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "PhoneNumber": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "State": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "Unit": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "ZipCode": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "Address",
+            "City",
+            "Country",
+            "Email",
+            "FirstName",
+            "LastName",
+            "PhoneNumber",
+            "State",
+            "Unit",
+            "ZipCode"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Profile Information": {
+          "type": "object",
+          "properties": {
+            "ProfileMap": {
+              "type": "object",
+              "properties": {
+                "PlatformInfo": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Description": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "Name": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "Platform": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "Profile Photo": {
+                        "type": "string",
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      }
+                    },
+                    "required": [
+                      "Description",
+                      "Name",
+                      "Platform",
+                      "Profile Photo"
+                    ],
+                    "x-first-seen": "2024-12-10",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-12-10",
+                    "x-seen-in": 1
+                  },
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "bioDescription": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "birthDate": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "emailAddress": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "likesReceived": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "profilePhoto": {
+                  "type": "string",
+                  "format": "uri",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "profileVideo": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "telephoneNumber": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "userName": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "PlatformInfo",
+                "bioDescription",
+                "birthDate",
+                "emailAddress",
+                "likesReceived",
+                "profilePhoto",
+                "profileVideo",
+                "telephoneNumber",
+                "userName"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ProfileMap"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Auto Fill",
+        "Profile Information"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Tiktok Live": {
+      "type": "object",
+      "properties": {
+        "Go Live History": {
+          "type": "object",
+          "properties": {
+            "GoLiveList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "GoLiveList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Go Live Settings": {
+          "type": "object",
+          "properties": {
+            "SettingsMap": {
+              "type": "object",
+              "properties": {
+                "Allow agencies to find and invite you": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow others to invite you to co-host in LIVE": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow people to send and receive comments during your LIVE": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow suggested LIVE hosts to invite you to co-host in LIVE": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow viewers to request to go LIVE with you": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow viewers to see and send questions and answers in your LIVE": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Allow viewers to send you gifts during your LIVE": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Hide comments that contain the following keywords from your LIVE": {
+                  "type": "array",
+                  "x-always-empty": true,
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Hide potential spam or offensive comments from your LIVE": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "People you assigned to moderate your LIVE": {
+                  "type": "array",
+                  "x-always-empty": true,
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "Show your username and gift information in features with ranking lists": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "Allow agencies to find and invite you",
+                "Allow others to invite you to co-host in LIVE",
+                "Allow people to send and receive comments during your LIVE",
+                "Allow suggested LIVE hosts to invite you to co-host in LIVE",
+                "Allow viewers to request to go LIVE with you",
+                "Allow viewers to see and send questions and answers in your LIVE",
+                "Allow viewers to send you gifts during your LIVE",
+                "Hide comments that contain the following keywords from your LIVE",
+                "Hide potential spam or offensive comments from your LIVE",
+                "People you assigned to moderate your LIVE",
+                "Show your username and gift information in features with ranking lists"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "SettingsMap"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Watch Live History": {
+          "type": "object",
+          "properties": {
+            "WatchLiveMap": {
+              "type": "object",
+              "patternProperties": {
+                "^.+$": {
+                  "type": "object",
+                  "properties": {
+                    "Comments": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "CommentContent": {
+                            "type": "string",
+                            "x-first-seen": "2024-12-10",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2024-12-10",
+                            "x-seen-in": 1
+                          },
+                          "CommentTime": {
+                            "type": "string",
+                            "x-first-seen": "2024-12-10",
+                            "x-format": "local-date-time",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2024-12-10",
+                            "x-seen-in": 1
+                          },
+                          "RawTime": {
+                            "type": "integer",
+                            "x-first-seen": "2024-12-10",
+                            "x-langs": [
+                              "en"
+                            ],
+                            "x-last-seen": "2024-12-10",
+                            "x-seen-in": 1
+                          }
+                        },
+                        "required": [
+                          "CommentContent",
+                          "CommentTime",
+                          "RawTime"
+                        ],
+                        "x-first-seen": "2024-12-10",
+                        "x-langs": [
+                          "en"
+                        ],
+                        "x-last-seen": "2024-12-10",
+                        "x-seen-in": 1
+                      },
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "Link": {
+                      "type": "string",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "Questions": {
+                      "type": "null",
+                      "x-first-seen": "2024-12-10",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    },
+                    "WatchTime": {
+                      "type": "string",
+                      "x-first-seen": "2024-12-10",
+                      "x-format": "local-date-time",
+                      "x-langs": [
+                        "en"
+                      ],
+                      "x-last-seen": "2024-12-10",
+                      "x-seen-in": 1
+                    }
+                  },
+                  "required": [
+                    "Comments",
+                    "Link",
+                    "Questions",
+                    "WatchTime"
+                  ],
+                  "x-first-seen": "2024-12-10",
+                  "x-key-pattern": "<id>",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "WatchLiveMap"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Watch Live Settings": {
+          "type": "object",
+          "properties": {
+            "MostRecentModificationTimeInApp": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "MostRecentModificationTimeInWeb": {
+              "type": "string",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            },
+            "WatchLiveSettingsMap": {
+              "type": "object",
+              "properties": {
+                "app": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                },
+                "web": {
+                  "type": "string",
+                  "x-first-seen": "2024-12-10",
+                  "x-langs": [
+                    "en"
+                  ],
+                  "x-last-seen": "2024-12-10",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "app",
+                "web"
+              ],
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "MostRecentModificationTimeInApp",
+            "MostRecentModificationTimeInWeb",
+            "WatchLiveSettingsMap"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Go Live History",
+        "Go Live Settings",
+        "Watch Live History",
+        "Watch Live Settings"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Tiktok Shopping": {
+      "type": "object",
+      "properties": {
+        "Communication History": {
+          "type": "object",
+          "properties": {
+            "CommunicationHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "CommunicationHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Current Payment Information": {
+          "type": "object",
+          "properties": {
+            "PayCard": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "PayCard"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Customer Support History": {
+          "type": "object",
+          "properties": {
+            "CustomerSupportHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "CustomerSupportHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Order Dispute History": {
+          "type": "object",
+          "properties": {
+            "OrderDisputeHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "OrderDisputeHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Order History": {
+          "type": "object",
+          "properties": {
+            "OrderHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "OrderHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Product Browsing History": {
+          "type": "object",
+          "properties": {
+            "ProductBrowsingHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ProductBrowsingHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Product Review History": {
+          "type": "object",
+          "properties": {
+            "ProductReviewHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ProductReviewHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Return and Refund History": {
+          "type": "object",
+          "properties": {
+            "ReturnAndRefundHistories": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ReturnAndRefundHistories"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Saved Address Information": {
+          "type": "object",
+          "properties": {
+            "SavedAddress": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "SavedAddress"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Shopping Cart List": {
+          "type": "object",
+          "properties": {
+            "ShoppingCart": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "ShoppingCart"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        },
+        "Vouchers": {
+          "type": "object",
+          "properties": {
+            "Vouchers": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "Vouchers"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Communication History",
+        "Current Payment Information",
+        "Customer Support History",
+        "Order Dispute History",
+        "Order History",
+        "Product Browsing History",
+        "Product Review History",
+        "Return and Refund History",
+        "Saved Address Information",
+        "Shopping Cart List",
+        "Vouchers"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    },
+    "Video": {
+      "type": "object",
+      "properties": {
+        "Videos": {
+          "type": "object",
+          "properties": {
+            "VideoList": {
+              "type": "null",
+              "x-first-seen": "2024-12-10",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-12-10",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "VideoList"
+          ],
+          "x-first-seen": "2024-12-10",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-12-10",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Videos"
+      ],
+      "x-first-seen": "2024-12-10",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-12-10",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "Activity",
+    "Ads and data",
+    "App Settings",
+    "Comment",
+    "Direct Messages",
+    "Income Plus Wallet Transactions",
+    "Poi Review",
+    "Profile",
+    "Tiktok Live",
+    "Tiktok Shopping",
+    "Video"
+  ],
+  "x-first-seen": "2024-12-10",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-12-10",
+  "x-seen-in": 1
+}
