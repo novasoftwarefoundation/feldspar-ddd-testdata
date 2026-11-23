@@ -4,8 +4,8 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 ## Coverage
 
-- Packages: 0
-- File patterns seen: 0 ()
+- Packages: 1, export dates 2024-09-02; languages en
+- File patterns seen: 1 (json 1)
 - No media files (photos, videos, audio) in any package yet.
 - Lists that were empty in every package, so their items are unknown: 0
 
@@ -17,8 +17,7 @@ Names, keys and labels the extractor was not sure about. They were replaced by a
 
 ## Known gaps
 
-Files the platform's donation scripts read that no package has shown yet: 1
-- `user_data_tiktok.json | user_data.json`
+Files the platform's donation scripts read that no package has shown yet: 0
 
 <!-- known gaps by hand: start -->
 
@@ -26,4 +25,4 @@ Files the platform's donation scripts read that no package has shown yet: 1
 
 ## Last change
 
-- None yet.
+- 2024-09-02: package of 2024-09-02 (en) added: 1 new, 0 changed shape, 0 not seen since an earlier package

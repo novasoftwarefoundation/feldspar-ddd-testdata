@@ -5,12 +5,28 @@
 #   personal_keys: patterns (regular expressions) of keys that hold user data, written as <name>
 expected:
   - "user_data_tiktok.json | user_data.json"
-files: {}
+files:
+  "user_data_tiktok.json":
+    ascii: true
+    first_seen: "2024-09-02"
+    indent: 2
+    kind: "json"
+    langs:
+      - "en"
+    last_seen: "2024-09-02"
+    meta_encoding: false
+    schema: "schemas/user_data_tiktok.schema.json"
+    seen_in: 1
+last_change:
+  date: "2024-09-02"
+  summary: "package of 2024-09-02 (en) added: 1 new, 0 changed shape, 0 not seen since an earlier package"
 left_out: {}
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/tiktok.py) read."
   - "personal_keys: TikTok writes its own keys in Title Case or CamelCase; a lower-case key with letters and a dot, underscore or digit is a username (as under Family Content Preferences)."
-packages: []
+packages:
+  - date: "2024-09-02"
+    lang: "en"
 personal_keys:
   - "(?=.*[a-z])(?=.*[._0-9])[a-z0-9._]+"
 platform: "tiktok"

@@ -1,0 +1,682 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "user_data_tiktok.json",
+  "type": "object",
+  "properties": {
+    "Activity": {
+      "type": "object",
+      "properties": {
+        "Comment History": {
+          "type": "object",
+          "properties": {
+            "CommentList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Comment": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Comment",
+                  "Date",
+                  "Link"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "CommentList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Favorite Effects": {
+          "type": "object",
+          "properties": {
+            "FavoriteEffectsList": {
+              "type": "null",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteEffectsList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Favorite Hashtags": {
+          "type": "object",
+          "properties": {
+            "FavoriteHashtagList": {
+              "type": "null",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteHashtagList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Favorite Sounds": {
+          "type": "object",
+          "properties": {
+            "FavoriteSoundList": {
+              "type": "null",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "FavoriteSoundList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Favorite Videos": {
+          "type": "object",
+          "properties": {
+            "App": {
+              "type": "integer",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "FavoriteVideoList": {
+              "type": "null",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "App",
+            "FavoriteVideoList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Follower List": {
+          "type": "object",
+          "properties": {
+            "App": {
+              "type": "integer",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "FansList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "UserName": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "UserName"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "IsFastLane": {
+              "type": "boolean",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "App",
+            "FansList",
+            "IsFastLane"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Following List": {
+          "type": "object",
+          "properties": {
+            "App": {
+              "type": "integer",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "Following": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "UserName": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "UserName"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "IsFastLane": {
+              "type": "boolean",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "App",
+            "Following",
+            "IsFastLane"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Hashtag": {
+          "type": "object",
+          "properties": {
+            "HashtagList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "HashtagLink": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "HashtagName": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "HashtagLink",
+                  "HashtagName"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "HashtagList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Like List": {
+          "type": "object",
+          "properties": {
+            "App": {
+              "type": "integer",
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            },
+            "ItemFavoriteList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "App",
+            "ItemFavoriteList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Login History": {
+          "type": "object",
+          "properties": {
+            "LoginHistoryList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "Device": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "IP": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Device",
+                  "IP"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "LoginHistoryList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Search History": {
+          "type": "object",
+          "properties": {
+            "SearchList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "Query": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Query"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "SearchList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        },
+        "Watch History": {
+          "type": "object",
+          "properties": {
+            "WatchHistoryList": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Date": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-format": "local-date-time",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "Link": {
+                    "type": "string",
+                    "format": "uri",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  },
+                  "VideoTitle": {
+                    "type": "string",
+                    "x-first-seen": "2024-09-02",
+                    "x-langs": [
+                      "en"
+                    ],
+                    "x-last-seen": "2024-09-02",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "Date",
+                  "Link",
+                  "VideoTitle"
+                ],
+                "x-first-seen": "2024-09-02",
+                "x-langs": [
+                  "en"
+                ],
+                "x-last-seen": "2024-09-02",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2024-09-02",
+              "x-langs": [
+                "en"
+              ],
+              "x-last-seen": "2024-09-02",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "WatchHistoryList"
+          ],
+          "x-first-seen": "2024-09-02",
+          "x-langs": [
+            "en"
+          ],
+          "x-last-seen": "2024-09-02",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "Comment History",
+        "Favorite Effects",
+        "Favorite Hashtags",
+        "Favorite Sounds",
+        "Favorite Videos",
+        "Follower List",
+        "Following List",
+        "Hashtag",
+        "Like List",
+        "Login History",
+        "Search History",
+        "Watch History"
+      ],
+      "x-first-seen": "2024-09-02",
+      "x-langs": [
+        "en"
+      ],
+      "x-last-seen": "2024-09-02",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "Activity"
+  ],
+  "x-first-seen": "2024-09-02",
+  "x-langs": [
+    "en"
+  ],
+  "x-last-seen": "2024-09-02",
+  "x-seen-in": 1
+}
