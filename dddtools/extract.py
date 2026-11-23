@@ -214,6 +214,8 @@ class Extractor:
             self.values.add(value)
 
     def key_pattern(self, key, where):
+        if key.strip().casefold() in self.values.wording:
+            return key
         if any(p.fullmatch(key) for p in self.personal_keys):
             self.left_out[f"key that is user data replaced by <name>: {where}"] += 1
             return "<name>"
@@ -267,6 +269,8 @@ class Extractor:
             node.types.add("null")
 
     def label_ok(self, label):
+        if label.strip().casefold() in self.values.wording:
+            return True
         return (len(label) <= 80 and "@" not in label and not URL.search(label)
                 and not re.search(r"\d{3,}", label) and "\n" not in label and not self.values.contains(label))
 

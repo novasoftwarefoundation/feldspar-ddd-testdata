@@ -20,7 +20,8 @@ from .extract import TYPE_ORDER, pattern_regex
 FILES_HEADER = """Layout of {platform} packages, combined over every package added with `ddd.py add`.
 Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
   expected: file names the platform's donation scripts read (alternatives separated by " | ")
-  wording: the platform's own words that also occur as values, kept in names and keys
+  wording: the platform's own words and labels, kept in names, keys and labels even where they also occur as
+    values or are long
   personal_keys: patterns (regular expressions) of keys that hold user data, written as <name>"""
 
 

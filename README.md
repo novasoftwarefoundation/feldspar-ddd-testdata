@@ -55,8 +55,9 @@ Write one package's structure to a file, to review it before adding:
 
 Every name that can hold personal data becomes a placeholder: `<name>_<id>` for message folders, `<id>` for media
 files, `<value>` for a word that is also a value in the package, `<text>` for long free text. Whatever the extractor
-is unsure about is left out and counted, by place only, in `LIMITS.md`. Words that are the platform's own but also
-occur as values (Google's product names, for example) can be listed under `wording` in `files.yaml`.
+is unsure about is left out and counted, by place only, in `LIMITS.md`. Words and labels that are the platform's own
+but also occur as values or are long (Google's product names, Meta's longer field labels) can be listed under
+`wording` in `files.yaml`; keys that hold user data on a platform (TikTok's usernames) under `personal_keys`.
 
 ## Generators
 
