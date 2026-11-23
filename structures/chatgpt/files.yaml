@@ -2,6 +2,7 @@
 # Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
 #   expected: file names the platform's donation scripts read (alternatives separated by " | ")
 #   wording: the platform's own words that also occur as values, kept in names and keys
+#   personal_keys: patterns (regular expressions) of keys that hold user data, written as <name>
 expected:
   - "conversations-000.json"
   - "conversations.json"
@@ -13,6 +14,7 @@ left_out: {}
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/chatgpt.py) read."
 packages: []
+personal_keys: []
 platform: "chatgpt"
 wording:
   - "file"

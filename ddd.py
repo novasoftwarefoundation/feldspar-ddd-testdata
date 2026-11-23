@@ -27,8 +27,13 @@ def structures(platform):
     return os.path.join(ROOT, "structures", platform)
 
 
-def wording(platform):
-    return Combined(structures(platform), platform).meta["wording"]
+def rules(combined):
+    """The hand-edited extraction rules of a platform: its own wording and its personal keys."""
+    return combined.meta["wording"], combined.meta["personal_keys"]
+
+
+def platform_rules(platform):
+    return rules(Combined(structures(platform), platform))
 
 
 def load(target, platform=None):
@@ -40,7 +45,7 @@ def load(target, platform=None):
             return json.load(f)
     if not platform:
         sys.exit("--platform is needed to read a package")
-    return extract(target, platform, wording(platform))
+    return extract(target, platform, *platform_rules(platform))
 
 
 def main():
@@ -82,13 +87,13 @@ def main():
         if not date:
             sys.exit("the zip has no entry dates; pass --date")
         combined = Combined(structures(a.platform), a.platform)
-        changes = combined.add(extract(a.package, a.platform, combined.meta["wording"]), date, a.lang)
+        changes = combined.add(extract(a.package, a.platform, *rules(combined)), date, a.lang)
         combined.save()
         print("\n".join(changes) if changes else "no changes")
         print(combined.meta["last_change"]["summary"])
     elif a.command == "extract":
         with open(a.output, "w", encoding="utf-8") as f:
-            json.dump(extract(a.package, a.platform, wording(a.platform)), f, indent=2, ensure_ascii=False, sort_keys=True)
+            json.dump(extract(a.package, a.platform, *platform_rules(a.platform)), f, indent=2, ensure_ascii=False, sort_keys=True)
             f.write("\n")
     elif a.command == "diff":
         lines = compare(load(a.a, a.platform), load(a.b, a.platform))
@@ -96,7 +101,7 @@ def main():
     elif a.command == "check":
         combined = Combined(structures(a.platform), a.platform)
         known = as_snapshot(combined)
-        snapshot = extract(a.package, a.platform, combined.meta["wording"])
+        snapshot = extract(a.package, a.platform, *rules(combined))
         lines = compare(known, snapshot, check=True)
         lines += [f"! {where}" for where in sorted(snapshot["left_out"]) if where.startswith("unreadable JSON")]
         print("\n".join(lines) if lines else "everything in this package is known")

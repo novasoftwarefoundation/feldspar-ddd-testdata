@@ -20,7 +20,8 @@ from .extract import TYPE_ORDER, pattern_regex
 FILES_HEADER = """Layout of {platform} packages, combined over every package added with `ddd.py add`.
 Written by ddd.py; only `expected`, `wording` and `notes` are edited by hand:
   expected: file names the platform's donation scripts read (alternatives separated by " | ")
-  wording: the platform's own words that also occur as values, kept in names and keys"""
+  wording: the platform's own words that also occur as values, kept in names and keys
+  personal_keys: patterns (regular expressions) of keys that hold user data, written as <name>"""
 
 
 def types_of(schema):
@@ -160,13 +161,15 @@ class Combined:
                 self.meta = yamlio.loads(f.read())
         else:
             self.meta = {"platform": platform or os.path.basename(os.path.normpath(folder)), "packages": [],
-                         "files": {}, "left_out": {}, "expected": [], "wording": [], "notes": []}
+                         "files": {}, "left_out": {}, "expected": [], "wording": [], "personal_keys": [],
+                         "notes": []}
         self.meta.setdefault("files", {})
         self.meta.setdefault("left_out", {})
         self.meta.setdefault("expected", [])
         self.meta.setdefault("packages", [])
         self.meta.setdefault("notes", [])
         self.meta.setdefault("wording", [])
+        self.meta.setdefault("personal_keys", [])
         self.schemas = {}
         for pattern, entry in self.meta["files"].items():
             if entry.get("schema"):

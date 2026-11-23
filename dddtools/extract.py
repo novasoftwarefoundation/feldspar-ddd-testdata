@@ -194,9 +194,11 @@ def string_format(value):
 
 
 class Extractor:
-    def __init__(self, platform, wording=()):
+    def __init__(self, platform, wording=(), personal_keys=()):
         self.platform = platform
         self.values = Values(wording)
+        # Patterns of keys that are user data on this platform (files.yaml `personal_keys`).
+        self.personal_keys = [re.compile(p) for p in personal_keys]
         self.left_out = collections.Counter()
 
     # Pass 1: collect values so names and keys holding user data can be recognised.
@@ -212,6 +214,9 @@ class Extractor:
             self.values.add(value)
 
     def key_pattern(self, key, where):
+        if any(p.fullmatch(key) for p in self.personal_keys):
+            self.left_out[f"key that is user data replaced by <name>: {where}"] += 1
+            return "<name>"
         out = id_pattern(key)
         out, hit = self.values.replace_tokens(out, keep_capitalised=True)
         if hit:
@@ -341,13 +346,14 @@ def decode_tree(value):
     return walk(value), changed
 
 
-def extract(zip_path, platform, wording=()):
+def extract(zip_path, platform, wording=(), personal_keys=()):
     """Return a snapshot {platform, files: {pattern: entry}, schemas: {pattern: schema}, left_out}.
 
     `wording` lists words that are the platform's own even where they also occur as values
-    (product names such as "YouTube"); they are kept in file names and keys.
+    (product names such as "YouTube"); they are kept in file names and keys. `personal_keys` lists
+    patterns of keys that hold user data on this platform, such as TikTok's handles; they become <name>.
     """
-    ex = Extractor(platform, wording)
+    ex = Extractor(platform, wording, personal_keys)
     archive = zipfile.ZipFile(zip_path)
     names = [i.filename for i in archive.infolist() if not i.is_dir() and not i.filename.startswith("__MACOSX/")
              and not i.filename.rpartition("/")[2].startswith("._") and i.filename.rpartition("/")[2] != ".DS_Store"]
