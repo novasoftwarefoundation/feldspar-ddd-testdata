@@ -17,7 +17,7 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 Names, keys and labels the extractor was not sure about. They were replaced by a placeholder or dropped; only the place and the count are kept.
 
-- 2 × label not kept (unsure it is the platform's wording): fb_example/ad_preferences.json.label_values[].label
+- Nothing.
 
 ## Known gaps
 

@@ -224,8 +224,7 @@ files:
 last_change:
   date: "2024-09-02"
   summary: "package of 2024-09-02 (en) added: 14 new, 0 changed shape, 0 not seen since an earlier package"
-left_out:
-  "label not kept (unsure it is the platform's wording): fb_example/ad_preferences.json.label_values[].label": 2
+left_out: {}
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/facebook.py) read."
 packages:

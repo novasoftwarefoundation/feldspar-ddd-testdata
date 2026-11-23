@@ -151,6 +151,8 @@
               "Datafile custom audience opt-out",
               "Is opted out from seeing ads off Meta",
               "Is opted out of third party data at the user level",
+              "Is opted out of using data about interactions between the user and third party sites",
+              "Is opted out of using education information (school, college year, field of study, etc.) to target ads",
               "Is opted out of using interests to target ads",
               "Is opted out of using life events to target ads",
               "Is opted out of using location affinity data to target ads",
@@ -212,6 +214,22 @@
                 "seen-in": 1
               },
               "Is opted out of third party data at the user level": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using data about interactions between the user and third party sites": {
+                "first-seen": "2024-09-02",
+                "langs": [
+                  "en"
+                ],
+                "last-seen": "2024-09-02",
+                "seen-in": 1
+              },
+              "Is opted out of using education information (school, college year, field of study, etc.) to target ads": {
                 "first-seen": "2024-09-02",
                 "langs": [
                   "en"
