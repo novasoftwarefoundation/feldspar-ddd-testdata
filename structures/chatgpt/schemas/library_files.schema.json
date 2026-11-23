@@ -1,0 +1,966 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "library_files.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "app_id": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "client_sha256_digest": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "content_backing_kind": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "context_scopes": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "context_scopes_v2": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "properties": {
+          "context_scopes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "is_siloed": {
+                  "type": "boolean",
+                  "x-first-seen": "2026-09-28",
+                  "x-langs": [
+                    "und"
+                  ],
+                  "x-last-seen": "2026-09-28",
+                  "x-seen-in": 1
+                },
+                "key": {
+                  "type": "null",
+                  "x-first-seen": "2026-09-28",
+                  "x-langs": [
+                    "und"
+                  ],
+                  "x-last-seen": "2026-09-28",
+                  "x-seen-in": 1
+                },
+                "key_scoped_access_claim": {
+                  "type": "null",
+                  "x-first-seen": "2026-09-28",
+                  "x-langs": [
+                    "und"
+                  ],
+                  "x-last-seen": "2026-09-28",
+                  "x-seen-in": 1
+                },
+                "key_timestamp": {
+                  "type": "null",
+                  "x-first-seen": "2026-09-28",
+                  "x-langs": [
+                    "und"
+                  ],
+                  "x-last-seen": "2026-09-28",
+                  "x-seen-in": 1
+                },
+                "scope_namespace": {
+                  "type": "string",
+                  "x-first-seen": "2026-09-28",
+                  "x-langs": [
+                    "und"
+                  ],
+                  "x-last-seen": "2026-09-28",
+                  "x-seen-in": 1
+                },
+                "sub_scope": {
+                  "type": "null",
+                  "x-first-seen": "2026-09-28",
+                  "x-langs": [
+                    "und"
+                  ],
+                  "x-last-seen": "2026-09-28",
+                  "x-seen-in": 1
+                }
+              },
+              "required": [
+                "is_siloed",
+                "key",
+                "key_scoped_access_claim",
+                "key_timestamp",
+                "scope_namespace",
+                "sub_scope"
+              ],
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "context_scopes"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "created_at": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "current_version_number": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "deleted_at": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "deletion_origin": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "deletion_reason": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "directory_id": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "error_msg": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "etag": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "expires_at": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_extension": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_failure_time": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_id": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_name": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_name_provenance": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_name_revision": {
+        "type": "integer",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_processed_time": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_size_bytes": {
+        "type": "integer",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "file_upload_time": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "gizmo_id": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "hide_from_file_search": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "id": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "partition_key": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "id",
+          "partition_key"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "image_gen_generation_id": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "initiating_conversation_id": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "is_project": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "is_visible": {
+        "type": "boolean",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "knowledge_store_id": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "kind": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "id",
+          "kind"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "last_used_at": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "legacy_retrieval_document_id": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "library_artifact_subtype": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "library_artifact_type": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "library_file_category": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "metadata_updated_at": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "mime_type": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "modified_at": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "normalized_name": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "object_version": {
+        "type": "integer",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "origination_message_id": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "origination_thread_id": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "pinned_at": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "record_creation_time": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "rehomed_to_library_file_id": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "request_read_version": {
+        "type": "integer",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "root_directory_id": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "sha256_digest": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "source_version_number": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "state": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "thumbnail_sources": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "patternProperties": {
+          "^.+:fit\\-256x256$": {
+            "type": "object",
+            "properties": {
+              "generated_at": {
+                "type": "string",
+                "format": "date-time",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "generator_version": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "height": {
+                "type": "integer",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "kind": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "mime_type": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "sediment_source": {
+                "type": "object",
+                "properties": {
+                  "file_id": {
+                    "type": "string",
+                    "x-first-seen": "2026-09-28",
+                    "x-langs": [
+                      "und"
+                    ],
+                    "x-last-seen": "2026-09-28",
+                    "x-seen-in": 1
+                  }
+                },
+                "required": [
+                  "file_id"
+                ],
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "size_bytes": {
+                "type": "integer",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "source_id": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "variant": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "width": {
+                "type": "integer",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "generated_at",
+              "generator_version",
+              "height",
+              "kind",
+              "mime_type",
+              "sediment_source",
+              "size_bytes",
+              "source_id",
+              "variant",
+              "width"
+            ],
+            "x-first-seen": "2026-09-28",
+            "x-key-pattern": "<value>:fit-256x256",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "trash_original_directory_id": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "trashed_at": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "ttl": {
+        "type": "integer",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "updated_at": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "uploading_account_user_id": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "user_renamed_at": {
+        "type": "null",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "version_created_at": {
+        "type": "string",
+        "format": "date-time",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "version_provenance": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "actor": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "actor_id": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "reason": {
+            "type": "null",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "action",
+          "actor",
+          "actor_id",
+          "reason"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      }
+    },
+    "required": [
+      "app_id",
+      "client_sha256_digest",
+      "content_backing_kind",
+      "context_scopes",
+      "context_scopes_v2",
+      "created_at",
+      "current_version_number",
+      "deleted_at",
+      "deletion_origin",
+      "deletion_reason",
+      "directory_id",
+      "error_msg",
+      "etag",
+      "expires_at",
+      "file_extension",
+      "file_failure_time",
+      "file_id",
+      "file_name",
+      "file_name_provenance",
+      "file_name_revision",
+      "file_processed_time",
+      "file_size_bytes",
+      "file_upload_time",
+      "gizmo_id",
+      "hide_from_file_search",
+      "id",
+      "image_gen_generation_id",
+      "initiating_conversation_id",
+      "is_project",
+      "is_visible",
+      "knowledge_store_id",
+      "last_used_at",
+      "legacy_retrieval_document_id",
+      "library_artifact_subtype",
+      "library_artifact_type",
+      "library_file_category",
+      "metadata_updated_at",
+      "mime_type",
+      "modified_at",
+      "normalized_name",
+      "object_version",
+      "origination_message_id",
+      "origination_thread_id",
+      "pinned_at",
+      "record_creation_time",
+      "rehomed_to_library_file_id",
+      "request_read_version",
+      "root_directory_id",
+      "sha256_digest",
+      "source_version_number",
+      "state",
+      "thumbnail_sources",
+      "trash_original_directory_id",
+      "trashed_at",
+      "ttl",
+      "updated_at",
+      "uploading_account_user_id",
+      "user_renamed_at",
+      "version_created_at",
+      "version_provenance"
+    ],
+    "x-first-seen": "2026-09-28",
+    "x-langs": [
+      "und"
+    ],
+    "x-last-seen": "2026-09-28",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2026-09-28",
+  "x-langs": [
+    "und"
+  ],
+  "x-last-seen": "2026-09-28",
+  "x-seen-in": 1
+}

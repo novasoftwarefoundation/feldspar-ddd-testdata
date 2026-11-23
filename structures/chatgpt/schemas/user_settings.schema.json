@@ -1,0 +1,428 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "user_settings.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "announcements": {
+        "type": "object",
+        "patternProperties": {
+          "^oai/apps/.+$": {
+            "type": "string",
+            "format": "date-time",
+            "x-first-seen": "2026-09-28",
+            "x-key-pattern": "oai/apps/<id>",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "properties": {
+          "oai/apps/hasSeenArchiveConversationOnboarding": {
+            "type": "string",
+            "format": "date-time",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "oai/apps/hasSeenOnboarding": {
+            "type": "string",
+            "format": "date-time",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "oai/apps/hasSeenOnboardingFlow": {
+            "type": "string",
+            "format": "date-time",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "oai/apps/hasSeenArchiveConversationOnboarding",
+          "oai/apps/hasSeenOnboarding",
+          "oai/apps/hasSeenOnboardingFlow"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "beta_settings": {
+        "type": "object",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "habitat_object_version": {
+        "type": "integer",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "settings": {
+        "type": "object",
+        "patternProperties": {
+          "^.+$": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-key-pattern": "<id>",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "^.+_gmail$": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-key-pattern": "<id>_gmail",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "^.+_google_calendar$": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-key-pattern": "<id>_google_calendar",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "^.+_google_contacts$": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-key-pattern": "<id>_google_contacts",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "properties": {
+          "calpico_who_can_message_me": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "can_consume_personal_credits_chatgpt": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "codex_training_allowed": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "codex_training_allowed_v2": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "connector_search_enabled": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "enable_device_code_auth": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "first_party_project_pins_unmigrated": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "golden_hour": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "hive_referenced_in_internal_knowledge": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "model_sticky_for_new_chats": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "moonshine": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "potion_enabled": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "precise_location_device_settings": {
+            "type": "object",
+            "properties": {
+              "devices": {
+                "type": "object",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "devices"
+            ],
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "precise_location_enabled_for_device": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "project_pins_backfilled": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "rKAMeJfyrM_settings": {
+            "type": "object",
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "end_time": {
+                "type": "null",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "start_time": {
+                "type": "null",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              }
+            },
+            "required": [
+              "enabled",
+              "end_time",
+              "start_time"
+            ],
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "record_meeting_on_calendar": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "show_expanded_code_view": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "study_mode_project_pins_unmigrated": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "sunshine": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "training_allowed": {
+            "type": "boolean",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "calpico_who_can_message_me",
+          "can_consume_personal_credits_chatgpt",
+          "codex_training_allowed",
+          "codex_training_allowed_v2",
+          "connector_search_enabled",
+          "enable_device_code_auth",
+          "first_party_project_pins_unmigrated",
+          "golden_hour",
+          "hive_referenced_in_internal_knowledge",
+          "model_sticky_for_new_chats",
+          "moonshine",
+          "potion_enabled",
+          "precise_location_device_settings",
+          "precise_location_enabled_for_device",
+          "project_pins_backfilled",
+          "rKAMeJfyrM_settings",
+          "record_meeting_on_calendar",
+          "show_expanded_code_view",
+          "study_mode_project_pins_unmigrated",
+          "sunshine",
+          "training_allowed"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "user_id": {
+        "type": "string",
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      }
+    },
+    "required": [
+      "announcements",
+      "beta_settings",
+      "habitat_object_version",
+      "settings",
+      "user_id"
+    ],
+    "x-first-seen": "2026-09-28",
+    "x-langs": [
+      "und"
+    ],
+    "x-last-seen": "2026-09-28",
+    "x-seen-in": 1
+  },
+  "x-first-seen": "2026-09-28",
+  "x-langs": [
+    "und"
+  ],
+  "x-last-seen": "2026-09-28",
+  "x-seen-in": 1
+}

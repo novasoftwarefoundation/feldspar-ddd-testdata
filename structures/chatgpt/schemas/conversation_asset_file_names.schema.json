@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "conversation_asset_file_names.json",
+  "type": "object",
+  "patternProperties": {
+    "^file_.+\\.dat$": {
+      "type": "string",
+      "x-first-seen": "2026-09-28",
+      "x-key-pattern": "file_<hex>.dat",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    }
+  },
+  "x-first-seen": "2026-09-28",
+  "x-langs": [
+    "und"
+  ],
+  "x-last-seen": "2026-09-28",
+  "x-seen-in": 1
+}

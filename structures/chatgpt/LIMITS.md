@@ -4,25 +4,23 @@ A structure is only as complete as the packages it came from: a file, key or lab
 
 ## Coverage
 
-- Packages: 0
-- File patterns seen: 0 ()
-- No media files (photos, videos, audio) in any package yet.
-- Lists that were empty in every package, so their items are unknown: 0
+- Packages: 1, export dates 2026-09-28; languages und
+- File patterns seen: 9 (html 1, json 7, media 1)
+- Lists that were empty in every package, so their items are unknown: 1
+  - `conversations.json [].mapping.<uuid>.message.content.thoughts[].chunks`
 
 ## Left out
 
 Names, keys and labels the extractor was not sure about. They were replaced by a placeholder or dropped; only the place and the count are kept.
 
-- Nothing.
+- 4 × key part replaced by <value>: library_files.json $[].thumbnail_sources
 
 ## Known gaps
 
-Files the platform's donation scripts read that no package has shown yet: 5
+Files the platform's donation scripts read that no package has shown yet: 3
 - `conversations-000.json`
-- `conversations.json`
 - `message_feedback.json`
 - `model_comparisons.json`
-- `user.json`
 
 <!-- known gaps by hand: start -->
 
@@ -30,4 +28,4 @@ Files the platform's donation scripts read that no package has shown yet: 5
 
 ## Last change
 
-- None yet.
+- 2026-09-28: package of 2026-09-28 (und) added: 9 new, 0 changed shape, 0 not seen since an earlier package

@@ -9,11 +9,108 @@ expected:
   - "message_feedback.json"
   - "model_comparisons.json"
   - "user.json"
-files: {}
-left_out: {}
+files:
+  "ads.json":
+    ascii: true
+    first_seen: "2026-09-28"
+    indent: 0
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/ads.schema.json"
+    seen_in: 1
+  "chat.html":
+    first_seen: "2026-09-28"
+    kind: "html"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    seen_in: 1
+  "conversation_asset_file_names.json":
+    ascii: true
+    first_seen: "2026-09-28"
+    indent: 2
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/conversation_asset_file_names.schema.json"
+    seen_in: 1
+  "conversations.json":
+    ascii: false
+    first_seen: "2026-09-28"
+    indent: 0
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/conversations.schema.json"
+    seen_in: 1
+  "export_manifest.json":
+    ascii: true
+    first_seen: "2026-09-28"
+    indent: 2
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/export_manifest.schema.json"
+    seen_in: 1
+  "file_<hex>.dat":
+    first_seen: "2026-09-28"
+    kind: "media"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    seen_in: 1
+  "library_files.json":
+    ascii: true
+    first_seen: "2026-09-28"
+    indent: 2
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/library_files.schema.json"
+    seen_in: 1
+  "user.json":
+    ascii: true
+    first_seen: "2026-09-28"
+    indent: 2
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/user.schema.json"
+    seen_in: 1
+  "user_settings.json":
+    ascii: true
+    first_seen: "2026-09-28"
+    indent: 2
+    kind: "json"
+    langs:
+      - "und"
+    last_seen: "2026-09-28"
+    meta_encoding: false
+    schema: "schemas/user_settings.schema.json"
+    seen_in: 1
+last_change:
+  date: "2026-09-28"
+  summary: "package of 2026-09-28 (und) added: 9 new, 0 changed shape, 0 not seen since an earlier package"
+left_out:
+  "key part replaced by <value>: library_files.json $[].thumbnail_sources": 4
 notes:
   - "expected: the file names that the D3i data-donation-task scripts (platforms/chatgpt.py) read."
-packages: []
+packages:
+  - date: "2026-09-28"
+    lang: "und"
 personal_keys: []
 platform: "chatgpt"
 wording:

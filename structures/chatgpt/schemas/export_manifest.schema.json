@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "export_manifest.json",
+  "type": "object",
+  "properties": {
+    "export_files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          },
+          "size_bytes": {
+            "type": "integer",
+            "x-first-seen": "2026-09-28",
+            "x-langs": [
+              "und"
+            ],
+            "x-last-seen": "2026-09-28",
+            "x-seen-in": 1
+          }
+        },
+        "required": [
+          "path",
+          "size_bytes"
+        ],
+        "x-first-seen": "2026-09-28",
+        "x-langs": [
+          "und"
+        ],
+        "x-last-seen": "2026-09-28",
+        "x-seen-in": 1
+      },
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    },
+    "logical_files": {
+      "type": "object",
+      "patternProperties": {
+        "^file_.+\\.dat$": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-key-pattern": "file_<hex>.dat",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        }
+      },
+      "properties": {
+        "ads.json": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        },
+        "chat.html": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        },
+        "conversation_asset_file_names.json": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        },
+        "conversations.json": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        },
+        "library_files.json": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        },
+        "user.json": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        },
+        "user_settings.json": {
+          "type": "object",
+          "properties": {
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "x-first-seen": "2026-09-28",
+                "x-langs": [
+                  "und"
+                ],
+                "x-last-seen": "2026-09-28",
+                "x-seen-in": 1
+              },
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            },
+            "sharded": {
+              "type": "boolean",
+              "x-first-seen": "2026-09-28",
+              "x-langs": [
+                "und"
+              ],
+              "x-last-seen": "2026-09-28",
+              "x-seen-in": 1
+            }
+          },
+          "required": [
+            "files",
+            "sharded"
+          ],
+          "x-first-seen": "2026-09-28",
+          "x-langs": [
+            "und"
+          ],
+          "x-last-seen": "2026-09-28",
+          "x-seen-in": 1
+        }
+      },
+      "required": [
+        "ads.json",
+        "chat.html",
+        "conversation_asset_file_names.json",
+        "conversations.json",
+        "library_files.json",
+        "user.json",
+        "user_settings.json"
+      ],
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    },
+    "manifest_file": {
+      "type": "string",
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    },
+    "version": {
+      "type": "integer",
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "export_files",
+    "logical_files",
+    "manifest_file",
+    "version"
+  ],
+  "x-first-seen": "2026-09-28",
+  "x-langs": [
+    "und"
+  ],
+  "x-last-seen": "2026-09-28",
+  "x-seen-in": 1
+}

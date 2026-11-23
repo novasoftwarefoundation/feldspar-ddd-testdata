@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "user.json",
+  "type": "object",
+  "properties": {
+    "birth_year": {
+      "type": "integer",
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    },
+    "chatgpt_plus_user": {
+      "type": "boolean",
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    },
+    "id": {
+      "type": "string",
+      "x-first-seen": "2026-09-28",
+      "x-langs": [
+        "und"
+      ],
+      "x-last-seen": "2026-09-28",
+      "x-seen-in": 1
+    }
+  },
+  "required": [
+    "birth_year",
+    "chatgpt_plus_user",
+    "email",
+    "id"
+  ],
+  "x-first-seen": "2026-09-28",
+  "x-langs": [
+    "und"
+  ],
+  "x-last-seen": "2026-09-28",
+  "x-seen-in": 1
+}
