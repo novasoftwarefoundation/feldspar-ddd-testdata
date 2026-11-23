@@ -96,7 +96,9 @@ def main():
     elif a.command == "check":
         combined = Combined(structures(a.platform), a.platform)
         known = as_snapshot(combined)
-        lines = compare(known, extract(a.package, a.platform, combined.meta["wording"]), check=True)
+        snapshot = extract(a.package, a.platform, combined.meta["wording"])
+        lines = compare(known, snapshot, check=True)
+        lines += [f"! {where}" for where in sorted(snapshot["left_out"]) if where.startswith("unreadable JSON")]
         print("\n".join(lines) if lines else "everything in this package is known")
         sys.exit(1 if lines else 0)
     elif a.command == "generate":
