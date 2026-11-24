@@ -50,6 +50,34 @@ def media_sig(d):
     return "other"
 
 
+from urllib.parse import urlsplit  # noqa: E402
+sys.path.insert(0, __file__.rsplit("/", 1)[0])
+import anonymize as an  # noqa: E402  (its Meta host list and Meta path words only)
+UA_FIELDS = ("User Agent", "Gebruikersagent")
+
+
+def written_part(a, b, path):
+    """The part of replacement b to scan, without what the anonymizer keeps by design: a Meta host, the
+    top-level domain, query key names, Meta path words, unrenamed folders of a media path, a user agent's
+    letters. Every other host label, path segment and query value is scanned, changed or not."""
+    if any(u in path for u in UA_FIELDS):
+        return re.sub(r"\D+", " ", b)
+    if re.match(r"https?://", b):
+        try:
+            u = urlsplit(b)
+        except ValueError:
+            return b
+        host = u.hostname or ""
+        out = [] if an.META_HOSTS.search(host) else host.split(".")[:-1]
+        out += [x for x in u.path.split("/") if x not in an.STRUCT]
+        out += [kv.split("=", 1)[-1] for kv in u.query.split("&") if kv]
+        return " ".join(out + [u.fragment])
+    if path.endswith((".uri", ".thread_path")):
+        sa, sb = a.split("/"), b.split("/")
+        return " ".join(y for i, y in enumerate(sb) if i >= len(sa) or y != sa[i])
+    return b
+
+
 diff = collections.Counter()
 replaced = collections.defaultdict(set)     # field -> original values that were replaced
 derived = []                                # copy text written by the anonymizer (replacement values)
@@ -87,7 +115,7 @@ def compare(a, b, path):
             diff["string_kind:" + kind(a) + "->" + kind(b)] += 1
         if isinstance(a, str) and a != b:
             replaced[field_of(path)].add(fix(a))
-            derived.append(fix(b))
+            derived.append(written_part(fix(a), fix(b), path))
         elif isinstance(a, str) and a and a not in ("True", "False", "true", "false"):
             kept[field_of(path)] += 1
 
@@ -113,7 +141,20 @@ for a, b in zip(oi, ci):
         compare(json.loads(orig.read(a)), json.loads(copy.read(b)), fn)
     else:
         da, db = orig.read(a), copy.read(b)
-        if fn.endswith(".txt") or fn.endswith((".csv", ".html")):
+        if fn.endswith(".srt"):
+            la, lb = da.decode("utf-8").split("\n"), db.decode("utf-8").split("\n")
+            if len(la) != len(lb):
+                diff["srt line count"] += 1
+            for x, y in zip(la, lb):
+                if re.fullmatch(r"\s*(\d+|\d\d:\d\d:\d\d[,.]\d+ --> .*)?\s*", x):
+                    if x != y:
+                        diff["srt cue or timing changed"] += 1
+                elif x != y:
+                    replaced["srt caption"].add(x.strip())
+                    derived.append(y)
+                else:
+                    kept["srt caption"] += 1
+        elif fn.endswith(".txt") or fn.endswith((".csv", ".html")):
             if da != db:
                 diff["text file changed"] += 1
         elif media_sig(da) != media_sig(db):
@@ -146,7 +187,7 @@ for b in ci:
     if b.filename.endswith(".json"):
         parts.append(d.decode("utf-8"))
         strings(json.loads(d), leaves)
-    elif b.filename.endswith((".txt", ".csv", ".html")):
+    elif b.filename.endswith((".txt", ".csv", ".html", ".srt")):
         parts.append(d.decode("utf-8", "replace"))
 parts += leaves
 corpus = "\n".join(parts).casefold()
