@@ -7,7 +7,9 @@
 2. Leak scan: every original string value that the copy replaced, and every renamed path part, is searched
    in the copy (entry names, JSON text decoded, other text files): as a whole value, as a whole token, and
    (for values of 6+ characters) as a substring. All values of the --own-file entries (the account's own
-   profile files) are searched too, replaced or not.
+   profile files) are searched too, replaced or not. Text the anonymizer keeps by design is left out of the
+   "written" text: a Meta host, the top-level domain, query key names, Meta path words, unrenamed folders
+   and a user agent's letters.
 """
 import collections
 import json

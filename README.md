@@ -97,13 +97,24 @@ counts only, never a value. All tools are in [`anonymizer/`](anonymizer):
 - **ChatGPT:** `cg_anon.py` rewrites JSON string by string, so a file that is deliberately broken (for testing) keeps
   its breakage byte for byte. Several zips anonymized in one run share one mapping. Each copy gets the same file name
   as its original in the output folder; an existing file is never replaced.
-- **Instagram:** `verify.py` is the older check with the account's own values as options:
+- **Instagram:** English, German and Dutch exports, in the older and the newer format. Subtitle files (`.srt`) of
+  reels keep their cue numbers and timings; their caption lines are replaced. `verify.py` is the older check with
+  the account's own values as options:
   `python3 anonymizer/verify.py instagram-export.zip instagram-anonymized.zip --username <username> --email <email>`.
+  `own_check.py` searches the copy for the account's username and full name and for every email address and phone
+  number in its profile files, and the same check on the original shows it finds them:
+  `python3 anonymizer/own_check.py instagram-export.zip instagram-anonymized.zip <username> "<full name>"`.
 - **Google:** `stress_build.py` rebuilds a large Takeout made of many copies of one export from that export's
   anonymized copy, with the same file list; `stress_verify.py` checks it.
-- **Diagnostics:** `survey.py`, `gsurvey.py`, `gprobe.py`, `cg_probe.py`, `stress_probe.py`, `mac_probe.py` and the
-  `locate*.py` scripts explain what an export holds or where a scan hit occurs, with masked values, field names,
-  lengths and counts only.
+- **Diagnostics:** `survey.py`, `gsurvey.py`, `gprobe.py`, `cg_probe.py`, `stress_probe.py`, `mac_probe.py`,
+  `nl_probe.py` and the `locate*.py` scripts explain what an export holds or where a scan hit occurs, with masked
+  values, field names, lengths and counts only. `nl_probe.py` shows where a label occurs and the shape of its values,
+  to decide whether it is a setting or data; `locate6.py` says why each hit of `verify2.py` occurs.
+- **Hosts written with capitals:** before the fix in `fake_netloc()`, a URL host written with capitals
+  (`https://Example.com/…`) stayed unchanged in every anonymizer. `host_scan.py` counts such hosts in copies, leaving
+  out the platform hosts the tools keep: `python3 anonymizer/host_scan.py copy.zip [more.zip …]`.
+- **Tests:** `test_fake_url.py` and `test_instagram.py` reproduce fixed bugs on synthetic data and exit 0 when they
+  pass: `python3 anonymizer/test_fake_url.py && python3 anonymizer/test_instagram.py`.
 
 The fake values change on every run, and the key that maps them is never stored. Always run the check after
 anonymizing: by chance a fake can contain a piece of an original value, and the check reports that as a leak. Run the
