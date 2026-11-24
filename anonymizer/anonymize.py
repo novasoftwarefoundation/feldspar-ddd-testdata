@@ -151,6 +151,12 @@ def fit_case(new, old):
     return new
 
 
+def pick(r, pool, original):
+    """A fake from the pool, or the original's letters scrambled when every pool word occurs in the originals
+    (an address book can hold every fake first name)."""
+    return r.choice(pool) if pool else "".join(scramble_char(c, r) for c in original)
+
+
 def fake_word(w, r):
     if w.isascii() and w.isalpha():
         pool = BY_LEN.get(len(w))
@@ -189,7 +195,7 @@ def _fake_plain(s, r):
 def fake_letters_only(s):
     """Replace words, keep digits and punctuation (aggregate stats like 'City: 12.5%')."""
     r = rng_for("letters", s)
-    return re.sub(r"[^\W\d_]+", lambda m: fit_case(r.choice(CITIES), m.group(0)) if m.group(0)[:1].isupper() else fake_word(m.group(0), r), s)
+    return re.sub(r"[^\W\d_]+", lambda m: fit_case(pick(r, CITIES, m.group(0)), m.group(0)) if m.group(0)[:1].isupper() else fake_word(m.group(0), r), s)
 
 
 def fake_username(u):
@@ -204,8 +210,8 @@ def fake_name(n):
         if not p or p.isspace():
             out.append(p)
         elif p.isascii() and p.isalpha():
-            out.append(fit_case((r.choice(FIRST) if first else r.choice(LAST)), p) if p[:1].isupper() else
-                       fit_case((r.choice(FIRST) if first else r.choice(LAST)).lower(), p))
+            new = pick(r, FIRST if first else LAST, p)
+            out.append(fit_case(new, p) if p[:1].isupper() else fit_case(new.lower(), p))
             first = False
         else:
             out.append("".join(scramble_char(c, r) for c in p))
@@ -235,6 +241,11 @@ def fake_ip(ip):
 
 def fake_coord(v, axis):
     """axis 0 = latitude, 1 = longitude; keeps the number of decimals of a string value."""
+    try:
+        if float(v) == 0:
+            return v        # 0 means "no location": nothing to hide, and a fake would invent one
+    except ValueError:
+        pass
     r = rng_for("coord%d" % axis, str(v))
     base = r.choice(COORDS)[axis] + r.uniform(-0.02, 0.02)
     if isinstance(v, str):
@@ -251,7 +262,7 @@ def fake_place(s, kind="place"):
         if re.fullmatch(r"[A-Z]{2}", p):
             out.append(r.choice(CODES))
         elif i == 0:
-            out.append(r.choice(CITIES))
+            out.append(pick(r, CITIES, p))
         elif i == len(parts) - 1 and len(parts) > 1:
             out.append(r.choice(COUNTRIES))
         else:
@@ -381,11 +392,16 @@ def looks_time(s):
 IP_RE = re.compile(r"^(\d{1,3}(\.\d{1,3}){3}|[0-9a-fA-F]{0,4}(:[0-9a-fA-F]{0,4}){2,7})$")
 EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 PHONE_RE = re.compile(r"^\+?[\d\s\-()]{6,}$")
-BOOLS = {"True", "False", "true", "false"}
+BOOLS = {"True", "False", "true", "false", "Waar", "Niet waar"}     # Dutch exports write booleans in words
 
 HEADINGS = {"Author", "Brand partner", "Hashtags", "Media", "Metadata", "Owner", "Place", "Profile change",
-            "Reel metadata", "Repost", "Topics"}
-NONPERSON_GROUPS = {"Hashtags", "Topics", "Place", "Media", "Metadata", "Reel metadata"}
+            "Reel metadata", "Repost", "Topics",
+            # Dutch exports
+            "Auteur", "Merkpartner", "Eigenaar", "Plaats", "Reel-metagegevens", "Onderwerpen"}
+NONPERSON_GROUPS = {"Hashtags", "Topics", "Place", "Media", "Metadata", "Reel metadata",
+                    "Onderwerpen", "Plaats", "Reel-metagegevens"}
+NAME_LABELS = {"Name", "Naam"}
+EMPTY_SECTIONS = collections.Counter()    # titles of sections with an empty dict: repeated ones are Meta headings
 
 KEEP_LABELS = {
     "Click type", "Email type", "Type", "Privacy", "Publish mode", "How you opened the camera",
@@ -404,11 +420,21 @@ KEEP_LABELS = {
     "Unterstützte SDK-Versionen", "Gesichtserkennungs-Version", "Kommentieren gestattet für",
     "Methode zur Bestätigung der Telefonnummer", "Sprachcode", "Privates Konto", "Kontaktsynchronisierung",
     "Telefonnummer bestätigt", "Hat ein Live-Video geteilt",
+    # Dutch exports
+    "Besluit", "Reden", "Productnaam", "Contacten synchroniseren", "Doelgroep delen", "Evenement", "E-mailtype",
+    "Heb je gearchiveerde reels?", "Hoe je de camera hebt geopend", "Hoe je de camera hebt geopend vanuit de browser",
+    "Mediakwaliteit", "Uitvoerindeling", "Originele mediatype", "Publicatiemodus", "Taal", "Landcode",
+    "Eerste landcode", "Uitleg van gebruik", "Ondersteunde SDK-versies", "Ondersteunde indeling voor afbeeldingscompressie",
+    "Ondersteunde testversies van de SDK voor camera-effecten van Meta",
+    "Ondersteunde versies van de SDK voor camera-effecten van Meta", "Appversie", "Aantal", "Ingezamelde bedrag",
+    "Bestandsgrootte in bytes", "Oorspronkelijke hoogte", "Originele breedte", "Duur", "Camerapositie",
+    "Phone Confirmation Method", "Heeft een livevideo gedeeld", "Hoe vaak heb je geprobeerd het bestand te downloaden?",
+    "Jou scheiden van je achtergrond", "duration", "Primair e-mailadres",
 }
 KEEP_KEYS = {"device_manufacturer", "device_model", "device_os_version", "device_type", "type",
              "source_app", "camera_position", "source_type", "scene_capture_type", "lens_make", "lens_model",
              "software", "focal_length", "aperture", "shutter_speed", "metering_mode", "date_time_digitized",
-             "date_time_original", "reply_control", "geo_gated_country_list", "music_genre", "reaction"}
+             "date_time_original", "reply_control", "geo_gated_country_list", "music_genre", "reaction", "duration"}
 ACTION_BY_LABEL = {
     "Username": "username", "Media Owner": "username", "Author": "username",
     "Name": "name", "Profile Name": "name", "First Name": "name", "Last Name": "name", "First name": "name",
@@ -438,6 +464,25 @@ ACTION_BY_LABEL = {
     "Genauer Breitengrad": "lat", "Genauer Längengrad": "lon", "Suche": "auto", "Vorname": "name", "Nachname": "name",
     "Kontaktinformationen": "auto", "Erstes Länderkennzeichen": "keep", "Geburtsdatum": "dob", "Biografie": "text",
     "Kommentar": "text", "Eigentümer": "username", "Medieninhaber": "username", "Saved on": "url",
+    # Dutch exports
+    "Gebruikersnaam": "username", "Media-eigenaar": "username", "Naam": "name", "Voornaam": "name",
+    "Achternaam": "name", "Profielnaam": "name", "Merkpartner": "name",
+    "E-mailadres": "email",
+    "Laatste e-mailadres dat is ingediend tijdens het bevestigingsproces voor e-mailadressen": "email",
+    "Telefoonnummer": "phone", "IP-adres": "ip", "Apparaat-ID": "id", "Gebruikersagent": "ua", "Poortnummer": "id",
+    "Breedtegraad": "lat", "Onnauwkeurige breedtegraad": "lat", "Exacte breedtegraad": "lat",
+    "Lengtegraad": "lon", "Onnauwkeurige lengtegraad": "lon", "Exacte lengtegraad": "lon",
+    "Geboortedatum": "dob", "Geslacht": "gender", "Stad": "city", "Plaats": "city", "Regio": "region",
+    "Staat/provincie": "region", "Land": "country", "Landnaam": "country", "Locatie": "place",
+    "Interessante locaties": "city", "Postcode": "id", "Postcode-extensie": "id",
+    "Websitelink die je hebt bezocht": "url", "Openbare URL advertentiebibliotheek": "url",
+    "Profiel van merkpartner": "url",
+    "Volgerpercentage per stad": "letters", "Volgerpercentage per land": "letters",
+    "Bio": "text", "Biografie": "text", "Onderschrift": "text", "Bijschrift": "text", "Titel": "text", "Opmerking": "text",
+    "Reactie": "text", "Tekst": "text", "Bericht": "text", "Vraag": "text", "Beschrijving": "text",
+    "Advertentietitel": "text", "Titel van websitepagina die je hebt bezocht": "text", "Productnamen": "text",
+    "Merk": "text", "Prijs": "text", "Antwoord": "auto", "Contactgegevens": "auto",
+    "Nieuwe waarde": "auto", "Vorige waarde": "auto",
 }
 KEY_ACTIONS = {"advertiser_name": "text", "last_connected_ip": "ip", "sender_name": "name", "actor": "name", "name": "name", "original_content_owner": "username",
                "content": "text", "share_text": "text", "link": "url", "href": "url", "uri": "path",
@@ -500,6 +545,7 @@ def _brings_original_token(new, v):
                 return True
     return False
 COLLISIONS = collections.Counter()
+IDENTITY_REDRAW = {"name", "username", "email", "phone", "ip", "id"}   # a fake that equals its own original is re-drawn
 
 
 def apply(action, v, field):
@@ -511,15 +557,20 @@ def apply(action, v, field):
         return FAKE_CACHE[key]
     new = _apply(action, v, field)
     n = 0
-    while (new and new != v and action not in MANY_TO_ONE and n < 60
-           and ((new.casefold() in FAKE_OWNER and FAKE_OWNER[new.casefold()] != v) or new.casefold() in ORIGINALS_CF
-                or _brings_original_token(new, v))):
+    while (new and action not in MANY_TO_ONE and n < 60
+           and ((new == v and action in IDENTITY_REDRAW and any(c.isalnum() for c in v))
+                or new != v and ((new.casefold() in FAKE_OWNER and FAKE_OWNER[new.casefold()] != v)
+                                 or new.casefold() in ORIGINALS_CF or _brings_original_token(new, v)))):
         n += 1
         SALT[0] = f"#{n}"
         new = _apply(action, v, field) if n < 30 else scramble(v, "collision")
         SALT[0] = ""
     if n:
-        COLLISIONS["re-drawn" if new.casefold() not in FAKE_OWNER else "unresolved"] += 1
+        why = ("equals its own original" if new == v and any(c.isalnum() for c in v)
+               else "other original's fake" if new.casefold() in FAKE_OWNER and FAKE_OWNER[new.casefold()] != v
+               else "equals an original" if new.casefold() in ORIGINALS_CF
+               else "brings an original token" if _brings_original_token(new, v) else None)
+        COLLISIONS["re-drawn" if why is None else "unresolved: " + why + " (" + action + ")"] += 1
     if new and new != v:
         FAKE_OWNER.setdefault(new.casefold(), v)
     FAKE_CACHE[key] = new
@@ -568,7 +619,7 @@ def _apply(action, v, field):
     if action == "gender":
         return "Prefer not to say"
     if action == "city":
-        return rng_for("city", v).choice(CITIES)
+        return pick(rng_for("city", v), CITIES, v)
     if action == "region":
         return rng_for("region", v).choice(REGIONS)
     if action == "country":
@@ -603,14 +654,14 @@ def _apply(action, v, field):
 def label_action(label, group, fname):
     if fname.startswith(INSIGHTS) or "/" + INSIGHTS in fname:
         a = ACTION_BY_LABEL.get(label)
-        return a if a in ("letters",) else "keep"
+        return a if a in ("letters", "text") else "keep"
     if label in KEEP_LABELS:
         return "keep"
-    if label == "Name" and group in NONPERSON_GROUPS:
+    if label in NAME_LABELS and group in NONPERSON_GROUPS:
         return "text"
     if fname.endswith(TEXT_FILES):
         return "text"
-    if label == "Name" and group is None and fname.endswith(("saved_collections.json",)):
+    if label in NAME_LABELS and group is None and fname.endswith(("saved_collections.json",)):
         return "text"
     return ACTION_BY_LABEL.get(label, "auto")
 
@@ -667,7 +718,7 @@ def walk(node, fname, key=None, label=None, group=None, parent=None):
 
 def title_value(v, node, fname, parent):
     t = unmoji(v)[0]
-    if t == "" or t in HEADINGS:
+    if t == "" or t in HEADINGS or (node.get("dict") == [] and EMPTY_SECTIONS[t] >= 5):
         STATS[("keep", "title")] += 1
         return v
     if any(k in node for k in ("uri", "creation_timestamp", "media")) and "string_list_data" not in node:
@@ -697,6 +748,8 @@ def fix_profile_changes(orig, new):
 def collect(node, label=None, key=None):
     if isinstance(node, dict):
         lab = unmoji(node["label"])[0] if isinstance(node.get("label"), str) else None
+        if node.get("dict") == [] and isinstance(node.get("title"), str) and node["title"]:
+            EMPTY_SECTIONS[unmoji(node["title"])[0]] += 1
         for k, v in node.items():
             if k == "string_map_data" and isinstance(v, dict):
                 for mk, mv in v.items():
@@ -727,9 +780,11 @@ def collect(node, label=None, key=None):
     elif isinstance(node, str) and node:
         v = unmoji(node)[0]
         if label in ("Username", "Media Owner", "Author", "Benutzername", "Nutzername", "Eigentümer",
-                     "Medieninhaber") or key == "original_content_owner":
+                     "Medieninhaber", "Gebruikersnaam", "Media-eigenaar") or key == "original_content_owner":
             USERNAMES.add(v)
-        elif label in ("Name", "Profile Name", "Vorname", "Nachname") or key in ("sender_name", "actor", "name"):
+        elif (label in ("Name", "Profile Name", "Vorname", "Nachname", "Naam", "Voornaam", "Achternaam", "Profielnaam",
+                        "First Name", "Last Name", "First name", "Last name")
+              or key in ("sender_name", "actor", "name")):
             NAMES.add(v)
 
 
@@ -752,6 +807,20 @@ def _all_strings(n):
 
 
 # --- media placeholders ------------------------------------------------------------------------
+
+SRT_META = re.compile(r"\d+|\d\d:\d\d:\d\d[,.]\d+ --> \d\d:\d\d:\d\d[,.]\d+.*")
+
+
+def fake_srt(data):
+    """Subtitles (reels captions): cue numbers, timings and line breaks kept; caption lines become fake text."""
+    out = []
+    for line in data.decode("utf-8").split("\n"):
+        body = line.rstrip("\r")
+        if body.strip() and not SRT_META.fullmatch(body.strip()):
+            body = apply("text", body, "srt caption")
+        out.append(body + line[len(line.rstrip("\r")):])
+    return "\n".join(out).encode("utf-8")
+
 
 def placeholder(name, data, ph):
     ext = name.rsplit(".", 1)[-1].lower() if "." in name.rsplit("/", 1)[-1] else ""
@@ -781,6 +850,10 @@ def main(src, dst, phdir=os.path.join(os.path.dirname(os.path.abspath(__file__))
     print("known usernames:", len(USERNAMES), "known names:", len(NAMES))
     # fake words must never spell an original name or username by coincidence
     taken = {w.casefold() for x in NAMES | USERNAMES for w in re.findall(r"[^\W\d_]+", x)}
+    # ... nor contain one of 6+ letters (the verifier's substring threshold), e.g. a surname inside a longer one
+    long_taken = {w for w in taken if len(w) >= 6}
+    taken |= {w.casefold() for pool in [FIRST, LAST, CITIES] + list(BY_LEN.values()) for w in pool
+              if any(t in w.casefold() for t in long_taken)}
     for n in list(BY_LEN):
         BY_LEN[n] = [w for w in BY_LEN[n] if w.casefold() not in taken]
         if not BY_LEN[n]:
@@ -788,6 +861,10 @@ def main(src, dst, phdir=os.path.join(os.path.dirname(os.path.abspath(__file__))
     FIRST[:] = [w for w in FIRST if w.casefold() not in taken]
     LAST[:] = [w for w in LAST if w.casefold() not in taken]
     CITIES[:] = [w for w in CITIES if w.casefold() not in taken]
+    # same for regions and countries; an original may be a page named after one (keep the pool if it would empty)
+    taken_all = taken | ORIGINALS_CF
+    for pool in (REGIONS, COUNTRIES):
+        pool[:] = [w for w in pool if w.casefold() not in taken_all] or pool
     print("fake pools after removing words used in originals: words", sum(map(len, BY_LEN.values())),
           "first names", len(FIRST), "last names", len(LAST), "cities", len(CITIES))
     files = collections.Counter()
@@ -800,6 +877,9 @@ def main(src, dst, phdir=os.path.join(os.path.dirname(os.path.abspath(__file__))
             elif info.filename.endswith("no-data.txt"):
                 body = zin.read(info)          # Meta's fixed "no data" notice
                 files["no-data"] += 1
+            elif info.filename.endswith(".srt"):
+                body = fake_srt(zin.read(info))
+                files["srt"] += 1
             elif info.filename.endswith(".json"):
                 data = parsed[info.filename]
                 new = walk(data, info.filename)
