@@ -277,6 +277,19 @@ USERNAMES: set = set()
 NAMES: set = set()
 
 
+def fake_netloc(netloc, host):
+    """Scramble the host as written in netloc (urlsplit's hostname is lowercased, so a capitalised host would not
+    be found in netloc); www and the top-level domain are kept, user info and port too."""
+    at = netloc.lower().find(host) if host else -1
+    if at < 0:
+        return netloc
+    labels = netloc[at:at + len(host)].split(".")
+    keep_last = 1 if len(labels) > 1 else 0
+    new = ".".join(lab if lab.lower() == "www" or i >= len(labels) - keep_last else scramble_ident(lab, "host")
+                   for i, lab in enumerate(labels))
+    return netloc[:at] + new + netloc[at + len(host):]
+
+
 def fake_url(u):
     try:
         parts = urlsplit(u)
@@ -296,11 +309,7 @@ def fake_url(u):
         netloc = parts.netloc
         path = "/".join(new)
     else:
-        labels = host.split(".")
-        keep_last = 1 if len(labels) > 1 else 0
-        new_labels = [lab if (lab == "www" or i >= len(labels) - keep_last) else scramble_ident(lab, "host")
-                      for i, lab in enumerate(labels)]
-        netloc = parts.netloc.replace(host, ".".join(new_labels)) if host else parts.netloc
+        netloc = fake_netloc(parts.netloc, host)
         path = "/".join(scramble_ident(s, "seg") for s in parts.path.split("/"))
     query = "&".join(
         (kv.split("=", 1)[0] + "=" + scramble_ident(kv.split("=", 1)[1], "q")) if "=" in kv else scramble_ident(kv, "q")

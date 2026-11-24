@@ -40,9 +40,7 @@ def tt_url(u):
     except ValueError:
         return an.scramble_ident(u, "url")
     host = p.hostname or ""
-    netloc = p.netloc if TT_HOSTS.search(host) or not host else p.netloc.replace(host, ".".join(
-        lab if lab == "www" or i == len(host.split(".")) - 1 else an.scramble_ident(lab, "host")
-        for i, lab in enumerate(host.split("."))))
+    netloc = p.netloc if TT_HOSTS.search(host) or not host else an.fake_netloc(p.netloc, host)
     segs = [s if s in TT_STRUCT else ("@" + an.fake_username(s[1:]) if s.startswith("@") else an.scramble_ident(s, "tt-id"))
             for s in p.path.split("/")]
     query = "&".join((kv.split("=", 1)[0] + "=" + an.scramble_ident(kv.split("=", 1)[1], "q")) if "=" in kv else kv

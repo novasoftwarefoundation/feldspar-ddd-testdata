@@ -77,9 +77,7 @@ def cg_url(u):
     if OPENAI_HOSTS.search(host):
         netloc = p.netloc
     else:
-        labels = host.split(".")
-        netloc = p.netloc.replace(host, ".".join(l if l == "www" or i == len(labels) - 1 else an.scramble_ident(l, "host")
-                                                 for i, l in enumerate(labels)))
+        netloc = an.fake_netloc(p.netloc, host)
     path = "/".join(ids_in(x) if has_id(x) else an.scramble_ident(x, "seg") for x in p.path.split("/"))
     query = "&".join((kv.split("=", 1)[0] + "=" + an.scramble_ident(kv.split("=", 1)[1], "q")) if "=" in kv else kv
                      for kv in p.query.split("&")) if p.query else ""

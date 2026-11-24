@@ -40,19 +40,13 @@ def ident(x):
     return an.scramble_ident(x, "yt-id")
 
 
-def fake_host(h):
-    labels = h.split(".")
-    return ".".join(lab if lab == "www" or i == len(labels) - 1 else an.scramble_ident(lab, "host")
-                    for i, lab in enumerate(labels))
-
-
 def g_fake_url(u):
     try:
         p = urlsplit(u)
     except ValueError:
         return an.scramble_ident(u, "url")
     host = p.hostname or ""
-    netloc = p.netloc if KEEP_HOSTS.search(host) or not host else p.netloc.replace(host, fake_host(host))
+    netloc = p.netloc if KEEP_HOSTS.search(host) or not host else an.fake_netloc(p.netloc, host)
     segs = []
     for s in p.path.split("/"):
         if s in STRUCT:
